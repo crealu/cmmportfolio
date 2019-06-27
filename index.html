@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cameron Miller</title>
+	<link href="css/camstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/cmm.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="body-wrapper">
+		<div class="navigation-bar">
+			<img src="img/designs/sunsetFL.svg" id="flake-logo"/>
+			<a id="home-link" href=""><h1 id="cameron-miller">CMM</h1></a>
+			<div class="nav-list-container">
+				<ul class="nav-items-list">
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('About')">About</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('Software')">Software</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('Visual Arts')">Visual Arts</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<img onclick="toggleNavList()" src="img/mobile btn gray.jpg" id="mobile-menu"/>
+			<div id="nav-list-container-mobile">
+				<ul class="nav-list-mobile">
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link"  onclick="displayContent('About')">About</a>
+						<p id="close-mobile" onclick="toggleNavList()">x</p>
+					</li>
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link" onclick="displayContent('Software')">Software</a>
+					</li>
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link" onclick="displayContent('Visual Arts')">Visual Arts</a>
+					</li>
+					<li class="nav-list-li-mobile">
+						<div class="other-sites-mobile">
+							<ul class="media-list">
+								<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
+								<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
+								<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
+								<li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://www.shareicon.net/download/2017/03/01/880151_media.ico" class="social-img"/></a></li>
+								<li><a href="https://www.instagram.com/lucidlycreative/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="home-content">
+			<div class="home-img-wrapper">
+				<img src="css/suncam_4.jpg" class="home-img"/>
+			</div>
+		</div>
+	  <!--<div id="title-content-container">
+
+		</div>-->
+		<div id="section-title-here">
+			<h2 id="hello-welcome">Hello and welcome! I'm Cam, a</h2>
+			<div id="roles-container">
+				<ul id="roles">
+					<li class="role" id="software-developer">software developer.</li>
+					<li class="role" id="web-designer">web designer.</li>
+					<li class="role" id="visual-artist">visual artist.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="other-sites">
+	    <ul>
+				<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
+	      <li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
+	      <li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
+	      <li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://www.shareicon.net/download/2017/03/01/880151_media.ico" class="social-img"/></a></li>
+	      <li><a href="https://www.instagram.com/lucidlycreative/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
+	    </ul>
+	  </div>
+
+		<div id="about-content" class="topic-content about-wrapper">
+			<div class="row">
+				<div class="project-wrapper">
+					<div class="col-of-1 cam-text-col">
+						<div class="project-title-wrapper">
+							<h3 class="project-title">Cam</h3>
+						</div>
+						<div class="project-text-wrapper">
+							<p class="project-text">I'm a sofware developer and visual artist.
+								With versatility as one of my strengths, code and creative design are passions that coalesce well for me.
+								They are skills that I strive to continuously hone. Projects that I enjoy working on include building user interfaces, coding animations, forecasting data analytics and recently, embedded software.
+								When I'm not coding I'm usually socializing, playing music, or adventuring outside. Often times I explore new places to grow my photography portfolio.
+								Traveling is a big part of my life, too, and I'm always looking to expand my network as I learn and grow.
+								Let's connect!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--	<div id="about-content" class="topic-content about-wrapper">
+			<div class="row">
+				<div class="project-wrapper">
+					<div class="col-of-2 cam-photo-col">
+						<div class="img-wrapper">
+							<img class="project-img" src="img/site/cam pacifica.jpg"/>
+						</div>
+					</div>
+					<div class="col-of-2 cam-text-col">
+						<div class="project-title-wrapper">
+							<h3 class="project-title">Cam</h3>
+						</div>
+						<div class="project-text-wrapper">
+							<p class="project-text">I'm a sofware developer and visual artist.
+								With versatility as one of my strengths, code and creative design are passions that coalesce well for me.
+								They are skills that I strive to continuously hone. Projects that I enjoy working on include building user interfaces, coding animations, forecasting data analytics and recently, embedded software.
+								When I'm not coding I'm usually socializing, playing music, or adventuring outside. Often times I explore new places to grow my photography portfolio.
+								Traveling is a big part of my life, too, and I'm always looking to expand my network as I learn and grow.
+								Let's connect!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+
+<!--
+		<div id="about-content" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1 cam-photo-col">
+					<img src="img/site/cam pacifica.jpg" id="cam-about"/>
+				</div>
+				<div class="col col-5 cam-text-col">
+					<div class="project-text-wrapper">
+						<h4 class="project-title" id="about-title">Cam</h4>
+						<p class="project-text" id="about-text">I'm a sofware developer and visual artist.
+							With versatility as one of my natural strengths, code and creative design are passions that coalesce well for me.
+							They are skills that I strive to continuously hone. Projects that I love to work on include building user interfaces, coding animation, data analysis and recently, embedded software.
+							When I'm not coding I'm usually socializing, playing music, or adventuring outside.
+							Traveling is a big part of my life, too, and I'm always looking to expand my network as I learn and grow.
+							Let's connect!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>-->
+
+		<!-- website content -->
+		<div id="website-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\marissasite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Urushitei</h4>
+						<p class="project-text">Hotel website for Japanese ryokan located in Kyoto.</p>
+						<div class="links-container">
+							<a href="https://crealu.github.io/urushiteisample/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\marissasite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Niheigo</h4>
+						<p class="project-text">Kanji learning application.</p>
+						<div class="links-container">
+							<a href="https://crealu.github.io/niheigo/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\marissasite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Uniqtable</h4>
+						<p class="project-text">Website for travel industry startup in Japan.</p>
+						<div class="links-container">
+							<a href="http://uniqtable.xsrv.jp/wp/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\marissasite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Holistic Practitioner Website</h4>
+						<p class="project-text">Custom built website for a holistic practitioner's growing business.</p>
+						<div class="links-container">
+							<a href="https://crealu.github.io/marissasite/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\moosiko-site-img.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Moosiko</h4>
+						<p class="project-text">Moosiko company website built on top of WordPress with functioning storefront.</p>
+						<div class="links-container">
+							<a href="https://www.moosiko.com/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\periossite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Perios World</h4>
+						<p class="project-text">Website for an educational video game that teaches kids about the periodic table in chemistry.</p>
+						<div class="links-container">
+							<a href="http://www.periosworld.com/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\quinnsite.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Quinn Tu Portfolio</h4>
+						<p class="project-text">A portfolio website for lifestyle influencer Quinn Tu. Custom built with parallax scrolling.</p>
+						<div class="links-container">
+							<a href="https://crealu.github.io/quinntu/" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img\covers\rainy-day.png" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Robert Miller Paintings</h4>
+						<p class="project-text">Portfolio for painter Robert Miller.</p>
+						<div class="links-container">
+							<a href="REM Site/remHome.html" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	  <div id="js-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/drummachine.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">React Drum Machine</h4>
+						<p class="project-text">A drum machine with pads that respond to key press and click events, built using React.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/eQygOP" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/eQygOP?editors=0010" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/wikiviewer.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Wikipedia Article Viewer</h4>
+						<p class="project-text">An app that uses the Wikipedia API to display article results of what the user search.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/aEgMjq" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/aEgMjq " class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+						<img src="img/fontify.jpg" class="project-img"/>
+	        </div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">Fontify</h4>
+	          <p class="project-text">Hand drawn fonts edited with Adobe Illustrator. Generator algorithm coded in JavaScript.</p>
+						<div class="links-container">
+							<a href="fontify.html" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://github.com/crealu" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/calculator.jpg" class="project-img"/>
+					</div>
+	      </div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">JavsScript Calculator</h4>
+						<p class="project-text">Basic calculator created using JavaScript's built in math functions.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/EoJzKg" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/EoJzKg" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/pomodoro.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Pomodoro Clock</h4>
+						<p class="project-text">Clock for helping to break down productivity into segments of time.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/mXdZZK" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/mXdZZK" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/quoteMachine.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Random Quote Machine</h4>
+						<p class="project-text">Random quote generator from JavaScript object.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/ppOoYR" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/ppOoYR" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/xando.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Tic Tac Toe</h4>
+						<p class="project-text">Tic tac toe game built with vanilla JavaScript.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/yvvZej" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://codepen.io/lucidcode6/pen/yvvZej" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="py-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/sidewalkSuferspy.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Sanuk Sidewalk Surfers</h4>
+						<p class="project-text">A web scrape for the title and price of Sanuk's sandals and saves the data in a csv file.</p>
+						<div class="links-container">
+							<a href="https://repl.it/@crealu/Sidewalk-Surfers-Scrape" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://repl.it/@crealu/Sidewalk-Surfers-Scrape" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/employeepy.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Employee Class</h4>
+						<p class="project-text">A program that creates an employee using object-oriented methods.</p>
+						<div class="links-container">
+							<a href="https://repl.it/@crealu/Employee-Class" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://repl.it/@crealu/Employee-Class" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="cpp-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/shapecpp.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Simple Shape Drawing</h4>
+						<p class="project-text">The program allows a user to input dimensions of the shape and have it drawn to size.</p>
+						<div class="links-container">
+							<a href="https://repl.it/@crealu/Draw-Shape" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+							<a href="https://repl.it/@crealu/Draw-Shape" class="source-link" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	  <div id="design-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+	          <img src="img/moosikoExample.jpg" class="project-img"/>
+	        </div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">Moosiko Guitar Lessons</h4>
+	          <p class="project-text">Custom made PDF song sheets designed to breakdown the chord progression for each song.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="oneImgModal('moosikolessons')">View</button>
+						</div>
+					</div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/single/alz cure.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Alzheimer's Golf Tournament</h4>
+						<p class="project-text">Flyer design for a upstate NY golf tournament to benefit Alzheimer's.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="oneImgModal('alz')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	    <div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+	          <img src="img/form-group.png" class="project-img"/>
+	        </div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">SCSS Styling Guidelines</h4>
+	          <p class="project-text">Webpages created to outline a SCSS naming convention for UI developers at Medfusion, Inc. Coded with HTML, Bootstrap 3, SCSS.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="oneImgModal('medfusionscss')">View</button>
+						</div>
+					</div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+						<img src="img/django-page.jpg" class="project-img"/>
+	        </div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">Django Tribute Page</h4>
+	          <p class="project-text">Tribute page for jazz guitarist, Django Reignhart, created using HTML and Bootstrap 3.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/ZadvOO" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+				  </div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/survey form.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Bootstrap Survey Form</h4>
+						<p class="project-text">Skeleton of a survey form. Built using HTML and Bootstrap 4.</p>
+						<div class="links-container">
+							<a href="https://codepen.io/lucidcode6/full/QJgRBz" target="_blank">
+								<button class="view-it">View</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+						<img src="img/designs/mf logo.jpg" class="project-img" id="proj-mflogo"/>
+	        </div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">Millerfest Logo</h4>
+	          <p class="project-text">A collaborative design for Millerfest 2018, a summertime music and arts festival in upstate New York.</p>
+						<div class="links-container">
+							<a href="img/designs/mf logo.jpg">
+								<button class="view-it" onclick="oneImgModal('millerfest')">View</button>
+							</a>
+						</div>
+				  </div>
+	      </div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+	        <div class="project-img-wrapper">
+						<img src="img/designs/faces.svg" class="project-img"/>
+					</div>
+	      </div>
+				<div class="col col-4">
+	        <div class="project-text-wrapper">
+	          <h4 class="project-title">Graphic Art</h4>
+	          <p class="project-text">Custom graphics and illustrations.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="designModal()">View</button>
+						</div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+		<div id="photo-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/photos/pattern/foliage.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Pattern</h4>
+						<p class="project-text">Textures and patterns found in nature.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="photoModal('pattern')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/photos/aerial/latourell falls.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Aerial</h4>
+						<p class="project-text">Aerial photographs taken in a variety of locations across the US.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="photoModal('aerial')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/photos/travel/Sun Portal.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Travel</h4>
+						<p class="project-text">Photographs from my travels and adventures. Locations include: Indonesia, South America, Ireland and the US.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="photoModal('travel')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/photos/moon/berkeley.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Moon</h4>
+						<p class="project-text">All moon photos shot on a Sony a6300 with a 210mm lens.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="photoModal('moon')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/photos/long exposure/bs light.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Long Exposure</h4>
+						<p class="project-text">An area of photography that is relatively new to me.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="photoModal('long exposure')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="video-projects" class="topic-content">
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/vw.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">VW Mock Commercial</h4>
+						<p class="project-text">One minute mock Volkswagen commercial of a friend's old VW bus. Filmed in Kansas near Monument Rocks.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="videoModal('vw')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/galap.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Galapagos Adventures</h4>
+						<p class="project-text">A short film documenting some of my adventures and encounters in the Galapagos.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="videoModal('galap')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row project-background">
+				<div class="col col-5 col-push-1">
+					<div class="project-img-wrapper">
+						<img src="img/vpan.jpg" class="project-img"/>
+					</div>
+				</div>
+				<div class="col col-4">
+					<div class="project-text-wrapper">
+						<h4 class="project-title">Venice Sunset</h4>
+						<p class="project-text">Cinematic pan to reveal the sunset at Venice Beach with original music.</p>
+						<div class="links-container">
+							<button class="view-it" onclick="videoModal('venice')">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="portfolio-footer">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a href="Miller_Cameron_Resume.pdf" target="_blank" id="resume">Resume</a>
+				</div>
+			</div>
+		</footer>
+
+		<div id="modal">
+			<button id="close" onclick="closeModal()">X</button>
+			<div class="test-nav-wrapper">
+				<div class="nav-btn-wrapper nav-left">
+					<button class="rooms-nav-btn" id="prev" onclick="slideCaro('prev')"><</button>
+				</div>
+				<div class="nav-btn-wrapper nav-right">
+					<button class="rooms-nav-btn" id="next" onclick="slideCaro('next')">></button>
+				</div>
+			</div>
+			<div class="kanji-slide-num" data-slideNum="0">0</div>
+
+			<div id="modal-inner"></div>
+		</div>
+
+		<div id="mechanicalModal">
+			<button id="close" onclick="closeMechModal()">X</button>
+			<h3 class="mechanical-proj-title"></h3>
+			<div id="carousel-center">
+				<div id="carousel-display"></div>
+				<p id="carousel-text"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/help.js"></script>
+  <script type="text/javascript" src="js/new.js"></script>
+	<script type="text/javascript" src="js/windowLoad.js"></script>
+
+</body>
+</html>
