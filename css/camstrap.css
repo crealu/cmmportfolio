@@ -122,11 +122,24 @@
   float: left;
   display: inline-block;
   width: 45%;
-  padding: 2.5%;
+  padding: 1% 2.5% 1% 2.5%;
 }
 
+.col-of-3 {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 28.33%;
+  padding: 0px 2.5% 0px 2.5%;
+}
 
-
+.col-of-4 {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 20%;
+  padding: 0px 2.5% 0px 2.5%;
+}
 
 @media (max-width: 900px) and (min-width: 470px) {
   .col-push-1 {

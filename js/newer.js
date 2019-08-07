@@ -1,27 +1,154 @@
+// newer.js
+
+let websiteProjects = [
+  [
+    'Photaero',
+    'Photography services company website.',
+    'photaero-logo.png',
+    'https://crealu.github.io/photaero/'
+  ],
+  [
+    'Urushitei',
+    'Japanese Ryokan in Kyoto, Japan.',
+    'urushitei-logo.png',
+    'https://crealu.github.io/urushiteisample/'
+  ],
+  [
+    'Uniqtable',
+    'A website for a travel industry startup in Japan.',
+    'UT_transparent_logo.png',
+    'https://crealu.github.io/niheigo/'
+  ],
+  [
+    'Niheigo',
+    'Kanji learning application.',
+    'niheigo temp logo.png',
+    'https://crealu.github.io/niheigo/'
+  ],
+  [
+    'Holistic Pracitioner',
+    "Custom built website for a holisitic practitioner's growing business.",
+    'marissasite.jpg',
+    'https://crealu.github.io/marissasite/'
+  ],
+  [
+    'Moosiko',
+    'Moosiko company website built on top of WordPress.',
+    'moosiko-site-img.jpg',
+    'https://www.moosiko.com/'
+  ],
+  [
+    'Perios World',
+    'Website for an educational video game that teaches kids chemistry.',
+    'periossite.jpg',
+    'http://www.periosworld.com/'
+  ],
+  [
+    'Quinn Tu Portfolio',
+    'A portfolio website for lifestyle influencer, Quinn Tu.',
+    'quinnsite.jpg',
+    'https://crealu.github.io/quinntu/'
+  ],
+  [
+    'Robert Miller Portfolio',
+    'Porfolio for painter Robert E. Miller.',
+    'rainy-day.png',
+    'REM Site/remHome.html'
+  ]
+];
+
+let photos = [
+  {
+    collection: 'aerial',
+    images: [
+      'casino',
+      'cathedral',
+      'furusato real',
+      'furusato windmill',
+      'latourell falls',
+      'marin headlands',
+      'maroon bells',
+      'nara 2',
+      'nara park back',
+      'rainierbow',
+      'santa cruz',
+      'tp sunset',
+      'twopaths',
+      'whole pier'
+    ]
+  },
+  {
+    collection: 'long exposure',
+    images: [
+      'bs light',
+      'meguro aerial',
+      'meguro spark',
+      'ocha n 2',
+      'ochanomizu gate',
+      'ochanomizu ground',
+      'odaiba 2',
+      'rainbowbashi 2',
+      'rville falls',
+      'rville falls 2',
+      'yoyogi longexp2'
+    ]
+  },
+  {
+    collection: 'moon',
+    images: [
+      'berkeley',
+      'clouds',
+      'ireland',
+      'venice'
+    ]
+  },
+  {
+    collection: 'pattern',
+    images: [
+      'bs red shrubs',
+      'calm water',
+      'dirt',
+      'foliage speckles',
+      'foliage',
+      'glass',
+      'grass',
+      'rainbow'
+    ]
+  },
+  {
+    collection: 'travel',
+    images: [
+      'balinese serenade',
+      'blue eyed bird',
+      'chichibu gates',
+      'cordillera cow',
+      'deermeme',
+      'lopez foliage',
+      'meguro lanterns',
+      'sakura and river',
+      'sea iguana',
+      'snowy shadows',
+      'starboard',
+      'sun portal',
+      'sun surfer',
+      'temple sakura',
+      'webside relaxing'
+    ]
+  }
+];
 
 // toggles menu for mobile
 function toggleNavList() {
   let navList = document.getElementById('nav-list-container-mobile');
   let body = document.body;
-  if (!(navList.style.left === '10%')) {
-    navList.style.left = '10%';
+  if (!(navList.style.left === '100px')) {
+    navList.style.left = '100px';
     navList.style.opacity = '1';
-    navList.style.width = '90%';
     //body.style.opacity = '0.5'
   } else {
-      navList.style.left = '100%';
+      navList.style.left = '355px';
       navList.style.opacity = '0';
-      navList.style.width = '90%';
       ///body.style.opacity = '1';
-  }
-}
-
-function mobileMenu() {
-  let mobileNav = gebcn('mobile-nav-modal')[0];
-  if (!(mobileNav.style.display == 'block')) {
-    mobileNav.style.display = 'block';
-  } else {
-      mobileNav.style.display = 'none';
   }
 }
 
@@ -60,20 +187,10 @@ function displayProject(div) {
   contentToDisplay.style.opacity = '1';
 }
 
-function displayProjectNew(projName) {
-  let proj = projName;
-  for (var i = 0; i < websiteProjects.length; i++) {
-    websiteProjects[i].display = 'none';
-  }
-
-  websiteProjects[projName].style.display = 'block';
-}
-
 function deColor() {
   let homeImg = gebcn('home-img')[0];
   //homeImg.style.filter = 'brightness(0.85) grayscale(0.75)';
   homeImg.style.filter = 'brightness(0.65)';
-
 }
 
 function displayContent(topic) {
@@ -100,16 +217,16 @@ function displayContent(topic) {
       switch (topic) {
         case 'About':
           toggleNavList();
-          //changeTitle('About', titleH2);
+          changeTitle('About', titleH2);
           displayProject('about-content');
           deColor();
           break;
         case 'Software':
           toggleNavList();
-          //changeTitle('Software', titleH2);
+          changeTitle('Software', titleH2);
           displayProject('website-projects');
-          addProjectList('web');
-          //createList('s');
+          //addProjectList();
+          createList('s');
           let option1 = gebcn('options-wrapper')[0];
           //option1.style.background = 'rgba(250, 250, 250, 0.4)';
           option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
@@ -117,15 +234,15 @@ function displayContent(topic) {
           break;
         case 'Visual Arts':
           toggleNavList();
-          //changeTitle('Visual Arts', titleH2);
-          displayProject('design-projects');
-          //createList('va');
+          changeTitle('Visual Arts', titleH2);
+          displayProject('photo-projects');
           addVisualProjectList();
+          createList('va');
           deColor();
           break;
         case 'Mechanical':
           toggleNavList();
-          //changeTitle('Mechanical', titleH2);
+          changeTitle('Mechanical', titleH2);
           displayProject('mechanical-content');
         break;
       }
@@ -135,169 +252,89 @@ function displayContent(topic) {
   }
 }
 
-let websiteProjects = [
-  [
-    'Photaero',
-    'Photography services company website.',
-    'img/covers/photaero-site.png',
-    'https://crealu.github.io/photaero/'
-  ],
-  [
-    'Urushitei',
-    'Japanese Ryokan in Kyoto, Japan.',
-    'img/covers/new urushitei logo.png',
-    'https://crealu.github.io/urushiteisample/'
-  ],
-  [
-    'Uniqtable',
-    'A website for a travel industry startup in Japan.',
-    'img/covers/UT_transparent_logo.png',
-    'https://crealu.github.io/niheigo/'
-  ],
-  [
-    'Niheigo',
-    'Kanji learning application.',
-    'img/covers/niheigo temp logo.png',
-    'https://crealu.github.io/niheigo/'
-  ],
-  [
-    'Holistic Pracitioner',
-    "Custom built website for a holisitic practitioner's growing business.",
-    'img/covers/marissasite.jpg',
-    'https://crealu.github.io/marissasite/'
-  ],
-  [
-    'Moosiko',
-    'Moosiko company website built on top of WordPress.',
-    'img/covers/moosiko-site-img.jpg',
-    'https://www.moosiko.com/'
-  ],
-  [
-    'Perios World',
-    'Website for an educational video game that teaches kids chemistry.',
-    'img/covers/periossite.jpg',
-    'http://www.periosworld.com/'
-  ],
-  [
-    'Quinn Tu Portfolio',
-    'A portfolio website for lifestyle influencer, Quinn Tu.',
-    'img/covers/quinnsite.jpg',
-    'https://crealu.github.io/quinntu/'
-  ],
-  [
-    'Robert Miller Portfolio',
-    'Porfolio for painter Robert E. Miller.',
-    'img/covers/rainy-day.png',
-    'REM Site/remHome.html'
-  ]
-];
+// creates a selectable sub-section list
+function createList(topic) {
+  let sth = document.getElementById('section-title-here');
 
-let jsProjects = [
-  [
-    'React Drum Machine',
-    'A drum machine with pads that responds to key press events',
-    'img/drummachine.jpg',
-    'https://codepen.io/lucidcode6/full/eQygOP',
-    'https://codepen.io/lucidcode6/pen/eQygOP?editors=0010'
-  ],
-  [
-    'Wikipedia Article Viewer',
-    'An app that uses the Wikipedia API to display article results of what the user searches',
-    'img/wikiviewer.jpg',
-    'https://codepen.io/lucidcode6/full/aEgMjq',
-    'https://codepen.io/lucidcode6/pen/aEgMjq'
-  ],
-  [
-    'Fontify',
-    'Hand drawn fonts edited with Adobe Illustrator. Generator algorithm coded in JavaScript',
-    'img/fontify.jpg',
-    'fontify.html',
-    'https://github.com/crealu'
-  ],
-  [
-    'JavaScript Calculator',
-    "Basic calculator created using JavaScript's built in math funcitons",
-    'img/calculator.jpg',
-    'https://codepen.io/lucidcode6/full/EoJzKg',
-    'https://codepen.io/lucidcode6/pen/EoJzKg'
-  ],
-  [
-    'Pomodoro Clock',
-    'Clock for hepling to break down productivity into segments of time',
-    'img/pomodoro.jpg',
-    'https://codepen.io/lucidcode6/full/mXdZZK',
-    'https://codepen.io/lucidcode6/pen/mXdZZK'
-  ],
-  [
-    'Random Quote Machine',
-    'Random quote generator form JavaScript object',
-    'img/quoteMachine.jpg',
-    'https://codepen.io/lucidcode6/full/ppOoYR',
-    'https://codepen.io/lucidcode6/pen/ppOoYR'
-  ],
-  [
-    'Tic Tac Toe',
-    'Tic tac toe game built with vanilla JavaScript',
-    'img/xando.jpg',
-    'https://codepen.io/lucidcode6/full/yvvZej',
-    'https://codepen.io/lucidcode6/pen/yvvZej'
-  ]
-];
+  let topicButtons = document.createElement("div");
+  topicButtons.setAttribute("id", "topic-buttons-container");
 
-let pyProjects = [
-  [
-    'Sanuk Sidewalk Surfers',
-    "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
-    'img/sidewalkSurferspy.jpg',
-    'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
-    'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
-  ],
-  [
-    'Employee Class',
-    'A program that creates an employee using object-oriented methods',
-    'img/employeepy.jpg',
-    'https://repl.it/@crealu/Employee-Class',
-    'https://repl.it/@crealu/Employee-Class'
-  ]
-];
+  let buttonsUL = document.createElement("ul");
+  buttonsUL.setAttribute("class", "topic-btn-list");
+  //let newBtnsUL = document.getElementsByClassName("topic-btn-list")[0];
 
-let cppProjects = [
-  [
-    'Simple Shape Drawing',
-    'The program allows users to input dimensions of a shape and have it drawn to size',
-    'img/schapecpp.jpg',
-    'https://repl.it/@crealu/Draw-Shape',
-    'https://repl.it/@crealu/Draw-Shape'
-  ]
-];
+  let optionsArray;
 
-function fillProject(p, projN) {
-  let softwareImg = gebcn('software-img')[0];
-  let softViewLink = gebcn('software-view-link')[0];
-  let projArr;
-  switch (p) {
-    case 'web':
-      projArr = websiteProjects;
+  switch (topic) {
+    case 's':
+      optionsArray = [
+        {
+          title: 'Websites',
+          projects: 'website-projects'
+        },
+        {
+          title: 'JavaScript',
+          projects: 'js-projects'
+        },
+        {
+          title: 'Python',
+          projects: 'py-projects'
+        },
+        {
+          title: 'C/C++',
+          projects: 'cpp-projects'
+        }
+      ];
+      buttonsUL.style.width = '400px';
+      buttonsUL.style.left = '10px';
       break;
-    case 'js':
-      projArr = jsProjects;
-      break;
-    case 'py':
-      projArr = pyProjects;
-      break;
-    case 'cpp':
-      projArr = cppProjects;
+    case 'va':
+      optionsArray = [
+        {
+          title: 'Design',
+          projects: 'design-projects'
+        },
+        {
+          title: 'Photo',
+          projects: 'photo-projects'
+        },
+        {
+          title: 'Video',
+          projects: 'video-projects'
+        }
+      ];
+      buttonsUL.style.width = '300px';
+      buttonsUL.style.left = '40px';
       break;
   }
-  let newImgSrc = projArr[projN][2];
-  console.log(projArr);
 
-  let newSoftwareLink = projArr[projN][3];
-  softwareImg.src = newImgSrc;
-  softViewLink.setAttribute('href', newSoftwareLink);
+  for (let i = 0; i < optionsArray.length; i++) {
+    let buttonsLI = document.createElement("li");
+    buttonsLI.setAttribute("class", "topic-btn-item text-center");
 
-  console.log(softwareImg.src, softViewLink.href);
+    let dot = document.createElement("div");
+    dot.setAttribute("class", "list-dot");
+
+    let optionText = document.createTextNode(optionsArray[i].title);
+
+    let optionButton = document.createElement("button");
+    optionButton.setAttribute("class", "topic-button");
+    optionButton.setAttribute("onclick", "displayProject('" + optionsArray[i].projects + "')");
+
+    optionButton.appendChild(optionText);
+    buttonsLI.appendChild(optionButton);
+    buttonsLI.appendChild(dot);
+    buttonsUL.appendChild(buttonsLI);
+  }
+
+  topicButtons.appendChild(buttonsUL);
+
+  sth.appendChild(topicButtons);
 }
+
+let jsProjects = [
+  []
+]
 
 function projectListItem(ti) {
   this.newLI = createEl("li");
@@ -305,7 +342,7 @@ function projectListItem(ti) {
   this.titleT = textNode(ti);
 }
 
-function addProjectList(p) {
+function addProjectList(w) {
   let softwareList = gebcn('software-list')[0];
   let softwareImg = gebcn('software-img')[0];
   clear(softwareList);
@@ -316,57 +353,37 @@ function addProjectList(p) {
     [itemH, 'titleH'],
     [itemTitle, 'titleT']
   ];
-  console.log(p);
+  console.log(w);
 
-  // option tab number
-  let optNum;
-  let projArr;
-  switch (p) {
-    case 'web':
-      projArr = websiteProjects;
-      optNum = 0;
-      break;
-    case 'js':
-      projArr = jsProjects;
-      optNum = 1;
-      break;
-    case 'py':
-      projArr = pyProjects;
-      optNum = 2;
-      break;
-    case 'cpp':
-      projArr = cppProjects;
-      optNum = 3;
-      break;
-  }
-
-  let opt = gebcn('options-wrapper');
-  for (var x = 0; x < opt.length; x++) {
-    opt[x].style.boxShadow = '';
-  }
-  //option1.style.background = 'rgba(250, 250, 250, 0.4)';
-  opt[optNum].style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
-
-  for (var z = 0; z < projArr.length; z++) {
-    let newItem = new projectListItem(projArr[z][0]);
+  for (var z = 0; z < w.length; z++) {
+    let newItem = new projectListItem(w[z][0]);
     for (var y = 0; y < attrArr.length; y++) {
       attrArr[y][0] = newItem[attrArr[y][1]];
       console.log(attrArr[y][0]);
     }
 
     attrArr[0][0].classList.add('software-list-item');
-    attrArr[0][0].setAttribute('onclick', 'fillProject("' + p + '", ' + z + ')');
     attrArr[1][0].classList.add('list-item-title');
 
+    /*itemH.appendChild(itemTitle);
+    itemLI.appendChild(itemH);
+    softwareList.appendChild(newItem);*/
     attrArr[1][0].appendChild(attrArr[2][0]);
     attrArr[0][0].appendChild(attrArr[1][0]);
     softwareList.appendChild(attrArr[0][0]);
   }
 
-  softwareImg.src = 'img/site' + p[0][2];
+  softwareImg.src = 'img/site' + w[0][2];
 }
 
-//addProjectList(websiteProjects);
+addProjectList(websiteProjects);
+
+function addVisualProjectList() {
+  let visualList = gebcn('visual-list-item');
+  for (var n = 0; n < photos.length; n++) {
+    createImgSlide(photos[n].collection, photos[n].images[0]);
+  }
+}
 
 function oneImgModal(oneImg) {
   let modal = document.getElementById('modal');
@@ -764,113 +781,5 @@ function closeModal() {
   modal.style.display = 'none';
   modal.style.animation = null;
 }
-
-// new functions
-function addVisualProjectList() {
-  let visualList = gebcn('visual-list')[0];
-  clear(visualList);
-
-  let newSlide;
-  for (var n = 0; n < photos.length; n++) {
-    let newLI = createEl("li");
-    newSlide = createPhotoSlide(photos[n].collection, photos[n].images[0]);
-    newLI.appendChild(newSlide);
-    newLI.classList.add('visual-ui-item');
-    visualList.appendChild(newLI);
-  }
-}
-
-function createPhotoSlide(c, i) {
-  let imgSlide = createEl("div");
-  let theImg = createEl("img");
-  theImg.setAttribute("src", "img/photos/" + c + "/" + i + ".jpg");
-
-  imgSlide.classList.add('visual-ui-img-wrapper');
-  theImg.classList.add('visual-ui-img');
-  // add clickable modal
-  imgSlide.setAttribute('onclick', 'photoModal("' + c + '")');
-  imgSlide.appendChild(theImg);
-  return imgSlide;
-}
-
-let photos = [
-  {
-    collection: 'aerial',
-    images: [
-      'casino',
-      'cathedral',
-      'furusato real',
-      'furusato windmill',
-      'latourell falls',
-      'marin headlands',
-      'maroon bells',
-      'nara 2',
-      'nara park back',
-      'rainierbow',
-      'santa cruz',
-      'tp sunset',
-      'twopaths',
-      'whole pier'
-    ]
-  },
-  {
-    collection: 'long exposure',
-    images: [
-      'bs light',
-      'meguro aerial',
-      'meguro spark',
-      'ocha n 2',
-      'ochanomizu gate',
-      'ochanomizu ground',
-      'odaiba 2',
-      'rainbowbashi 2',
-      'rville falls',
-      'rville falls 2',
-      'yoyogi longexp2'
-    ]
-  },
-  {
-    collection: 'moon',
-    images: [
-      'berkeley',
-      'clouds',
-      'ireland',
-      'venice'
-    ]
-  },
-  {
-    collection: 'pattern',
-    images: [
-      'bs red shrubs',
-      'calm water',
-      'dirt',
-      'foliage speckles',
-      'foliage',
-      'glass',
-      'grass',
-      'rainbow'
-    ]
-  },
-  {
-    collection: 'travel',
-    images: [
-      'balinese serenade',
-      'blue eyed bird',
-      'chichibu gates',
-      'cordillera cow',
-      'deermeme',
-      'lopez foliage',
-      'meguro lanterns',
-      'sakura and river',
-      'sea iguana',
-      'snowy shadows',
-      'starboard',
-      'sun portal',
-      'sun surfer',
-      'temple sakura',
-      'webside relaxing'
-    ]
-  }
-];
 
 //window.location.replace('https://github.com/crealu');

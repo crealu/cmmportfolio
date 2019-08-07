@@ -8,7 +8,6 @@ let webProject = {
 }
 
 let softwareProj = {
-  language: '',
   title: '',
   img: '',
   text: '',
@@ -57,7 +56,25 @@ function websiteProject() {
   this.link = l
 }
 
-let websiteProjects = [
+function projectListItem(ti) {
+  this.newLI = createEl("li");
+  this.titleH = createEl("h3");
+  this.titleT = textNode(ti);
+}
+
+function projectObj(ti, te, i, l) {
+  this.newW = createEl("div");
+  this.titleH = createEl("h3"),
+  this.titleT = textNode(ti),
+  this.textP = createEl("p"),
+  this.textT = textNode(te),
+  this.img = i,
+  this.link = l
+}
+
+// used project data
+
+let webProjects = [
   [
     'Photaero',
     'Photography services company website.',
@@ -112,4 +129,95 @@ let websiteProjects = [
     'rainy-day.png',
     'REM Site/remHome.html'
   ]
+];
+
+let softwareProj = {
+  title: '',
+  img: '',
+  text: '',
+  viewLink: '',
+  sourceLink: ''
+}
+
+// just need to plug in the next data and fix displayProjects function
+// to take in the projects array (w) as a dependent variable
+let jsProjects = [
+  [
+    'React Drum Machine',
+    'A drum machine with pads that responds to key press events',
+    'img/drummachine.jpg',
+    'https://codepen.io/lucidcode6/full/eQygOP',
+    'https://codepen.io/lucidcode6/pen/eQygOP?editors=0010'
+  ],
+  [
+    'Wikipedia Article Viewer',
+    'An app that uses the Wikipedia API to display article results of what the user searches',
+    'img/wikiviewer.jpg',
+    'https://codepen.io/lucidcode6/full/aEgMjq',
+    'https://codepen.io/lucidcode6/pen/aEgMjq'
+  ],
+  [
+    'Fontify',
+    'Hand drawn fonts edited with Adobe Illustrator. Generator algorithm coded in JavaScript',
+    'img/fontify.jpg',
+    'fontify.html',
+    'https://github.com/crealu'
+  ],
+  [
+    'JavaScript Calculator',
+    "Basic calculator created using JavaScript's built in math funcitons",
+    'img/calculator.jpg',
+    'https://codepen.io/lucidcode6/full/EoJzKg',
+    'https://codepen.io/lucidcode6/pen/EoJzKg'
+  ],
+  [
+    'Pomodoro Clock',
+    'Clock for hepling to break down productivity into segments of time',
+    'img/pomodoro.jpg',
+    'https://codepen.io/lucidcode6/full/mXdZZK',
+    'https://codepen.io/lucidcode6/pen/mXdZZK'
+  ],
+  [
+    'Random Quote Machine',
+    'Random quote generator form JavaScript object',
+    'img/quoteMachine.jpg',
+    'https://codepen.io/lucidcode6/full/ppOoYR',
+    'https://codepen.io/lucidcode6/pen/ppOoYR'
+  ],
+  [
+    'Tic Tac Toe',
+    'Tic tac toe game built with vanilla JavaScript',
+    'img/xando.jpg',
+    'https://codepen.io/lucidcode6/full/yvvZej',
+    'https://codepen.io/lucidcode6/pen/yvvZej'
+  ]
+];
+
+let pyProjects = [
+  [
+    'Sanuk Sidewalk Surfers',
+    "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
+    'img/sidewalkSurferspy.jpg',
+    'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
+    'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
+  ],
+  [
+    'Employee Class',
+    'A program that creates an employee using object-oriented methods',
+    'img/employeepy.jpg',
+    'https://repl.it/@crealu/Employee-Class',
+    'https://repl.it/@crealu/Employee-Class'
+  ]
+];
+
+let cppProjects = [
+  [
+    'Simple Shape Drawing',
+    'The program allows users to input dimensions of a shape and have it drawn to size',
+    'img/schapecpp.jpg',
+    'https://repl.it/@crealu/Draw-Shape',
+    'https://repl.it/@crealu/Draw-Shape'
+  ]
 ]
+
+export jsProjects, pyProjects, cppProjects;

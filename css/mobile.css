@@ -1,0 +1,74 @@
+/* mobile styling */
+
+@media (max-width: 800px) and (min-width: 200px) {
+
+  #flake-logo {
+    width: 35px;
+    left: 10px;
+  }
+
+  #cameron-miller {
+    font-size: 28px;
+    top: 10px;
+    padding-left: 10px;
+  }
+
+  .nav-list-container {
+    display: none;
+  }
+
+  #nav-btn {
+    display: block;
+  }
+
+  .other-sites {
+    display: none;
+  }
+
+  .whats-new-wrapper {
+    width: 90%;
+  }
+
+
+}
+
+@media (max-width: 675px) and (min-width: 200px) {
+  /*.desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }*/
+
+  body {
+    overflow-y: scroll;
+  }
+
+  .home-img {
+    filter: brightness(0.9);
+  }
+
+  .whats-new-title {
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .whats-new-col-3 {
+    width: 95%;
+    padding: 20px 2.5% 20px 2.5%;
+  }
+
+  .whats-new-col {
+    box-shadow: none;
+    background: none;
+  }
+
+  .whats-new-subtitle {
+    width: 100%;
+  }
+
+  .whats-new-text-wrapper {
+    width: 100%;
+  }
+}

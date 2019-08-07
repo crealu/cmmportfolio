@@ -35,32 +35,36 @@
 					</li>
 				</ul>
 			</div>
-			<img onclick="toggleNavList()" src="img/mobile btn gray.jpg" id="mobile-menu"/>
-			<div id="nav-list-container-mobile">
-				<ul class="nav-list-mobile">
-					<li class="nav-list-li-mobile">
-						<a class="navigation-link"  onclick="displayContent('About')">About</a>
-						<p id="close-mobile" onclick="toggleNavList()">x</p>
-					</li>
-					<li class="nav-list-li-mobile">
-						<a class="navigation-link" onclick="displayContent('Software')">Software</a>
-					</li>
-					<li class="nav-list-li-mobile">
-						<a class="navigation-link" onclick="displayContent('Visual Arts')">Visual Arts</a>
-					</li>
-					<li class="nav-list-li-mobile">
-						<div class="other-sites-mobile">
-							<ul class="media-list">
-								<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
-								<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
-								<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
-								<li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://www.shareicon.net/download/2017/03/01/880151_media.ico" class="social-img"/></a></li>
-								<li><a href="https://www.instagram.com/lucidlycreative/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+			<div id="nav-btn" onclick="mobileMenu()">
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class='bar bar3'></div>
 			</div>
+		</div>
+		<div id="nav-list-container-mobile">
+			<ul class="nav-list-mobile">
+				<li class="nav-list-li-mobile">
+					<a class="navigation-link"  onclick="displayContent('About')">About</a>
+					<p id="close-mobile" onclick="toggleNavList()">x</p>
+				</li>
+				<li class="nav-list-li-mobile">
+					<a class="navigation-link" onclick="displayContent('Software')">Software</a>
+				</li>
+				<li class="nav-list-li-mobile">
+					<a class="navigation-link" onclick="displayContent('Visual Arts')">Visual Arts</a>
+				</li>
+				<li class="nav-list-li-mobile">
+					<div class="other-sites-mobile">
+						<ul class="media-list">
+							<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
+							<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
+							<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
+							<!--<li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://www.shareicon.net/download/2017/03/01/880151_media.ico" class="social-img"/></a></li>-->
+							<li><a href="https://www.instagram.com/photaero/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div id="home-content">
 			<div class="home-img-wrapper">
@@ -70,6 +74,24 @@
 	  <!--<div id="title-content-container">
 
 		</div>-->
+
+		<div class="news-section">
+			<div class="news-inner">
+				<h2 class="news-header">Whats new?</h2>
+				<div class="news-subsection">
+					<div class="news-col">
+						<p class="news-col-text">Niheigo</p>
+					</div>
+					<div class="news-col">
+						<p class="news-col-text">Tochigi</p>
+					</div>
+					<div class="news-col">
+						<p class="news-col-text">Photaero</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="section-title-here">
 			<h2 id="hello-welcome">Hello and welcome! I'm Cam, a</h2>
 			<div id="roles-container">
@@ -85,8 +107,7 @@
 				<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
 	      <li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
 	      <li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
-	      <li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://www.shareicon.net/download/2017/03/01/880151_media.ico" class="social-img"/></a></li>
-	      <li><a href="https://www.instagram.com/lucidlycreative/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
+	      <li><a href="https://www.instagram.com/photaero/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
 	    </ul>
 	  </div>
 
@@ -160,146 +181,74 @@
 
 		<!-- website content -->
 		<div id="website-projects" class="topic-content">
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\marissasite.jpg" class="project-img"/>
+			<div class="software-ui">
+				<div class="row options-row">
+					<div class="software-options-container">
+						<div class="col-of-4 options-wrapper" onclick="addProjectList('web')">
+							<h3 class="options-title">Web</h3>
+						</div>
+						<div class="col-of-4 options-wrapper" onclick="addProjectList('js')">
+							<h3 class="options-title">JS</h3>
+						</div>
+						<div class="col-of-4 options-wrapper" onclick="addProjectList('py')">
+							<h3 class="options-title">Python</h3>
+						</div>
+						<div class="col-of-4 options-wrapper" onclick="addProjectList('cpp')">
+							<h3 class="options-title">C/C++</h3>
+						</div>
 					</div>
 				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Urushitei</h4>
-						<p class="project-text">Hotel website for Japanese ryokan located in Kyoto.</p>
-						<div class="links-container">
-							<a href="https://crealu.github.io/urushiteisample/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
+
+				<div class="row project-row">
+					<div class="software-project-wrapper">
+						<div class="col-of-2 software-ui-left">
+							<div class="software-img-wrapper">
+								<img class="software-img" src="img/covers/photaero-site.png"/>
+							</div>
+							<br>
+							<div class="software-view-link-wrapper">
+								<a href="" target="_blank" class="software-view-link">View</a>
+							</div>
+						</div>
+						<div class="col-of-2">
+							<div class="software-list-wrapper">
+								<ul class="software-list">
+									<li class="software-list-item">
+										<h4 class="list-item-title"></h4>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\marissasite.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Niheigo</h4>
-						<p class="project-text">Kanji learning application.</p>
-						<div class="links-container">
-							<a href="https://crealu.github.io/niheigo/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
+		</div>
+
+		<div id="design-projects" class="topic-content">
+			<div class="visual-arts-ui">
+				<div class="row options-row">
+					<div class="software-options-container">
+						<div class="col-of-3 options-wrapper" onclick="displayProject('design-projects')">
+							<h3 class="options-title">Design</h3>
+						</div>
+						<div class="col-of-3 options-wrapper" onclick="displayProject('photo-projects')">
+							<h3 class="options-title">Photo</h3>
+						</div>
+						<div class="col-of-3 options-wrapper" onclick="displayProject('video-projects')">
+							<h3 class="options-title">Video</h3>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\marissasite.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Uniqtable</h4>
-						<p class="project-text">Website for travel industry startup in Japan.</p>
-						<div class="links-container">
-							<a href="http://uniqtable.xsrv.jp/wp/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\marissasite.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Holistic Practitioner Website</h4>
-						<p class="project-text">Custom built website for a holistic practitioner's growing business.</p>
-						<div class="links-container">
-							<a href="https://crealu.github.io/marissasite/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\moosiko-site-img.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Moosiko</h4>
-						<p class="project-text">Moosiko company website built on top of WordPress with functioning storefront.</p>
-						<div class="links-container">
-							<a href="https://www.moosiko.com/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\periossite.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Perios World</h4>
-						<p class="project-text">Website for an educational video game that teaches kids about the periodic table in chemistry.</p>
-						<div class="links-container">
-							<a href="http://www.periosworld.com/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\quinnsite.jpg" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Quinn Tu Portfolio</h4>
-						<p class="project-text">A portfolio website for lifestyle influencer Quinn Tu. Custom built with parallax scrolling.</p>
-						<div class="links-container">
-							<a href="https://crealu.github.io/quinntu/" target="_blank">
-								<button class="view-it">View</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row project-background">
-				<div class="col col-5 col-push-1">
-					<div class="project-img-wrapper">
-						<img src="img\covers\rainy-day.png" class="project-img"/>
-					</div>
-				</div>
-				<div class="col col-4">
-					<div class="project-text-wrapper">
-						<h4 class="project-title">Robert Miller Paintings</h4>
-						<p class="project-text">Portfolio for painter Robert Miller.</p>
-						<div class="links-container">
-							<a href="REM Site/remHome.html" target="_blank">
-								<button class="view-it">View</button>
-							</a>
+				<div class="row project-row">
+					<div class="visual-project-wrapper">
+						<div class="visual-list-wrapper">
+							<ul class="visual-list">
+								<li class="visual-list-item">
+									<div class="visual-img-wrapper">
+										<img class="visual-img-photo" src=""/>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -341,7 +290,7 @@
 							<a href="https://codepen.io/lucidcode6/full/aEgMjq" target="_blank">
 								<button class="view-it">View</button>
 							</a>
-							<a href="https://codepen.io/lucidcode6/pen/aEgMjq " class="source-link" target="_blank">Source Code</a>
+							<a href="https://codepen.io/lucidcode6/pen/aEgMjq" class="source-link" target="_blank">Source Code</a>
 						</div>
 					</div>
 				</div>
@@ -506,8 +455,7 @@
 			</div>
 		</div>
 
-	  <div id="design-projects" class="topic-content">
-			<div class="row project-background">
+			<!--<div class="row project-background">
 				<div class="col col-5 col-push-1">
 	        <div class="project-img-wrapper">
 	          <img src="img/moosikoExample.jpg" class="project-img"/>
@@ -624,8 +572,7 @@
 						</div>
 	        </div>
 	      </div>
-	    </div>
-	  </div>
+	    </div>-->
 
 		<div id="photo-projects" class="topic-content">
 			<div class="row project-background">
@@ -795,10 +742,12 @@
 
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 	<script type="text/javascript" src="js/help.js"></script>
+	<srcipt type="text/javascript" src="js/projObj.js"></script>
   <script type="text/javascript" src="js/new.js"></script>
 	<script type="text/javascript" src="js/windowLoad.js"></script>
+
 
 </body>
 </html>

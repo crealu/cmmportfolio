@@ -1,5 +1,5 @@
 // windowLoad.js
-
+/*
 function animateRoles() {
   let softDev = document.getElementById('software-developer');
   let webDes = document.getElementById('web-designer');
@@ -15,3 +15,4 @@ function onloadFunctions() {
 }
 
 window.onload = onloadFunctions;
+*/
