@@ -1,5 +1,4 @@
 // redesign.js
-
 function checkViewport() {
   let w = window;
   let wWidth = w.innerWidth;
@@ -112,6 +111,22 @@ function fadeShow(el) {
 function fadeShowWhatsNew() {
   let whatsNew = gebi('whats-new-wrapper');
   fadeShow(whatsNew);
+}
+
+function whatsNewTab(wn) {
+  let newAddress = '';
+  switch (wn) {
+    case 'niheigo':
+      newAddress = 'https://crealu.github.io/niheigo/';
+      break;
+    case 'tochigi':
+      newAddress = 'https://www.instagram.com/p/B0NTGdAH53C/';
+      break;
+    case 'photaero':
+      newAddress = 'https://www.instagram.com/photaero/';
+      break;
+  }
+  window.open(newAddress, '_blank');
 }
 
 function displayProjects(div) {
