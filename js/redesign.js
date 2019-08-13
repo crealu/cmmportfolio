@@ -29,6 +29,18 @@ function resizeHomeImg(wW, wH) {
   //console.log(homeImg);
 }
 
+function toggleNavBackground(yn) {
+  let nav = gebcn('navigation-bar')[0];
+  switch (yn) {
+    case 'yes':
+      nav.style.background = 'linear-gradient(180deg, rgba(139, 161, 198, 1) 50%, rgba(159, 179, 200, 0))';
+      break;
+    case 'no':
+      nav.style.background = 'none';
+      break;
+  }
+}
+
 function mobileMenu() {
   let mobileNav = gebi('nav-mobile');
   if (!(mobileNav.style.display == 'block')) {
@@ -45,6 +57,7 @@ function mobileMenu() {
 function switchNavBtn() {
   let bars = gebcn('bar');
   let navBtn = gebi('nav-btn');
+  let homeImg = gebcn('home-img')[0];
 
   if (bars[2].style.opacity == '0') {
     bars[0].style.transform = 'rotate(0deg)';
@@ -54,15 +67,23 @@ function switchNavBtn() {
     bars[1].style.top = '0px';
     bars[1].style.background = 'white';
     bars[2].style.opacity = '1';
+    bars[2].style.background = 'white';
 
   } else {
       bars[0].style.transform = 'rotate(45deg)';
       bars[0].style.top = '5px';
-      bars[0].style.background = 'black';
+      bars[0].style.background = '#353535';
       bars[1].style.transform = 'rotate(-45deg)';
       bars[1].style.top = '-3px';
-      bars[1].style.background = 'black';
+      bars[1].style.background = '#353535';
       bars[2].style.opacity = '0';
+      bars[2].style.background = '#353535';
+  }
+
+  if (homeImg.style.opacity == '0') {
+    for (var q = 0; q < bars.length; q++) {
+      bars[q].style.background = '#353535';
+    }
   }
 }
 
@@ -163,14 +184,12 @@ function toggleSoftVis(tog) {
   let homeImg = gebcn('home-img')[0];
   let navbar = gebcn('navigation-bar')[0];
   let hoverLines = gebcn('underline');
-
   /*let softVisProps = [
     ['opacity', ''],
     ['color', ''],
     ['background', ''],
 
   ]*/
-
   switch (tog) {
     case 0:
       homeImg.style.opacity = '0';
@@ -178,6 +197,7 @@ function toggleSoftVis(tog) {
       for (var hl = 0; hl < hoverLines.length; hl++) {
         hoverLines[hl].style.background = '#353535';
       }
+
       break;
     case 1:
       homeImg.style.opacity = '1';
@@ -187,6 +207,7 @@ function toggleSoftVis(tog) {
       for (var hl = 0; hl < hoverLines.length; hl++) {
         hoverLines[hl].style.background = 'white';
       }
+
       break;
     case 2:
       homeImg.style.opacity = '1';
@@ -196,6 +217,7 @@ function toggleSoftVis(tog) {
       for (var hl = 0; hl < hoverLines.length; hl++) {
         hoverLines[hl].style.background = 'white';
       }
+
       break;
   }
 }
@@ -221,8 +243,23 @@ function displayContent(topic) {
     case 'Visual Arts':
       toggleSoftVis(0);
       displayProjects('design-projects');
-      addVisualProjectList();
+      addVisualProjectList('photos');
       break;
+  }
+
+  let bars = gebcn('bars');
+  if (window.innerWidth <= 675) {
+    mobileMenu();
+    checkViewport();
+    if (topic == 'About' || topic == 'Software') {
+      toggleNavBackground('yes');
+    } else if (topic == 'Visual Arts') {
+        toggleNavBackground('no');
+        for (var z = 0; z < bars.length; z++) {
+          bars[z].style.background = '#353535';
+        }
+        console.log('switch to vis');
+    }
   }
 }
 
@@ -272,14 +309,13 @@ function addProjectList(p) {
   for (var x = 0; x < opt.length; x++) {
     opt[x].style.boxShadow = '';
   }
-  //option1.style.background = 'rgba(250, 250, 250, 0.4)';
   opt[optNum].style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
 
   for (var z = 0; z < projArr.length; z++) {
     let newItem = new projectListItem(projArr[z][0]);
     for (var y = 0; y < attrArr.length; y++) {
       attrArr[y][0] = newItem[attrArr[y][1]];
-      console.log(attrArr[y][0]);
+      //console.log(attrArr[y][0]);
     }
 
     attrArr[0][0].classList.add('software-list-item');
@@ -291,12 +327,14 @@ function addProjectList(p) {
     softwareList.appendChild(attrArr[0][0]);
   }
 
-  softwareImg.src = 'img/site' + p[0][2];
+  softwareImg.src = projArr[0][2];
+  //console.log(p[0]);
 }
 
 function fillProject(p, projN) {
   let softwareImg = gebcn('software-img')[0];
   let softViewLink = gebcn('software-view-link')[0];
+  let softText = gebcn
   let projArr;
   switch (p) {
     case 'web':
@@ -323,17 +361,41 @@ function fillProject(p, projN) {
 }
 
 /* va js */
-function addVisualProjectList() {
+function addVisualProjectList(vp) {
   let visualList = gebcn('visual-list')[0];
   clear(visualList);
-
+  let vaArr;
   let newSlide;
-  for (var n = 0; n < photos.length; n++) {
-    let newLI = createEl("li");
-    newSlide = createPhotoSlide(photos[n].collection, photos[n].images[0]);
-    newLI.appendChild(newSlide);
-    newLI.classList.add('visual-ui-item');
-    visualList.appendChild(newLI);
+
+  switch (vp) {
+    case 'photos':
+      for (var n = 0; n < photos.length; n++) {
+        let newLI = createEl("li");
+        newSlide = createPhotoSlide(photos[n].collection, photos[n].images[0]);
+        newLI.appendChild(newSlide);
+        newLI.classList.add('visual-ui-item');
+        visualList.appendChild(newLI);
+      }
+      break;
+    case 'designs':
+    for (var n = 0; n < designs.length; n++) {
+      let newLI = createEl("li");
+      newSlide = createDesignSlide(designs[n]);
+      newLI.appendChild(newSlide);
+      newLI.classList.add('visual-ui-item');
+      visualList.appendChild(newLI);
+    }
+      break;
+    case 'videos':
+      for (var n = 0; n < videos.length; n++) {
+        let newLI = createEl("li");
+        newSlide = createVideoSlide(videos[n]);
+        newLI.appendChild(newSlide);
+        newLI.classList.add('visual-ui-item');
+        visualList.appendChild(newLI);
+      }
+
+      break;
   }
 }
 
@@ -346,6 +408,33 @@ function createPhotoSlide(c, i) {
   theImg.classList.add('visual-ui-img');
   // add clickable modal
   imgSlide.setAttribute('onclick', 'photoModal("' + c + '", photos)');
+  imgSlide.appendChild(theImg);
+  return imgSlide;
+}
+
+function createDesignSlide(i) {
+  let imgSlide = createEl("div");
+  let theImg = createEl("img");
+  theImg.setAttribute("src", "img/designs/" + i);
+
+  imgSlide.classList.add('visual-ui-img-wrapper');
+  theImg.classList.add('visual-ui-img');
+  theImg.classList.add('design-img');
+  // add clickable modal
+  // imgSlide.setAttribute('onclick', 'photoModal("' + c + '", photos)');
+  imgSlide.appendChild(theImg);
+  return imgSlide;
+}
+
+function createVideoSlide(i) {
+  let imgSlide = createEl("div");
+  let theImg = createEl("img");
+  theImg.setAttribute("src", "img/videos/" + i);
+
+  imgSlide.classList.add('visual-ui-img-wrapper');
+  theImg.classList.add('visual-ui-img');
+  // add clickable modal
+  // imgSlide.setAttribute('onclick', 'photoModal("' + c + '", photos)');
   imgSlide.appendChild(theImg);
   return imgSlide;
 }
@@ -427,6 +516,8 @@ function closeModal() {
 function homeLoadFunctions() {
   checkViewport();
   fadeShowWhatsNew()
+  let abtCnt = gebi('about-content');
+  fadeHide(abtCnt);
   window.addEventListener('resize', checkViewport);
 }
 
@@ -493,49 +584,49 @@ let jsProjects = [
   [
     'React Drum Machine',
     'A drum machine with pads that responds to key press events',
-    'img/drummachine.jpg',
+    'img/softimg/drummachine.jpg',
     'https://codepen.io/lucidcode6/full/eQygOP',
     'https://codepen.io/lucidcode6/pen/eQygOP?editors=0010'
   ],
   [
     'Wikipedia Article Viewer',
     'An app that uses the Wikipedia API to display article results of what the user searches',
-    'img/wikiviewer.jpg',
+    'img/softimg/wikiviewer.jpg',
     'https://codepen.io/lucidcode6/full/aEgMjq',
     'https://codepen.io/lucidcode6/pen/aEgMjq'
   ],
   [
     'Fontify',
     'Hand drawn fonts edited with Adobe Illustrator. Generator algorithm coded in JavaScript',
-    'img/fontify.jpg',
+    'img/softimg/fontify.jpg',
     'fontify.html',
     'https://github.com/crealu'
   ],
   [
     'JavaScript Calculator',
     "Basic calculator created using JavaScript's built in math funcitons",
-    'img/calculator.jpg',
+    'img/softimg/calculator.jpg',
     'https://codepen.io/lucidcode6/full/EoJzKg',
     'https://codepen.io/lucidcode6/pen/EoJzKg'
   ],
   [
     'Pomodoro Clock',
     'Clock for hepling to break down productivity into segments of time',
-    'img/pomodoro.jpg',
+    'img/softimg/pomodoro.jpg',
     'https://codepen.io/lucidcode6/full/mXdZZK',
     'https://codepen.io/lucidcode6/pen/mXdZZK'
   ],
   [
     'Random Quote Machine',
     'Random quote generator form JavaScript object',
-    'img/quoteMachine.jpg',
+    'img/softimg/quoteMachine.jpg',
     'https://codepen.io/lucidcode6/full/ppOoYR',
     'https://codepen.io/lucidcode6/pen/ppOoYR'
   ],
   [
     'Tic Tac Toe',
     'Tic tac toe game built with vanilla JavaScript',
-    'img/xando.jpg',
+    'img/softimg/xando.jpg',
     'https://codepen.io/lucidcode6/full/yvvZej',
     'https://codepen.io/lucidcode6/pen/yvvZej'
   ]
@@ -545,14 +636,14 @@ let pyProjects = [
   [
     'Sanuk Sidewalk Surfers',
     "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
-    'img/sidewalkSurferspy.jpg',
+    'img/softimg/sidewalkSuferspy.jpg',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
   ],
   [
     'Employee Class',
     'A program that creates an employee using object-oriented methods',
-    'img/employeepy.jpg',
+    'img/softimg/employeepy.jpg',
     'https://repl.it/@crealu/Employee-Class',
     'https://repl.it/@crealu/Employee-Class'
   ]
@@ -561,8 +652,8 @@ let pyProjects = [
 let cppProjects = [
   [
     'Simple Shape Drawing',
-    'The program allows users to input dimensions of a shape and have it drawn to size',
-    'img/schapecpp.jpg',
+    'A program allowing users to input dimensions of a shape and have it drawn to size',
+    'img/softimg/shapecpp.jpg',
     'https://repl.it/@crealu/Draw-Shape',
     'https://repl.it/@crealu/Draw-Shape'
   ]
@@ -646,6 +737,20 @@ let photos = [
       'webside relaxing'
     ]
   }
+];
+
+let designs = [
+  'blackFace.svg',
+  'dodec.svg',
+  'faces.svg',
+  'pacha1.svg',
+  'sacral.svg',
+  'sahasrara.jpg',
+  'mf logo.jpg'
+];
+
+let videos = [
+  ''
 ];
 
 /* mobile screen sizes
