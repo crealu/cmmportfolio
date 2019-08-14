@@ -634,28 +634,105 @@ let jsProjects = [
 
 let pyProjects = [
   [
-    'Sanuk Sidewalk Surfers',
+    'Sandal Prices Web Scrape',
     "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
     'img/softimg/sidewalkSuferspy.jpg',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
   ],
   [
-    'Employee Class',
+    'Object Oriented Basics',
     'A program that creates an employee using object-oriented methods',
     'img/softimg/employeepy.jpg',
     'https://repl.it/@crealu/Employee-Class',
     'https://repl.it/@crealu/Employee-Class'
+  ],
+  [
+    'Find Longest Algorithm',
+    'A small function that finds the longest word in a string',
+    'img/softimg/findlongest.png',
+    'https://github.com/crealu/pysamples/blob/master/findLongest.py',
+    'https://github.com/crealu/pysamples/blob/master/findLongest.py'
+  ],
+  [
+    'Linear Regression',
+    'Data analytics walkthrough with numpy, sklearn and matplotlib',
+    'img/softimg/linearreg.png',
+    'https://github.com/crealu/pysamples/blob/master/linearRegression.py',
+    'https://github.com/crealu/pysamples/blob/master/linearRegression.py'
+  ],
+  [
+    'Writing a JavaScript File',
+    'A python program that writes to a .js program',
+    'img/softimg/pywritejs.png',
+    'https://github.com/crealu/pysamples/blob/master/writeJS.py',
+    'https://github.com/crealu/pysamples/blob/master/writeJS.py'
+  ],
+  [
+    'Filter Excel Data',
+    'Using the xlrd and xlwt modules for filtering excel data',
+    'img/softimg/filterexcel.png',
+    'https://github.com/crealu/pysamples/blob/master/readSources.py',
+    'https://github.com/crealu/pysamples/blob/master/readSources.py'
   ]
 ];
 
 let cppProjects = [
   [
-    'Simple Shape Drawing',
+    'Shape Drawing',
     'A program allowing users to input dimensions of a shape and have it drawn to size',
     'img/softimg/shapecpp.jpg',
     'https://repl.it/@crealu/Draw-Shape',
     'https://repl.it/@crealu/Draw-Shape'
+  ],
+  [
+    'Windows GUI',
+    'A desktop application for opening, editing, and saving built using the windows API.',
+    'img/softimg/windowsGUI.png',
+    'https://github.com/crealu/cppsamples/blob/master/gui9.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/gui9.cpp'
+  ],
+  [
+    'Function Pointers',
+    'Declaring and using function pointers.',
+    'img/softimg/functionpointers.png',
+    'https://github.com/crealu/cppsamples/blob/master/functionPointer.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/functionPointer.cpp'
+  ],
+  [
+    'Abstract Data Types',
+    'Creating a linked list with abstract data types',
+    'img/softimg/linkedlist.png',
+    'https://github.com/crealu/cppsamples/blob/master/linkedList.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/linkedList.cpp'
+  ],
+  [
+    'Derived Classes',
+    'Calling constructors and destructors for objects belonging to derived classes',
+    'img/softimg/derivedclasses.png',
+    'https://github.com/crealu/cppsamples/blob/master/mammal3.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/mammal3.cpp'
+  ],
+  [
+    'Virtual Functions',
+    'Calling a virtual funciton on an array of pointers to respective subclasses',
+    'img/softimg/virtualfunctions.png',
+    'https://github.com/crealu/cppsamples/blob/master/mammal9.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/mammal9.cpp'
+  ],
+  [
+    'Pointer Swap',
+    'Passing pointers as parameters to manipulate their original value',
+    'img/softimg/pointerswap.png',
+    'https://github.com/crealu/cppsamples/blob/master/pointerSwap.cpp',
+    'https://github.com/crealu/cppsamples/blob/master/pointerSwap.cpp'
+  ],
+  [
+    'Temperature Conversion',
+    'Calling a virtual funciton on an array of pointers to respective subclasses',
+    'img/softimg/tempconverter.png',
+    'https://github.com/crealu/cppsamples/blob/master/temperature2.c',
+    'https://github.com/crealu/cppsamples/blob/master/temperature2.c'
   ]
 ];
 
