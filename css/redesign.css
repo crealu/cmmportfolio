@@ -173,8 +173,8 @@ body {
 .media-list li {
   display: inline-block;
   position: relative;
-  width: 18%;
-  padding: 0px 2% 0px 2%;
+  width: 16%;
+  padding: 0px 1% 0px 1%;
   text-align: center;
 }
 
@@ -214,6 +214,23 @@ body {
   position: relative;
   display: inline-block;
   margin: 0 auto;
+}
+
+.medium-img {
+  width: 45px;
+}
+
+#medium-desk {
+  position: relative;
+  left: -4px;
+}
+
+.ig-img {
+  width: 40px;
+}
+
+#ig-mobile {
+  top: 3px;
 }
 
 .desktop-view {
@@ -264,12 +281,12 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  top: 45px;
+  top: 20px;
 }
 
 .project-text-wrapper {
   position: relative;
-  top: 45px;
+  top: 30px;
 }
 
 .project-title {
@@ -282,7 +299,7 @@ body {
 }
 
 .project-text {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 100;
   font-style: italic;
   margin: 0;
@@ -426,6 +443,7 @@ body {
 .software-img-wrapper {
   height: 250px;
   padding-top: 20px;
+  overflow: hidden;
 }
 
 .software-img {
@@ -433,6 +451,11 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
+  transition: 0.25s ease;
+}
+
+.software-img:hover {
+  box-shadow: 0px 0px 15px rgba(250, 250, 250, 0.5);
 }
 
 .software-project-text-wrapper {
@@ -442,6 +465,13 @@ body {
   font-size: 20px;
   text-align: center;
   color: inherit
+}
+
+.software-project-text {
+  font-size: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: 100;
 }
 
 .project-row {

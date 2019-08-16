@@ -10,12 +10,17 @@ function checkViewport() {
 
 function resizeHomeImg(wW, wH) {
   let homeImg = gebcn('home-img')[0];
+  let desktopView = gebcn('desktop-view')[0];
+
   if (wW >= 1400) {
     homeImg.style.width = wW.toString() + 'px';;
   }
 
   if (wH >= 766) {
     homeImg.style.height = wH.toString() + 'px';
+  } else if (wH < 760 && wW > 700) {
+    console.log(wH, wH - 550);
+    desktopView.style.top = (wH - 550).toString() + 'px';
   }
 
   if (900 < wW <= 1400 && wH >= 600) {
@@ -334,7 +339,7 @@ function addProjectList(p) {
 function fillProject(p, projN) {
   let softwareImg = gebcn('software-img')[0];
   let softViewLink = gebcn('software-view-link')[0];
-  let softText = gebcn
+  let softwareText = gebcn('software-project-text')[0];
   let projArr;
   switch (p) {
     case 'web':
@@ -356,6 +361,7 @@ function fillProject(p, projN) {
   let newSoftwareLink = projArr[projN][3];
   softwareImg.src = newImgSrc;
   softViewLink.setAttribute('href', newSoftwareLink);
+  softwareText.innerHTML = projArr[projN][1];
 
   console.log(softwareImg.src, softViewLink.href);
 }
@@ -542,12 +548,6 @@ let websiteProjects = [
     'img/covers/photaero-site.png',
     'https://crealu.github.io/photaero/'
   ],
-  /*[
-    'Urushitei',
-    'Japanese Ryokan in Kyoto, Japan.',
-    'img/covers/urushitei-site.png',
-    'https://crealu.github.io/urushiteisample/'
-  ],*/
   [
     'Holistic Pracitioner',
     "Custom built website for a holisitic practitioner's growing business.",
