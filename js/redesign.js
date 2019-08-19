@@ -41,7 +41,7 @@ function toggleNavBackground(yn) {
       nav.style.background = 'linear-gradient(180deg, rgba(139, 161, 198, 1) 50%, rgba(159, 179, 200, 0))';
       break;
     case 'no':
-      nav.style.background = 'none';
+      nav.style.background = 'linear-gradient(180deg, rgba(250, 250, 250, 1) 50%, rgba(250, 250, 250, 0))';
       break;
   }
 }
@@ -49,13 +49,37 @@ function toggleNavBackground(yn) {
 function mobileMenu() {
   let mobileNav = gebi('nav-mobile');
   if (!(mobileNav.style.display == 'block')) {
-    mobileNav.style.display = 'block';
-    mobileNav.style.left = '0%';
     switchNavBtn();
+    fadeShowMobile(mobileNav);
   } else {
-      mobileNav.style.display = 'none';
-      mobileNav.style.left = '100%';
       switchNavBtn();
+      fadeHideMobile(mobileNav);
+  }
+}
+
+function fadeShowMobile(el) {
+  let i = 0;
+  let id = setInterval(frame, 125);
+  el.style.display = 'block';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      el.style.opacity = '1';
+    }
+  }
+}
+
+function fadeHideMobile(el) {
+  let i = 0;
+  let id = setInterval(frame, 125);
+  el.style.opacity = '0';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      el.style.display = 'none';
+    }
   }
 }
 
@@ -400,6 +424,9 @@ function addVisualProjectList(vp) {
         newLI.classList.add('visual-ui-item');
         visualList.appendChild(newLI);
       }
+      clear(visualList);
+      visualList.innerHTML = '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/78gaqQMWiOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      visualList.innerHTML += '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/CEJ846oOJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
       break;
   }

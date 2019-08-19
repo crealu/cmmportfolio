@@ -37,14 +37,6 @@
  */
 
 @media (max-width: 675px) and (min-width: 200px) {
-  /*.desktop-view {
-    display: none;
-  }
-
-  .mobile-view {
-    display: block;
-  }*/
-
   body {
     overflow-y: scroll;
   }
@@ -56,6 +48,10 @@
 
   .home-img {
     filter: brightness(0.9);
+  }
+
+  .desktop-view {
+    top: 120px;
   }
 
   .whats-new-title {
@@ -91,9 +87,14 @@
     top: 0px;
   }
 
+  .project-title {
+    text-align: center;
+  }
+
   .project-text {
     text-align: justify;
     padding-bottom: 40px;
+    line-height: 40px;
   }
 
   /* software */
@@ -103,11 +104,12 @@
 
   .options-row {
     height: 140px;
+    margin-bottom: 0px;
   }
 
   .software-title {
     width: 100%;
-    padding: 10px 0% 30px 0%;
+    padding: 10px 0% 10px 0%;
     text-align: center;
   }
 
@@ -116,11 +118,11 @@
   }
 
   .options-title {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .software-project-wrapper {
-    height: 900px;
+    height: 775px;
     box-shadow: none;
   }
 
@@ -136,6 +138,7 @@
   .software-img-wrapper {
     height: 250px;
     overflow: hidden;
+    padding-top: 0px;
   }
 
   .software-img {
@@ -173,6 +176,15 @@
     width: 60%;
   }
 
+  .vid-iframe {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px 2.5% 20px 2.5%;
+    height: 250px;
+  }
+
   /* modal */
 
   #modal {
@@ -201,5 +213,17 @@
 
   .modal-img {
     padding: 0%;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 800px) {
+  .project-text-wrapper {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 530px) and (min-width: 400px) {
+  .software-img-wrapper {
+    height: 200px;
   }
 }
