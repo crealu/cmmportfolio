@@ -167,7 +167,7 @@ function whatsNewTab(wn) {
   let newAddress = '';
   switch (wn) {
     case 'niheigo':
-      newAddress = 'https://crealu.github.io/niheigo/';
+      newAddress = 'https://niheigo.herokuapp.com';
       break;
     case 'tochigi':
       newAddress = 'https://www.instagram.com/p/B0NTGdAH53C/';
