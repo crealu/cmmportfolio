@@ -435,12 +435,19 @@ function addVisualProjectList(vp) {
 function createPhotoSlide(c, i) {
   let imgSlide = createEl("div");
   let theImg = createEl("img");
+  let theTitle = createEl("p");
+  let title = c.toUpperCase();
+  let titleText = document.createTextNode(title);
   theImg.setAttribute("src", "img/photos/" + c + "/" + i + ".jpg");
 
   imgSlide.classList.add('visual-ui-img-wrapper');
   theImg.classList.add('visual-ui-img');
+  theTitle.classList.add('photo-img-title');
+
   // add clickable modal
   imgSlide.setAttribute('onclick', 'photoModal("' + c + '", photos)');
+  theTitle.appendChild(titleText);
+  imgSlide.appendChild(theTitle)
   imgSlide.appendChild(theImg);
   return imgSlide;
 }
@@ -475,6 +482,13 @@ function createVideoSlide(i) {
 function photoModal(category, phos) {
   let modal = document.getElementById('modal');
   let modalInner = document.getElementById('modal-inner');
+  let modalTitle = createEl("h3");
+  let upperCat = category.toUpperCase();
+  let titleText = document.createTextNode(upperCat);
+
+  modalTitle.classList.add('modal-title');
+  modalTitle.appendChild(titleText);
+  modalInner.appendChild(modalTitle);
 
   for (let i = 0; i < phos.length; i++) {
     if (category == phos[i].collection) {
@@ -561,13 +575,19 @@ let websiteProjects = [
     'Niheigo',
     'Kanji learning application.',
     'img/covers/niheigo temp logo.png',
-    'https://crealu.github.io/niheigo/'
+    'https://niheigo.herokuapp.com'
   ],
   [
     'Uniqtable',
     'A website for a travel industry startup in Japan.',
     'img/covers/uniqtable-site.png',
     'http://uniqtable.xsrv.jp/wp/'
+  ],
+  [
+    'Urushitei',
+    'Sample website for Japanese ryokan, Urushitei',
+    'img/covers/urushitei-site.png',
+    'https://crealu.github.io/urushiteisample/'
   ],
   [
     'Photaero',

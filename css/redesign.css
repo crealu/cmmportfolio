@@ -587,6 +587,27 @@ body {
   width: 100%;
 }
 
+.photo-img-title {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: white;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  padding-top: 5px;
+  font-size: 20px;
+  transition: 0.25s ease;
+  z-index: 100;
+  opacity: 0;
+  text-shadow: 0px 0px 10px #353535;
+}
+
+.visual-ui-img-wrapper:hover .photo-img-title {
+  opacity: 1;
+}
+
 .visual-ui-img {
   position: relative;
   display: block;
@@ -633,7 +654,6 @@ body {
   height: 700px;
   background: white;
   color: #535353;
-  border-radius: 10px;
   box-shadow: 4px 4px 8px 4px;
   z-index: 103;
   padding: 6px;
@@ -642,15 +662,13 @@ body {
 #close {
   position: relative;
   float: right;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 20px;
   z-index: 200;
   background: none;
   color: black;
   font-weight: 400;
   border: none;
-  border-radius: 4px;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -722,13 +740,18 @@ body {
   color: black;
 }
 
+.modal-title {
+  text-align: center;
+  width: 100%;
+}
+
 .test-nav-wrapper {
   width: 100%;
-  position: relative;
+  position: absolute;
   display: block;
   margin: 0 auto;
   float: left;
-  top: 50px;
+  top: 300px;
 }
 
 .nav-btn-wrapper {
