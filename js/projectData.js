@@ -1,7 +1,7 @@
 let websiteProjects = [
   [
     'Phocam',
-    'A brand focused on digital content creation by through the means of photography, videography, and graphic design.',
+    'A brand focused on digital content creation by the means of photography, videography, and graphic design.',
     'img/covers/photaero-site.png',
     'https://crealu.github.io/phocam/'
   ],
@@ -18,10 +18,10 @@ let websiteProjects = [
     'https://cammailtester.herokuapp.com/'
   ],
   [
-    'Urushitei',
-    'Sample website for Japanese ryokan group, KIT.',
+    'KIT Group Ryokans',
+    'Main website and branch websites for Japanese ryokan group, KIT.',
     'img/covers/urushitei-site.png',
-    'https://crealu.github.io/urushiteisample/'
+    'https://www.kyoto-ryokan-sakura.com/'
   ],
   [
     'Quinn Tu',
@@ -43,7 +43,7 @@ let websiteProjects = [
   ],
   [
     'Holistic Pracitioner',
-    "Custom built website for a holisitic practitioner's growing business.",
+    "Custom-built website for a holisitic practitioner's growing business.",
     'img/covers/marissasite.jpg',
     'https://crealu.github.io/marissasite/'
   ],
@@ -53,18 +53,6 @@ let websiteProjects = [
     'img/covers/moosiko-site-img.jpg',
     'https://www.moosiko.com/'
   ]
-  /*[
-    'Perios World',
-    'Website for an educational video game that teaches kids chemistry.',
-    'img/covers/periossite.jpg',
-    'https://www.periosworld.com/'
-  ],
-  [
-    'Robert Miller Portfolio',
-    'Porfolio for painter Robert E. Miller.',
-    'img/covers/rainy-day.png',
-    'REM Site/remHome.html'
-  ]*/
 ];
 
 let jsProjects = [
@@ -83,18 +71,18 @@ let jsProjects = [
     'https://niheigo.herokuapp.com'
   ],
   [
-    'Vanilla JavaScript Animation',
-    "An experimental library of animations using JavaScript's setInterval() function.",
-    'img/covers/niheigo temp logo.png',
-    'https://crealu.github.io/',
-    'https://crealu.github.io/'
-  ],
-  [
     'React Drum Machine',
     'A drum machine with pads that respond to key press events, built using React.',
     'img/softimg/drummachine.jpg',
     'https://codepen.io/lucidcode6/full/eQygOP',
     'https://codepen.io/lucidcode6/pen/eQygOP?editors=0010'
+  ],
+  [
+    'Wikipedia Article Viewer',
+    "An app that uses the Wikipedia API to display article results from the user's search.",
+    'img/softimg/wikiviewer.jpg',
+    'https://codepen.io/lucidcode6/full/aEgMjq',
+    'https://codepen.io/lucidcode6/pen/aEgMjq'
   ],
   [
     'Nodemail App',
@@ -125,13 +113,6 @@ let jsProjects = [
     'https://kanjisketch.herokuapp'
   ],
   [
-    'Wikipedia Article Viewer',
-    "An app that uses the Wikipedia API to display article results from the user's search.",
-    'img/softimg/wikiviewer.jpg',
-    'https://codepen.io/lucidcode6/full/aEgMjq',
-    'https://codepen.io/lucidcode6/pen/aEgMjq'
-  ],
-  [
     'Fontify',
     'Hand drawn fonts edited with Adobe Illustrator. Generator algorithm coded in JavaScript.',
     'img/softimg/fontify.jpg',
@@ -139,32 +120,11 @@ let jsProjects = [
     'https://github.com/crealu'
   ],
   [
-    'JavaScript Calculator',
-    "Basic calculator created using JavaScript's built in math funcitons.",
+    'CodePen Projects',
+    'Curious about more projects? Check my CodePen profile for small live examples and code samples.',
     'img/softimg/calculator.jpg',
-    'https://codepen.io/lucidcode6/full/EoJzKg',
-    'https://codepen.io/lucidcode6/pen/EoJzKg'
-  ],
-  [
-    'Pomodoro Clock',
-    'Clock for hepling to break down productivity into segments of time.',
-    'img/softimg/pomodoro.jpg',
-    'https://codepen.io/lucidcode6/full/mXdZZK',
-    'https://codepen.io/lucidcode6/pen/mXdZZK'
-  ],
-  [
-    'Random Quote Machine',
-    'Random quote generator form JavaScript object.',
-    'img/softimg/quoteMachine.jpg',
-    'https://codepen.io/lucidcode6/full/ppOoYR',
-    'https://codepen.io/lucidcode6/pen/ppOoYR'
-  ],
-  [
-    'Tic Tac Toe',
-    'Tic-tac-toe game built with vanilla JavaScript.',
-    'img/softimg/xando.jpg',
-    'https://codepen.io/lucidcode6/full/yvvZej',
-    'https://codepen.io/lucidcode6/pen/yvvZej'
+    'https://codepen.io/lucidcode6/pens/public?grid_type=list',
+    'https://codepen.io/lucidcode6/pens/public?grid_type=list'
   ]
 ];
 

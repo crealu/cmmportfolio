@@ -169,11 +169,11 @@ function whatsNewTab(wn) {
     case 'niheigo':
       newAddress = 'https://niheigo.herokuapp.com';
       break;
-    case 'mernboiler':
-      newAddress = 'https://github.com/crealu/mernboiler';
+    case 'tochigi':
+      newAddress = 'https://www.instagram.com/p/B0NTGdAH53C/';
       break;
-    case 'photcam':
-      newAddress = 'https://crealu.github.io/phocam/';
+    case 'photaero':
+      newAddress = 'https://www.instagram.com/photaero/';
       break;
   }
   window.open(newAddress, '_blank');
@@ -348,7 +348,7 @@ function addProjectList(p) {
     }
 
     attrArr[0][0].classList.add('software-list-item');
-    attrArr[0][0].setAttribute('onmouseover', 'fillProject("' + p + '", ' + z + ')');
+    attrArr[0][0].setAttribute('onclick', 'fillProject("' + p + '", ' + z + ')');
     attrArr[1][0].classList.add('list-item-title');
 
     attrArr[1][0].appendChild(attrArr[2][0]);
@@ -427,6 +427,7 @@ function addVisualProjectList(vp) {
       clear(visualList);
       visualList.innerHTML = '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/78gaqQMWiOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
       visualList.innerHTML += '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/CEJ846oOJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
       break;
   }
 }
@@ -571,22 +572,10 @@ window.onload = homeLoadFunctions();
 
 let websiteProjects = [
   [
-    'Photaero',
-    'Photography services company website.',
-    'img/covers/photaero-site.png',
-    'https://crealu.github.io/photaero/'
-  ],
-  [
     'Niheigo',
     'Kanji learning application.',
     'img/covers/niheigo temp logo.png',
     'https://niheigo.herokuapp.com'
-  ],
-  [
-    'Fuego My Eigo',
-    'English learning and reference website.',
-    'img/covers/photaero-site.png',
-    'http://crealu.github.io/fuegomyeigo'
   ],
   [
     'Uniqtable',
@@ -595,16 +584,16 @@ let websiteProjects = [
     'http://uniqtable.xsrv.jp/wp/'
   ],
   [
-    'Urushitei',
-    'Sample website for Japanese ryokan, Urushitei.',
+    'KIT Group Ryokans',
+    'Sample website for Japanese ryokan, Urushitei',
     'img/covers/urushitei-site.png',
-    'https://crealu.github.io/urushiteisample/'
+    'https://www.kyoto-ryokan-sakura.com/'
   ],
   [
-    'Quinn Tu Portfolio',
-    'A portfolio website for lifestyle influencer, Quinn Tu.',
-    'img/covers/quinnsite.jpg',
-    'https://crealu.github.io/quinntu/'
+    'Photcam Website',
+    'Photography and videography services company website.',
+    'img/covers/photaero-site.png',
+    'https://crealu.github.io/photcam/'
   ],
   [
     'Holistic Pracitioner',
@@ -613,61 +602,26 @@ let websiteProjects = [
     'https://crealu.github.io/marissasite/'
   ],
   [
-    'Moosiko',
-    'Moosiko company website built on top of WordPress.',
-    'img/covers/moosiko-site-img.jpg',
-    'https://www.moosiko.com/'
-  ],
-  [
     'Perios World',
     'Website for an educational video game that teaches kids chemistry.',
     'img/covers/periossite.jpg',
     'http://www.periosworld.com/'
   ],
   [
-    'Robert Miller Portfolio',
-    'Porfolio for painter Robert E. Miller.',
-    'img/covers/rainy-day.png',
-    'REM Site/remHome.html'
+    'Moosiko',
+    'Moosiko company website built on top of WordPress.',
+    'img/covers/moosiko-site-img.jpg',
+    'https://www.moosiko.com/'
+  ],
+  [
+    'Quinn Tu Portfolio',
+    'A portfolio website for lifestyle influencer, Quinn Tu.',
+    'img/covers/quinnsite.jpg',
+    'https://crealu.github.io/quinntu/'
   ]
 ];
 
 let jsProjects = [
-  [
-    'Niheigo',
-    'Kanji learning application built with Node.js and vanilla JavaScript',
-    'img/covers/niheigo temp logo.png',
-    'https://niheigo.herokuapp.com',
-    'https://niheigo.herokuapp.com'
-  ],
-  [
-    'Niheigonoawa',
-    'Kanji learning game built with React',
-    'img/covers/niheigo temp logo.png',
-    'https://niheigo.herokuapp.com',
-    'https://niheigo.herokuapp.com'
-  ],
-  [
-    'Kanjisketch (React & p5)',
-    'A vector drawing application that uses React and p5.js to generate vector drawings',
-    'img/covers/niheigo temp logo.png',
-    'https://kanjisketch.herokuapp',
-    'https://kanjisketch.herokuapp'
-  ],
-  [
-    'Vanilla JavaScript Animation',
-    'A library of animations using the setInterval() function',
-    'img/covers/niheigo temp logo.png',
-    'https://crealu.github.io/',
-    'https://crealu.github.io/'
-  ],
-  [
-    'Digital drawing with p5.js',
-    'A variety of digital drawing made using the p5.js library',
-    'img/covers/niheigo temp logo.png',
-    'https://kanjisketch.herokuapp',
-    'https://kanjisketch.herokuapp'
-  ],
   [
     'React Drum Machine',
     'A drum machine with pads that responds to key press events',
@@ -719,109 +673,46 @@ let jsProjects = [
   ]
 ];
 
-/*
-JavaScript
-- niheigonoawa c
-- kanji/canvas drawing c
-- animation page c
-- p5 kanji drawing c
-- website scroll mapping
-- p5 sound c
-- small vue app
-
-Python
-- regular expressions c
-- pygame
-- turtle drawing c
-- img processing c
-- data read/write c
-- css read/write c
-- mern boiler plate c
-- minecraft codes
-
-C/C++
-- writing files
-- synthesizer
-- arduino
-- microcontrollers
-
-*/
-
 let pyProjects = [
-  [
-    'MERN Stack Boilerplate',
-    "A group of files that automates the preparation of a MERN stack for development",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/mernboiler',
-    'https://github.com/crealu/mernboiler'
-  ],
-  [
-    'Read & Write CSS',
-    "A program that uses Python's regular expression module to scan an HTML document and rewrite the styling to a new CSS file",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/writeCSS.py',
-    'https://github.com/crealu/pysamples/blob/master/writeCSS.py'
-  ],
-  [
-    'Write Kanji JSON',
-    "A script that writes array and object data from a JavaScript file to a JSON file using regular expressions",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py',
-    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py'
-  ],
-  [
-    'Interactive Turtle Graphics',
-    "A program that utilizes the Python turtle module to draw custom graphics in response to key events",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/drawingClass.py',
-    'https://github.com/crealu/pysamples/blob/master/drawingClass.py'
-  ],
-  [
-    '10 Image Gradients',
-    "An image processing script that generates random gradients from an image file (jpg) and saves the gradient as a ",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
-    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
-  ],
   [
     'Sandal Prices Web Scrape',
     "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/sidewalkSuferspy.jpg',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
   ],
   [
     'Object Oriented Basics',
     'A program that creates an employee using object-oriented methods',
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/employeepy.jpg',
     'https://repl.it/@crealu/Employee-Class',
     'https://repl.it/@crealu/Employee-Class'
   ],
   [
     'Find Longest Algorithm',
     'A small function that finds the longest word in a string',
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/findlongest.png',
     'https://github.com/crealu/pysamples/blob/master/findLongest.py',
     'https://github.com/crealu/pysamples/blob/master/findLongest.py'
   ],
   [
     'Linear Regression',
     'Data analytics walkthrough with numpy, sklearn and matplotlib',
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/linearreg.png',
     'https://github.com/crealu/pysamples/blob/master/linearRegression.py',
     'https://github.com/crealu/pysamples/blob/master/linearRegression.py'
   ],
   [
     'Writing a JavaScript File',
     'A python program that writes to a .js program',
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/pywritejs.png',
     'https://github.com/crealu/pysamples/blob/master/writeJS.py',
     'https://github.com/crealu/pysamples/blob/master/writeJS.py'
   ],
   [
     'Filter Excel Data',
     'Using the xlrd and xlwt modules for filtering excel data',
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'img/softimg/filterexcel.png',
     'https://github.com/crealu/pysamples/blob/master/readSources.py',
     'https://github.com/crealu/pysamples/blob/master/readSources.py'
   ]
@@ -879,7 +770,7 @@ let cppProjects = [
   ],
   [
     'Temperature Conversion',
-    'Calling a virtual funciton on an array of pointers to respective subclasses',
+    'Calling a virtual function on an array of pointers to respective subclasses',
     'img/softimg/tempconverter.png',
     'https://github.com/crealu/cppsamples/blob/master/temperature2.c',
     'https://github.com/crealu/cppsamples/blob/master/temperature2.c'

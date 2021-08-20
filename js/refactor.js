@@ -213,8 +213,8 @@ function displayContent(topic) {
     case 'Software':
       toggleSoftVis(1);
       displayProjects('software-projects');
-      addProjectList('web');
-      fillProject("web", 0);
+      addProjectList('js');
+      fillProject("js", 0);
       let option1 = gebcn('options-wrapper')[0];
       //option1.style.background = 'rgba(250, 250, 250, 0.4)';
       option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
@@ -272,21 +272,21 @@ function addProjectList(p) {
   let optNum;
   let projArr;
   switch (p) {
-    case 'web':
-      projArr = websiteProjects;
-      optNum = 0;
-      break;
     case 'js':
       projArr = jsProjects;
-      optNum = 1;
+      optNum = 0;
       break;
     case 'py':
       projArr = pyProjects;
-      optNum = 2;
+      optNum = 1;
       break;
     case 'cpp':
       projArr = cppProjects;
-      optNum = 3;
+      optNum = 2;
+      break;
+    case 'web':
+      projArr = websiteProjects;
+      optNum = 1;
       break;
   }
 
