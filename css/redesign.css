@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Gudea|Rajdhani:500|Courgette|Domine|Nunito');
 
 :root {
-
+  --cb1: cubic-bezier(.3, .01, .26, .97);
+  --cb2: cubic-bezier(.37, .01, .59, .97);
 }
 
 body {
@@ -143,8 +144,8 @@ body {
 .nav-item-mobile {
   list-style-type: none;
   padding: 26px 0px 26px 0px;
-  border-top: 1px solid #868686;
-  width: 75%;
+  border-top: 1px solid rgba(134, 134, 134, 0.5);
+  width: 50%;
   position: relative;
   display: block;
   margin: 0 auto;
@@ -186,7 +187,7 @@ body {
   position: fixed;
   text-align: left;
   width: 50px;
-  top: 290px;
+  top: 310px;
   z-index: 100;
   left: 30px;
   padding-left: 4px;
@@ -237,6 +238,45 @@ body {
   top: 3px;
 }
 
+.language-toggle-mobile {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #868686;
+  width: 100%;
+}
+
+.language-toggle {
+  position: fixed;
+  top: 94%;
+  z-index: 1;
+  color: white;
+  left: 30px;
+  padding-left: 4px;
+}
+
+.lang-btn-wrapper {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.language-btn {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 8px 0px 8px;
+  opacity: 0.5;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  opacity: 1;
+}
+
 .desktop-view {
   position: relative;
   top: 185px;
@@ -269,6 +309,8 @@ body {
   width: 1500px;
   height: 766px;
   transition: 2s ease;
+  filter: brightness(0.9) blur(0px);
+  transition-property: all;
 }
 
 .topic-content {
@@ -305,7 +347,6 @@ body {
 .project-text {
   font-size: 20px;
   font-weight: 100;
-  font-style: italic;
   margin: 0;
   color: white;
   line-height: 45px;
@@ -314,7 +355,7 @@ body {
 
 /* whats new */
 #whats-new-wrapper {
-  width: 79%;
+  width: 80%;
   opacity: 1;
   position: relative;
   margin: 0 auto;
@@ -327,8 +368,9 @@ body {
   margin-top: 0px;
   font-size: 34px;
   text-shadow: 0px 0px 20px #a0a0a0;
-  padding-left: 1.5%;
+  padding-left: 4.5%;
   margin-bottom: 50px;
+  font-weight: 100;
 }
 
 .whats-new-content {
@@ -345,7 +387,7 @@ body {
 .whats-new-col {
   width: 100%;
   height: inherit;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0);
   /*box-shadow: inset 0px 0px 20px 4px #ffffff;*/
   transition: 0.5s ease;
 }
@@ -360,7 +402,7 @@ body {
   font-size: 24px;
   margin-top: 0px;
   padding: 26px 0px 10px 0px;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid rgba(250, 250, 250, 0.5);
   width: 80%;
   position: relative;
@@ -388,8 +430,8 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 75%;
-  height: 400px;
+  width: 76%;
+  height: 415px;
   padding-left: 1.5%;
 }
 
@@ -444,6 +486,14 @@ body {
   box-shadow: inset 0px 0px 20px 4px #ffffff;
 }
 
+.software-view-link {
+  text-decoration: none;
+}
+
+.software-view-link:hover .software-project-text {
+  text-decoration: underline;
+}
+
 .software-img-wrapper {
   height: 250px;
   padding-top: 20px;
@@ -452,7 +502,7 @@ body {
 
 .software-img {
   width: 400px;
-  display: block;
+  display: none;
   margin: 0 auto;
   position: relative;
   transition: 0.25s ease;
@@ -462,13 +512,26 @@ body {
   box-shadow: 0px 0px 15px rgba(250, 250, 250, 0.5);
 }
 
+.software-project-title-wrapper {
+  padding-left: 5%;
+}
+
+.software-project-title {
+  font-size: 28px;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
 .software-project-text-wrapper {
   position: relative;
   display: block;
   margin: 0 auto;
   font-size: 20px;
-  text-align: center;
-  color: inherit
+  text-align: left;
+  color: inherit;
+  padding-left: 5%;
 }
 
 .software-project-text {
@@ -524,8 +587,8 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 79%;
-  height: 425px;
+  width: 76%;
+  height: 415px;
 }
 
 .visual-title {
@@ -648,19 +711,18 @@ body {
 #modal {
   display: none;
   position: fixed;
-  top: 2%;
-  left: 5%;
-  width: 90%;
-  height: 700px;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 800px;
   background: white;
   color: #535353;
-  box-shadow: 4px 4px 8px 4px;
   z-index: 103;
-  padding: 6px;
+  overflow-x: scroll;
 }
 
 #close {
-  position: relative;
+  position: absolute;
   float: right;
   padding: 20px;
   z-index: 200;
@@ -715,6 +777,48 @@ body {
 .new-eng-background {
   height: 600px;
 }
+
+#loader-modal {
+  display: block;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 800px;
+  background: white;
+  color: #535353;
+  z-index: 150;
+  transition: 0.75s ease;
+  text-align: center;
+}
+
+#loader-flower {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  top: 300px;
+  animation: 2.5s cubic-bezier(.63,.14,.4,.93) 0.25s infinite running spin;
+}
+
+/* cubic-bezier(.34,-0.22,.66,1.18) */
+/* cubic-bezier(.55,.01,.5,.98) */
+/* cubic-bezier(.63,.14,.4,.93) */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 #portfolio-footer {
   display: none;
@@ -777,13 +881,47 @@ body {
   font-size: 20px;
 }
 
-.img-slide {
-  width: 700px;
+/*
+.modal-film-roll {
+  width: 100%;
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 20px;
-  transition: 1s ease;
+  transition: 0.25s ease;
+  transform: translateX(0px);
+  cursor: pointer;
+  left: 0px;
+  overflow-x: scroll;
+}*/
+
+.modal-film-roll {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.modal-film-roll.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1.02);
+}
+
+.img-slide {
+  width: 400px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  float: left;
+  padding: 0px 4px 0px 4px;
+  margin: 0px 50px 0px 50px;
 }
 
 .modal-img {
@@ -791,11 +929,12 @@ body {
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding: 6px;
 }
 
 #modal-inner {
   padding: 6px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .modal-video {

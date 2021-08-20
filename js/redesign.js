@@ -169,11 +169,11 @@ function whatsNewTab(wn) {
     case 'niheigo':
       newAddress = 'https://niheigo.herokuapp.com';
       break;
-    case 'tochigi':
-      newAddress = 'https://www.instagram.com/p/B0NTGdAH53C/';
+    case 'mernboiler':
+      newAddress = 'https://github.com/crealu/mernboiler';
       break;
-    case 'photaero':
-      newAddress = 'https://www.instagram.com/photaero/';
+    case 'photcam':
+      newAddress = 'https://crealu.github.io/phocam/';
       break;
   }
   window.open(newAddress, '_blank');
@@ -348,7 +348,7 @@ function addProjectList(p) {
     }
 
     attrArr[0][0].classList.add('software-list-item');
-    attrArr[0][0].setAttribute('onclick', 'fillProject("' + p + '", ' + z + ')');
+    attrArr[0][0].setAttribute('onmouseover', 'fillProject("' + p + '", ' + z + ')');
     attrArr[1][0].classList.add('list-item-title');
 
     attrArr[1][0].appendChild(attrArr[2][0]);
@@ -427,7 +427,6 @@ function addVisualProjectList(vp) {
       clear(visualList);
       visualList.innerHTML = '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/78gaqQMWiOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
       visualList.innerHTML += '<iframe class="vid-iframe" width="560" height="315" src="https://www.youtube.com/embed/CEJ846oOJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-
       break;
   }
 }
@@ -545,7 +544,7 @@ function slideCaro(direction) {
     //testSlides[j].style.animation = 'psah 1s ease 0s forwards';
 
     // need to separate the previous slide anmiation to come before slideCaro('next') is called
-    testSlides[slideNum - 1].style.animation = 'psah 1s ease 0s forwards';
+    //testSlides[slideNum - 1].style.animation = 'psah 1s ease 0s forwards';
 
     testSlides[slideNum].style.display = 'block';
     testSlides[slideNum].style.animation = 'nsar 1s ease 0s forwards';
@@ -572,10 +571,22 @@ window.onload = homeLoadFunctions();
 
 let websiteProjects = [
   [
+    'Photaero',
+    'Photography services company website.',
+    'img/covers/photaero-site.png',
+    'https://crealu.github.io/photaero/'
+  ],
+  [
     'Niheigo',
     'Kanji learning application.',
     'img/covers/niheigo temp logo.png',
     'https://niheigo.herokuapp.com'
+  ],
+  [
+    'Fuego My Eigo',
+    'English learning and reference website.',
+    'img/covers/photaero-site.png',
+    'http://crealu.github.io/fuegomyeigo'
   ],
   [
     'Uniqtable',
@@ -585,15 +596,15 @@ let websiteProjects = [
   ],
   [
     'Urushitei',
-    'Sample website for Japanese ryokan, Urushitei',
+    'Sample website for Japanese ryokan, Urushitei.',
     'img/covers/urushitei-site.png',
     'https://crealu.github.io/urushiteisample/'
   ],
   [
-    'Photaero',
-    'Photography services company website.',
-    'img/covers/photaero-site.png',
-    'https://crealu.github.io/photaero/'
+    'Quinn Tu Portfolio',
+    'A portfolio website for lifestyle influencer, Quinn Tu.',
+    'img/covers/quinnsite.jpg',
+    'https://crealu.github.io/quinntu/'
   ],
   [
     'Holistic Pracitioner',
@@ -602,22 +613,16 @@ let websiteProjects = [
     'https://crealu.github.io/marissasite/'
   ],
   [
-    'Perios World',
-    'Website for an educational video game that teaches kids chemistry.',
-    'img/covers/periossite.jpg',
-    'http://www.periosworld.com/'
-  ],
-  [
     'Moosiko',
     'Moosiko company website built on top of WordPress.',
     'img/covers/moosiko-site-img.jpg',
     'https://www.moosiko.com/'
   ],
   [
-    'Quinn Tu Portfolio',
-    'A portfolio website for lifestyle influencer, Quinn Tu.',
-    'img/covers/quinnsite.jpg',
-    'https://crealu.github.io/quinntu/'
+    'Perios World',
+    'Website for an educational video game that teaches kids chemistry.',
+    'img/covers/periossite.jpg',
+    'http://www.periosworld.com/'
   ],
   [
     'Robert Miller Portfolio',
@@ -628,6 +633,41 @@ let websiteProjects = [
 ];
 
 let jsProjects = [
+  [
+    'Niheigo',
+    'Kanji learning application built with Node.js and vanilla JavaScript',
+    'img/covers/niheigo temp logo.png',
+    'https://niheigo.herokuapp.com',
+    'https://niheigo.herokuapp.com'
+  ],
+  [
+    'Niheigonoawa',
+    'Kanji learning game built with React',
+    'img/covers/niheigo temp logo.png',
+    'https://niheigo.herokuapp.com',
+    'https://niheigo.herokuapp.com'
+  ],
+  [
+    'Kanjisketch (React & p5)',
+    'A vector drawing application that uses React and p5.js to generate vector drawings',
+    'img/covers/niheigo temp logo.png',
+    'https://kanjisketch.herokuapp',
+    'https://kanjisketch.herokuapp'
+  ],
+  [
+    'Vanilla JavaScript Animation',
+    'A library of animations using the setInterval() function',
+    'img/covers/niheigo temp logo.png',
+    'https://crealu.github.io/',
+    'https://crealu.github.io/'
+  ],
+  [
+    'Digital drawing with p5.js',
+    'A variety of digital drawing made using the p5.js library',
+    'img/covers/niheigo temp logo.png',
+    'https://kanjisketch.herokuapp',
+    'https://kanjisketch.herokuapp'
+  ],
   [
     'React Drum Machine',
     'A drum machine with pads that responds to key press events',
@@ -679,46 +719,109 @@ let jsProjects = [
   ]
 ];
 
+/*
+JavaScript
+- niheigonoawa c
+- kanji/canvas drawing c
+- animation page c
+- p5 kanji drawing c
+- website scroll mapping
+- p5 sound c
+- small vue app
+
+Python
+- regular expressions c
+- pygame
+- turtle drawing c
+- img processing c
+- data read/write c
+- css read/write c
+- mern boiler plate c
+- minecraft codes
+
+C/C++
+- writing files
+- synthesizer
+- arduino
+- microcontrollers
+
+*/
+
 let pyProjects = [
+  [
+    'MERN Stack Boilerplate',
+    "A group of files that automates the preparation of a MERN stack for development",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/mernboiler',
+    'https://github.com/crealu/mernboiler'
+  ],
+  [
+    'Read & Write CSS',
+    "A program that uses Python's regular expression module to scan an HTML document and rewrite the styling to a new CSS file",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/pysamples/blob/master/writeCSS.py',
+    'https://github.com/crealu/pysamples/blob/master/writeCSS.py'
+  ],
+  [
+    'Write Kanji JSON',
+    "A script that writes array and object data from a JavaScript file to a JSON file using regular expressions",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py',
+    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py'
+  ],
+  [
+    'Interactive Turtle Graphics',
+    "A program that utilizes the Python turtle module to draw custom graphics in response to key events",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/pysamples/blob/master/drawingClass.py',
+    'https://github.com/crealu/pysamples/blob/master/drawingClass.py'
+  ],
+  [
+    '10 Image Gradients',
+    "An image processing script that generates random gradients from an image file (jpg) and saves the gradient as a ",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
+    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
+  ],
   [
     'Sandal Prices Web Scrape',
     "A web scrape for the title and price of Sanuk's sandals. Saves data into a csv file",
-    'img/softimg/sidewalkSuferspy.jpg',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape',
     'https://repl.it/@crealu/Sidewalk-Surfers-Scrape'
   ],
   [
     'Object Oriented Basics',
     'A program that creates an employee using object-oriented methods',
-    'img/softimg/employeepy.jpg',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://repl.it/@crealu/Employee-Class',
     'https://repl.it/@crealu/Employee-Class'
   ],
   [
     'Find Longest Algorithm',
     'A small function that finds the longest word in a string',
-    'img/softimg/findlongest.png',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://github.com/crealu/pysamples/blob/master/findLongest.py',
     'https://github.com/crealu/pysamples/blob/master/findLongest.py'
   ],
   [
     'Linear Regression',
     'Data analytics walkthrough with numpy, sklearn and matplotlib',
-    'img/softimg/linearreg.png',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://github.com/crealu/pysamples/blob/master/linearRegression.py',
     'https://github.com/crealu/pysamples/blob/master/linearRegression.py'
   ],
   [
     'Writing a JavaScript File',
     'A python program that writes to a .js program',
-    'img/softimg/pywritejs.png',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://github.com/crealu/pysamples/blob/master/writeJS.py',
     'https://github.com/crealu/pysamples/blob/master/writeJS.py'
   ],
   [
     'Filter Excel Data',
     'Using the xlrd and xlwt modules for filtering excel data',
-    'img/softimg/filterexcel.png',
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://github.com/crealu/pysamples/blob/master/readSources.py',
     'https://github.com/crealu/pysamples/blob/master/readSources.py'
   ]
@@ -789,6 +892,7 @@ let photos = [
     images: [
       'casino',
       'cathedral',
+      'chigabeach',
       'furusato real',
       'furusato windmill',
       'latourell falls',
@@ -796,9 +900,10 @@ let photos = [
       'maroon bells',
       'nara 2',
       'nara park back',
+      'nikkoscape',
       'rainierbow',
+      'san francisco',
       'santa cruz',
-      'tp sunset',
       'twopaths',
       'whole pier'
     ]
@@ -813,9 +918,12 @@ let photos = [
       'ochanomizu gate',
       'ochanomizu ground',
       'odaiba 2',
-      'rainbowbashi 2',
+      'rainbow nonbridge',
       'rville falls',
       'rville falls 2',
+      'shinobazu skytree',
+      'train trails edit',
+      'yoyogi fountain gradients',
       'yoyogi longexp2'
     ]
   },
@@ -823,19 +931,24 @@ let photos = [
     collection: 'moon',
     images: [
       'berkeley',
+      'big sur',
+      'chichibu',
       'clouds',
       'ireland',
+      'ueno',
+      'uenomoon',
       'venice'
     ]
   },
   {
     collection: 'pattern',
     images: [
+      'ice',
+      'foliage',
+      'foliage speckles',
+      'dirt',
       'bs red shrubs',
       'calm water',
-      'dirt',
-      'foliage speckles',
-      'foliage',
       'glass',
       'grass',
       'rainbow'
@@ -856,9 +969,22 @@ let photos = [
       'snowy shadows',
       'starboard',
       'sun portal',
-      'sun surfer',
+      'tail of the snake skin',
       'temple sakura',
       'webside relaxing'
+    ]
+  },
+  {
+    collection: 'sunscapes',
+    images: [
+      'denver sunset',
+      'arisen',
+      'funabashi sunset',
+      'morning gradients',
+      'pre-sun',
+      'tp sunset',
+      'sun surfer',
+      'waikiki sun'
     ]
   }
 ];

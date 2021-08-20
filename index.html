@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141011562-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-141011562-1');
+	</script>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cameron Miller</title>
+	<title>CMM Portfolio</title>
+	<link rel="icon" size="310x310" href="img/star.png">
 	<link href="css/camstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/redesign.css" rel="stylesheet" type="text/css">
 	<link href="css/mobile.css" rel="stylesheet" type="text/css">
@@ -44,7 +53,7 @@
 		</div>
 		<div id="nav-mobile">
 			<ul class="nav-list-mobile">
-				<li class="nav-item-mobile selector">
+				<li class="nav-item-mobile selector no-top-border-mobile">
 					<a class="nav-link-mobile"  onclick="displayContent('About')">About</a>
 				</li>
 				<li class="nav-item-mobile selector">
@@ -53,14 +62,24 @@
 				<li class="nav-item-mobile selector">
 					<a class="nav-link-mobile" onclick="displayContent('Visual Arts')">Visual Arts</a>
 				</li>
-				<li class="nav-item-mobile">
+				<li class="nav-item-mobile no-top-border-mobile">
 					<ul class="media-list">
 						<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
-						<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
-						<li><a href="https://www.instagram.com/photaero/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img" id="ig-mobile"/></a></li>
-						<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
+						<!--<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>-->
+						<li><a href="https://www.instagram.com/phocamm/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img" id="ig-mobile"/></a></li>
+						<!--<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img alt="linkedin" <!--src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>-->
 						<li><a href="https://medium.com/@cameron.miller294" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/medium-icon-white-on-black.png" class="social-img medium-img"/></a></li>
 					</ul>
+				</li>
+				<li class="nav-item-mobile no-top-border-mobile">
+					<div class="language-toggle-mobile">
+						<div class="lang-btn-wrapper">
+							<p class="language-btn" onclick="changeLanguage('j')">JP</p>
+						</div>
+						<div class="lang-btn-wrapper">
+							<p class="language-btn" onclick="changeLanguage('e')">EN</p>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -69,38 +88,49 @@
 	<div class="other-sites">
 		<ul>
 			<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
-			<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>
-			<li><a href="https://www.instagram.com/photaero/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img"/></a></li>
-			<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>
+			<!--<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>-->
+			<li><a href="https://www.instagram.com/photcamm/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img"/></a></li>
+			<!--<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>-->
 			<li><a href="https://medium.com/@cameron.miller294" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/medium-icon-white-on-black.png" class="social-img medium-img" id="medium-desk"/></a></li>
 		</ul>
 	</div>
 
+	<div class="language-toggle">
+		<div class="lang-btn-wrapper">
+			<p class="language-btn" onclick="changeLanguage('j')">JP</p>
+		</div>
+		<div class="lang-btn-wrapper">
+			<p class="language-btn" onclick="changeLanguage('e')">EN</p>
+		</div>
+	</div>
+
+
+
 	<div class="desktop-view">
 		<div id="whats-new-wrapper" class="topic-content">
-			<h2 class="whats-new-title">What's new ?</h2>
+			<h2 class="whats-new-title whats-new-swap">What's new ?</h2>
 			<div class="whats-new-content">
 				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('niheigo')">
 					<div class="whats-new-col">
 						<p class="whats-new-subtitle">Niheigo</p>
 						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text">A kanji learning platform and full-stack challenge bundled into one. This is a side project where I combine a frontend testing interface with backend database architecture using custom JavaScript and node.js.</p>
+							<p class="whats-new-text whats-new-swap">A kanji learning platform and full-stack challenge bundled into one. This is a side project where a frontend testing interface is combined with a backend database architecture using custom JavaScript and Node.js. Users can customize their own kanji learning sets.</p>
 						</div>
 					</div>
 				</div>
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('tochigi')">
+				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('photcam')">
 					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Tochigi</p>
+						<p class="whats-new-subtitle">Phocam</p>
 						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text">A small edit of aerial footage tying together mountain clouds, soft sounds and falling water. The project is a creative effort at mixing musical and visual perspectives.</p>
+							<p class="whats-new-text whats-new-swap">A digital brand specializing in creative content. Initially a photojournalism project, Phocam has grown into a brand that offers services in photography, videography, and content creation. Highlights are posted under the Instagram handle, photaero.</p>
 						</div>
 					</div>
 				</div>
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('photaero')">
+				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('mernboiler')">
 					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Photaero</p>
+						<p class="whats-new-subtitle">Mernboiler</p>
 						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text">A growing travel photography portfolio and other pictures of miscellaneous flavor. Highlights are mostly posted under the IG handle, @photaero, but there is more to see on the website coming soon.</p>
+							<p class="whats-new-text whats-new-swap">A MERN stack web application boiler plate written in Python. The Python scripts create an application architecture that utilizes Node.js, Express, MongoDB in the backend and React in the frontend.</p>
 						</div>
 					</div>
 				</div>
@@ -112,15 +142,17 @@
 				<div class="about-wrapper">
 					<div class="col-of-1 cam-text-col">
 						<div class="project-title-wrapper">
-							<h3 class="project-title">Me</h3>
+							<h3 class="project-title about-swap">Me</h3>
 						</div>
 						<div class="project-text-wrapper">
-							<p class="project-text">I'm a software developer and visual artist.
+							<p class="project-text about-swap">Originally from the US, I'm a software developer and visual artist based in Tokyo, Japan.
 								With versatility as a natural strength, code and creative design are pursuits that coalesce well for me.
-								They are skills that I strive to continuously hone. Projects that I enjoy working on include building user interfaces, coding animations, running data analytics and recently, configuring database architecture.
-								When I'm not coding I'm usually socializing, playing music, or adventuring outside. Often times I explore new places to grow my photography portfolio.
-								Traveling is a big part of my life, too, and I'm always looking to expand my network as I learn and grow.
-								Let's connect!
+								They are skills that I strive to continuously hone.
+								Projects that I enjoy working on include building user interfaces, coding animations, designing and editing digital content, and, recently, configuring database architecture.
+								When I'm not coding I'm usually socializing, making music, or adventuring outside.
+								Oftentimes I explore new places to grow my photography portfolio.
+								Traveling is a big part of my life, too, and I'm always looking to expand my network.
+								Let's connect and collaborate!
 							</p>
 						</div>
 					</div>
@@ -131,10 +163,10 @@
 		<div id="software-projects" class="topic-content">
 			<div class="software-ui">
 				<div class="row options-row">
-					<h2 class="software-title">Software</h2>
+					<h2 class="software-title software-swap">Software</h2>
 					<div class="software-options-container">
 						<div class="col-of-4 options-wrapper" onclick="addProjectList('web')">
-							<h3 class="options-title">Web</h3>
+							<h3 class="options-title software-swap">Web</h3>
 						</div>
 						<div class="col-of-4 options-wrapper" onclick="addProjectList('js')">
 							<h3 class="options-title">JS</h3>
@@ -151,17 +183,20 @@
 				<div class="row project-row">
 					<div class="software-project-wrapper">
 						<div class="col-of-2 software-ui-left">
+							<a href="" target="_blank" class="software-view-link">
+								<div class="software-project-title-wrapper">
+									<h4 class="software-project-title"></h4>
+								</div>
+								<div class="software-project-text-wrapper">
+									<p class="software-project-text"></p>
+								</div>
+								<img class="software-img" src="img/covers/quinnsite.jpg"/>
+							</a>
 							<div class="software-img-wrapper">
-								<a href="" target="_blank" class="software-view-link">
-									<img class="software-img" src="img/covers/quinnsite.jpg"/>
-								</a>
-							</div>
-							<br>
-							<div class="software-project-text-wrapper">
-								<p class="software-project-text"></p>
+								<img class="software-img" src="img/covers/quinnsite.jpg"/>
 							</div>
 						</div>
-						<div class="col-of-2">
+						<div class="col-of-2 software-ui-right">
 							<div class="software-list-wrapper">
 								<ul class="software-list">
 									<li class="software-list-item">
@@ -178,16 +213,16 @@
 		<div id="design-projects" class="topic-content">
 			<div class="visual-arts-ui">
 				<div class="row options-row">
-					<h1 class="visual-title">Visual Arts</h1>
+					<h1 class="visual-title va-swap">Visual Arts</h1>
 					<div class="software-options-container">
 						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('designs')">
-							<h3 class="options-title-v">Design</h3>
+							<h3 class="options-title-v va-swap">Design</h3>
 						</div>
 						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('photos')">
-							<h3 class="options-title-v">Photo</h3>
+							<h3 class="options-title-v va-swap">Photo</h3>
 						</div>
 						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('videos')">
-							<h3 class="options-title-v">Video</h3>
+							<h3 class="options-title-v va-swap">Video</h3>
 						</div>
 					</div>
 				</div>
@@ -226,8 +261,18 @@
 		</div>
 	</div>
 
+	<div id="loader-modal">
+		<div class="loader-inner">
+			<img src="img/designs/sunsetFL.svg" id="loader-flower"/>
+		</div>
+	</div>
+
 
 	<script type="text/javascript" src="js/help.js"></script>
-	<script type="text/javascript" src="js/redesign.js"></script>
+	<script type="text/javascript" src="js/loading.js"></script>
+	<script type="text/javascript" src="js/projectData.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
+	<script type="text/javascript" src="js/modalSlide.js"></script>
+	<script type="text/javascript" src="js/refactor.js"></script>
 </body>
 </html>

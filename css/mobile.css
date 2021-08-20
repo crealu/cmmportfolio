@@ -1,7 +1,6 @@
 /* mobile styling */
 
 @media (max-width: 800px) and (min-width: 200px) {
-
   #flake-logo {
     width: 35px;
     left: 10px;
@@ -27,6 +26,47 @@
 
   .whats-new-wrapper {
     width: 90%;
+  }
+
+  .language-toggle {
+    display: none;
+  }
+
+  .no-top-border-mobile {
+    border: 1px solid rgba(134, 134, 134, 0);
+  }
+
+  .lang-btn-wrapper {
+    float: none;
+  }
+
+  .software-ui-left {
+    display: none;
+  }
+
+  .software-list {
+    height: unset;
+    overflow-y: visible;
+    padding-inline-start: 0px;
+    padding-left: 0px;
+  }
+
+  .software-list-item {
+    border-bottom: none;
+    border-top: 1px solid white;
+    height: 200px;
+  }
+
+  .list-item-title {
+    padding: 0px;
+    font-size: 22px;
+  }
+
+  .list-item-description {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 0px;
+    padding-top: 8px;
   }
 }
 
@@ -75,10 +115,6 @@
 
   .whats-new-text-wrapper {
     width: 100%;
-  }
-
-  .media-list {
-    top: 50px;
   }
 
   /* about */
@@ -136,6 +172,10 @@
     padding: 1% 0% 1% 0%;
   }
 
+  .software-ui-left {
+    display: none;
+  }
+
   .software-img-wrapper {
     height: 250px;
     overflow: hidden;
@@ -191,7 +231,6 @@
   }
 
   /* modal */
-
   #modal {
     top: 0%;
     left: 0%;
@@ -222,6 +261,10 @@
 
   .modal-img {
     padding: 0%;
+  }
+
+  .no-top-border-mobile {
+    border-top: none;
   }
 }
 
