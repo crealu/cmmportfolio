@@ -414,7 +414,43 @@ function createVASlide(va, theCase) {
   return imgSlide;
 }
 
+var ball = document.getElementsByClassName('dot')[0];
+var ballSmall = '20px';
+var ballBig = '100px';
+
+let mouseX = window.innerWidth/2;
+let mouseY = window.innerHeight/2;
+
+let ballX = window.innerWidth/2;
+let ballY = window.innerHeight/2;
+
+let speed = 0.06;
+
+function animate() {
+  let distX = mouseX - ballX;
+  let distY = mouseY - ballY;
+
+  ballX = ballX + (distX * speed);
+  ballY = ballY + (distY * speed);
+
+  ball.style.left = ballX + "px";
+  ball.style.top = ballY + "px";
+
+  requestAnimationFrame(animate);
+}
+
+function handleMouseMove(event) {
+  mouseX = event.pageX;
+  mouseY = event.pageY;
+  //checkBounds();
+}
+
+document.addEventListener('mousemove', handleMouseMove);
+
+
 function photoModal(category, phos) {
+  ball.style.display = 'block';
+  animate();
   let modal = document.getElementById('modal');
   let modalInner = document.getElementById('modal-inner');
   let modalTitle = createEl("h3");
@@ -428,59 +464,6 @@ function photoModal(category, phos) {
   //addFilmSlide(filmRoll);
   //addFilmSlide1(filmRoll);
   filmSlide3(filmRoll);
-  /*
-  document.body.addEventListener('mousedown', event => {
-    console.log(event.pageX);
-  })*/
-
-/*
-  let draggingCoordinates = [
-    [mousePositionInitial = pageXi (mousedown), translateFilmI = 0],
-    [mousePositionChange = pageXC (mousemove), translateFilmC = pageXi - pageXC]
-  ]
-*/
-/*
-  let mouseI, mouseF;
-  let mOffset = 0;
-  let elOffset = 0;
-  let isDown = false;
-
-  let dragCoordinates = {
-    mouseInitial: 0,
-    mouseChange: 0,
-    elInitial: 0,
-    elChange: 0
-  };
-
-  document.addEventListener('mousedown', event => {
-    isDown = true;
-    mouseI = event.pageX;
-  });
-
-  document.addEventListener('mouseup', event => {
-    isDown = false;
-    mouseF = event.pageX;
-    console.log(
-      'mouse initial: ' + mouseI,
-      'mouse final: ' + mouseF,
-      'mouse offset: ' + mOffset,
-      'element offset: ' + elOffset
-    );
-  }, true);
-
-  document.addEventListener('mousemove', event => {
-    event.preventDefault();
-    if (isDown) {
-      mOffset = mouseI - event.pageX;
-      if (mOffset > 0) {
-        elOffset = elOffset - Math.abs(mOffset);
-      } else {
-        elOffset = elOffset + Math.abs(mOffset);
-      }
-      filmRoll.style.transform = 'translateX(' + (elOffset / 2) + 'px)';
-    }
-  }, true);
-*/
 
   modalTitle.appendChild(titleText);
   modalInner.appendChild(modalTitle);
@@ -497,13 +480,17 @@ function photoModal(category, phos) {
 
   let imgSlides = gebcn('img-slide');
   for (let z = 0; z < imgSlides.length; z++) {
-    imgSlides[z].style.display = 'inline-block';
+    imgSlides[z].style.display = 'none';
   }
+
+  imgSlides[0].style.display = 'block';
 
   let kanjiSlideNum = gebcn('kanji-slide-num')[0];
   kanjiSlideNum.dataset.slidenum = 0;
 
   //imgSlides[0].style.display = 'block';
+
+
 
   modal.style.overflowY = 'scroll';
   modal.style.display = 'block';
@@ -678,6 +665,7 @@ function closeModal() {
   clear(modalInner);
   modal.style.display = 'none';
   modal.style.animation = null;
+  ball.style.display = 'none';
 }
 
 function homeLoadFunctions() {

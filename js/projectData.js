@@ -310,12 +310,10 @@ let photos = [
     images: [
       'bs light',
       'meguro aerial',
-      'meguro spark',
       'ochanomizu ground',
       'odaiba 2',
       'rainbow nonbridge',
       'rville falls',
-      'rville falls 2',
       'shinobazu skytree',
       'train trails edit',
       'yoyogi fountain gradients',
@@ -328,11 +326,8 @@ let photos = [
       'berkeley',
       'big sur',
       'chichibu',
-      'clouds',
       'ireland',
-      'ueno',
-      'uenomoon',
-      'venice'
+      'uenomoon'
     ]
   },
   {
@@ -340,11 +335,9 @@ let photos = [
     images: [
       'ice',
       'foliage',
-      'foliage speckles',
       'dirt',
       'bs red shrubs',
       'calm water',
-      'glass',
       'grass',
       'rainbow'
     ]
@@ -356,10 +349,6 @@ let photos = [
       'blue eyed bird',
       'chichibu gates',
       'cordillera cow',
-      'deermeme',
-      'lopez foliage',
-      'meguro lanterns',
-      'sakura and river',
       'sea iguana',
       'snowy shadows',
       'starboard',
@@ -374,10 +363,8 @@ let photos = [
     images: [
       'denver sunset',
       'arisen',
-      'funabashi sunset',
       'morning gradients',
       'pre-sun',
-      'tp sunset',
       'sun surfer',
       'waikiki sun'
     ]
