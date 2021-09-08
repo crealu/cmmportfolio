@@ -737,6 +737,11 @@ body {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  z-index: 202;
+}
+
+#closes:hover .dot {
+  display: none;
 }
 
 @keyframes openUp {
@@ -768,6 +773,11 @@ body {
   top: 10px;
   color: yellow;
   font-size: 20px;
+  z-index: 202;
+}
+
+.closes:hover .dot {
+  display: none;
 }
 
 @keyframes zoom {
@@ -862,6 +872,7 @@ body {
   left: 0%;
   right: 0%;
   top: 400px;
+  z-index: 201;
 }
 
 .nav-btn-wrapper {

@@ -446,11 +446,31 @@ function handleMouseMove(event) {
 }
 
 document.addEventListener('mousemove', handleMouseMove);
-
-
+var called = 0;
 function photoModal(category, phos) {
   ball.style.display = 'block';
-  animate();
+  var theClose = document.getElementById('close');
+  theClose.addEventListener('mouseover', () => {
+    ball.style.opacity = '0';
+    var hideIt = setTimeout(500, () => {
+      ball.style.display = 'none';
+    });
+    clearTimeout(hideIt);
+    console.log('over close');
+  });
+
+  theClose.addEventListener('mouseout', () => {
+    ball.style.display = 'block';
+    var showIt = setTimeout(500, () => {
+      ball.style.opacity = '1';
+    });
+    clearTimeout(showIt);
+    console.log('left close');
+  });
+  if (called == 0) {
+    animate();
+    called++;
+  }
   let modal = document.getElementById('modal');
   let modalInner = document.getElementById('modal-inner');
   let modalTitle = createEl("h3");
@@ -487,10 +507,6 @@ function photoModal(category, phos) {
 
   let kanjiSlideNum = gebcn('kanji-slide-num')[0];
   kanjiSlideNum.dataset.slidenum = 0;
-
-  //imgSlides[0].style.display = 'block';
-
-
 
   modal.style.overflowY = 'scroll';
   modal.style.display = 'block';
