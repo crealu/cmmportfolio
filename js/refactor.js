@@ -226,7 +226,7 @@ function displayContent(topic) {
       break;
   }
 
-  window.history.pushState('', topic, topic);
+  //window.history.pushState('', topic, topic);
 
   let bars = gebcn('bars');
   if (window.innerWidth <= 800) {
@@ -446,7 +446,7 @@ function handleMouseMove(event) {
 }
 
 document.addEventListener('mousemove', handleMouseMove);
-var called = 0;
+var called = 1;
 function photoModal(category, phos) {
   ball.style.display = 'block';
   var theClose = document.getElementById('close');
