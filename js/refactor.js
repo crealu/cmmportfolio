@@ -119,20 +119,15 @@ function switchNavBtn() {
   }
 }
 
+let whatsNewSites = {
+  niheigo: 'https://niheigo.herokuapp.com',
+  mernboiler: 'https://github.com/crealu/mernboiler',
+  phocam: 'https://crealu.github.io/phocam/',
+  lshaders: 'https://lightningshaders.herokuapp.com/'
+}
+
 function whatsNewTab(wn) {
-  let newAddress = '';
-  switch (wn) {
-    case 'niheigo':
-      newAddress = 'https://niheigo.herokuapp.com';
-      break;
-    case 'mernboiler':
-      newAddress = 'https://github.com/crealu/mernboiler';
-      break;
-    case 'phocam':
-      newAddress = 'https://crealu.github.io/phocam/';
-      break;
-  }
-  window.open(newAddress, '_blank');
+  window.open(whatsNewSites[wn], '_blank')
 }
 
 function displayProjects(div) {
@@ -344,7 +339,7 @@ function fillProject(p, projN) {
       break;
   }
   let newImgSrc = projArr[projN][2];
-  console.log(projArr);
+//  console.log(projArr);
 
   let newSoftwareLink = projArr[projN][3];
   //softwareImg.src = newImgSrc;
@@ -352,7 +347,7 @@ function fillProject(p, projN) {
   softwareTitle.innerHTML = projArr[projN][0];
   softwareText.innerHTML = projArr[projN][1];
 
-  console.log(softViewLink.href);
+  //console.log(softViewLink.href);
 }
 
 /* va js */
@@ -448,7 +443,7 @@ function handleMouseMove(event) {
 document.addEventListener('mousemove', handleMouseMove);
 var called = 1;
 function photoModal(category, phos) {
-  ball.style.display = 'block';
+  ball.style.display = 'none';
   var theClose = document.getElementById('close');
   theClose.addEventListener('mouseover', () => {
     ball.style.opacity = '0';
@@ -456,19 +451,19 @@ function photoModal(category, phos) {
       ball.style.display = 'none';
     });
     clearTimeout(hideIt);
-    console.log('over close');
+    //console.log('over close');
   });
 
   theClose.addEventListener('mouseout', () => {
-    ball.style.display = 'block';
+    ball.style.display = 'none';
     var showIt = setTimeout(500, () => {
       ball.style.opacity = '1';
     });
     clearTimeout(showIt);
-    console.log('left close');
+    //console.log('left close');
   });
   if (called == 0) {
-    animate();
+    //animate();
     called++;
   }
   let modal = document.getElementById('modal');

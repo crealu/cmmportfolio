@@ -23,7 +23,7 @@
 	<div class="navigation-bar">
 		<a id="home-link" href="">
 			<img src="img/designs/sunsetFL.svg" id="flake-logo"/>
-			<h1 id="cameron-miller">CMM</h1>
+			<!-- <h1 id="cameron-miller">CMM</h1> -->
 		</a>
 		<div class="nav-list-container">
 			<ul class="nav-items-list">
@@ -65,7 +65,7 @@
 				</li>
 				<li class="nav-item-mobile no-top-border-mobile">
 					<ul class="media-list">
-						<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
+						<!-- <li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li> -->
 						<!--<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>-->
 						<li><a href="https://www.instagram.com/phocamm/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img" id="ig-mobile"/></a></li>
 						<!--<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img alt="linkedin" <!--src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>-->
@@ -88,15 +88,18 @@
 
 	<div class="other-sites">
 		<ul>
-			<li><a href="https://github.com/crealu" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="social-img"/></a></li>
+			<li><a href="https://github.com/crealu" target="_blank"><img src="http://assets.stickpng.com/images/5847f98fcef1014c0b5e48c0.png" class="social-img"/></a></li>
 			<!--<li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/></a></li>-->
 			<li><a href="https://www.instagram.com/photcamm/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img ig-img"/></a></li>
 			<!--<li><a href="https://www.linkedin.com/in/cameron-miller-35211094/" target="_blank"><img src="http://www.moteriai.lt/wp-content/uploads/2017/10/linkedin_circle_black-256.png" class="social-img"/></a></li>-->
-			<li><a href="https://medium.com/@cameron.miller294" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/medium-icon-white-on-black.png" class="social-img medium-img" id="medium-desk"/></a></li>
+			<!-- <li><a href="https://medium.com/@cameron.miller294" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/medium-icon-white-on-black.png" class="social-img medium-img" id="medium-desk"/></a></li> -->
 		</ul>
 	</div>
 
 	<div class="language-toggle">
+		<!-- <div class="lang-btn-wrapper">
+			<p class="language-btn" onclick="changeLanguage('s')">SP</p>
+		</div> -->
 		<div class="lang-btn-wrapper">
 			<p class="language-btn" onclick="changeLanguage('j')">JP</p>
 		</div>
@@ -105,25 +108,23 @@
 		</div>
 	</div>
 
-
-
 	<div class="desktop-view">
 		<div id="whats-new-wrapper" class="topic-content">
 			<h2 class="whats-new-title whats-new-swap">What's new ?</h2>
 			<div class="whats-new-content">
+				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('lshaders')">
+					<div class="whats-new-col">
+						<p class="whats-new-subtitle">Lightning Shaders</p>
+						<div class="whats-new-text-wrapper">
+							<p class="whats-new-text whats-new-swap">An interactive environment for learning OpenGL Shading Language (GLSL) via WebGL. Users can edit their shader programs, recompile, view, and save their work. Interface thoughtfully built with React. Backend configured with Express, Node, and MongoDB.</p>
+						</div>
+					</div>
+				</div>
 				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('niheigo')">
 					<div class="whats-new-col">
 						<p class="whats-new-subtitle">Niheigo</p>
 						<div class="whats-new-text-wrapper">
 							<p class="whats-new-text whats-new-swap">A kanji learning platform and full-stack challenge bundled into one. This is a side project where a frontend testing interface is combined with a backend database architecture using custom JavaScript and Node.js. Users can customize their own kanji learning sets.</p>
-						</div>
-					</div>
-				</div>
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('photcam')">
-					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Phocam</p>
-						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text whats-new-swap">A digital brand specializing in creative content. Initially a photojournalism project, Phocam has grown into a brand that offers services in photography, videography, and content creation. Highlights are posted under the Instagram handle, photaero.</p>
 						</div>
 					</div>
 				</div>
@@ -146,10 +147,11 @@
 							<h3 class="project-title about-swap">Me</h3>
 						</div>
 						<div class="project-text-wrapper">
-							<p class="project-text about-swap">Originally from the US, I'm a software developer and visual artist based in Tokyo, Japan.
+							<p class="project-text about-swap">I'm a software developer and visual artist based in New York.
 								With versatility as a natural strength, code and creative design are pursuits that coalesce well for me.
 								They are skills that I strive to continuously hone.
-								Projects that I enjoy working on include building user interfaces, coding animations, designing and editing digital content, and, recently, configuring database architecture.
+								Projects that I enjoy working on include building user interfaces, streamlining the display of data, editing digital content, and, recently, configuring backend architecture.
+								Although I feel most comfortable on the frontend, I'm drawn to working across the entire strength and feel that I excel in a Full Stack position.
 								When I'm not coding I'm usually socializing, making music, or adventuring outside.
 								Oftentimes I explore new places to grow my photography portfolio.
 								Traveling is a big part of my life, too, and I'm always looking to expand my network.
@@ -181,7 +183,7 @@
 					</div>
 				</div>
 
-				<div class="row project-row">
+				<div class="row project-row soft-proj-details">
 					<div class="software-project-wrapper">
 						<div class="col-of-2 software-ui-left">
 							<a href="" target="_blank" class="software-view-link">
