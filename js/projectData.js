@@ -159,10 +159,10 @@ C/C++
 let pyProjects = [
   [
     'MERN Stack Boilerplate',
-    "A group of files that automates the preparation of a MERN stack for development.",
+    "A file that automates the preparation of a MERN full stack application for development.",
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/mernboiler',
-    'https://github.com/crealu/mernboiler'
+    'https://github.com/crealu/mern-boilerplate',
+    'https://github.com/crealu/mern-boilerplate'
   ],
   [
     'Web Automate',
