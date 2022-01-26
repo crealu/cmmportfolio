@@ -120,14 +120,12 @@ function switchNavBtn() {
 }
 
 let whatsNewSites = {
-  niheigo: 'https://niheigo.herokuapp.com',
+  niheigo: 'https://www.niheigo.com',
   mernboiler: 'https://github.com/crealu/mern-boilerplate',
-  phocam: 'https://crealu.github.io/phocam/',
-  lshaders: 'https://lightningshaders.herokuapp.com/',
-  gengoatvista: 'https://gengoatvista.herokuapp.com/'
+  phocam: 'https://crealu.github.io/phocam',
+  lshaders: 'https://lightningshaders.herokuapp.com',
+  gengoatvista: 'https://gengoatvista.herokuapp.com'
 }
-
-//A kanji learning platform and full-stack challenge bundled into one. This is a side project where a frontend testing interface is combined with a backend database architecture using custom JavaScript and Node.js. Users can customize their own kanji learning sets.
 
 function whatsNewTab(wn) {
   window.open(whatsNewSites[wn], '_blank')
