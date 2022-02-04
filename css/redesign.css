@@ -235,8 +235,9 @@ body {
 }
 
 .ig-img {
-  width: 40px;
-}
+  width: 42px;
+  left: -4px;
+}}
 
 #ig-mobile {
   top: 3px;
