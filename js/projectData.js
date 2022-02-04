@@ -57,6 +57,16 @@ let websiteProjects = [
 
 let jsProjects = [
   [
+    'React Deth App',
+    '',
+    '',
+    'https://github.com/crealu/react-eth-dapp',
+    'https://github.com/crealu/react-eth-dapp'
+  ],
+  [
+
+  ],
+  [
     'Niheigo',
     'Kanji learning application built with Express, Node, and MongoDB. Vanilla JavaScript code is used for the front-end user interface.',
     'img/covers/niheigo temp logo.png',
@@ -168,29 +178,29 @@ let pyProjects = [
     'Web Automate',
     "A program that uses Python's regular expression module to scan an HTML document and rewrite the styling to a new CSS file.",
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/writeCSS.py',
-    'https://github.com/crealu/pysamples/blob/master/writeCSS.py'
+    'https://github.com/crealu/py-writing/blob/master/writeCSS.py',
+    'https://github.com/crealu/py-writing/blob/master/writeCSS.py'
   ],
   [
     'Data Coversion',
     "A script that writes array and object data from a JavaScript file to a JSON file using regular expressions.",
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py',
-    'https://github.com/crealu/pysamples/blob/master/writeKanjiJSON.py'
+    'https://github.com/crealu/py-writing/blob/master/writeKanjiJSON.py',
+    'https://github.com/crealu/py-writing/blob/master/writeKanjiJSON.py'
   ],
   [
     'Image Processing',
     "An image processing script that generates random gradients from an image file (jpg) and saves the gradient as a separate file.",
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
-    'https://github.com/crealu/pysamples/blob/master/gradient_text.py',
+    'https://github.com/crealu/py-writing/blob/master/gradient_text.py',
+    'https://github.com/crealu/py-writing/blob/master/gradient_text.py',
   ],
   [
     'Digital Drawing with Classes',
     "A program that utilizes the Python turtle module to draw custom graphics in response to key events.",
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/drawingClass.py',
-    'https://github.com/crealu/pysamples/blob/master/drawingClass.py'
+    'https://github.com/crealu/py-writing/blob/master/drawingClass.py',
+    'https://github.com/crealu/py-writing/blob/master/drawingClass.py'
   ],
   [
     'Sandal Prices Web Scrape',
@@ -210,22 +220,22 @@ let pyProjects = [
     'Find Longest Algorithm',
     'A small function that finds the longest word in a string.',
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/findLongest.py',
-    'https://github.com/crealu/pysamples/blob/master/findLongest.py'
+    'https://github.com/crealu/py-writing/blob/master/findLongest.py',
+    'https://github.com/crealu/py-writing/blob/master/findLongest.py'
   ],
   [
     'Linear Regression',
     'Data analytics walkthrough with numpy, sklearn and matplotlib.',
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/linearRegression.py',
-    'https://github.com/crealu/pysamples/blob/master/linearRegression.py'
+    'https://github.com/crealu/py-writing/blob/master/linearRegression.py',
+    'https://github.com/crealu/py-writing/blob/master/linearRegression.py'
   ],
   [
     'Filter Excel Data',
     'Using the xlrd and xlwt modules for filtering excel data.',
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/pysamples/blob/master/readSources.py',
-    'https://github.com/crealu/pysamples/blob/master/readSources.py'
+    'https://github.com/crealu/py-writing/blob/master/readSources.py',
+    'https://github.com/crealu/py-writing/blob/master/readSources.py'
   ]
 ];
 
