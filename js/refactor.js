@@ -112,11 +112,11 @@ function switchNavBtn() {
       bars[2].style.background = '#353535';
   }
 
-  if (homeImg.style.opacity == '0') {
-    for (var q = 0; q < bars.length; q++) {
-      bars[q].style.background = '#353535';
-    }
-  }
+  // if (homeImg.style.opacity == '0') {
+  //   for (var q = 0; q < bars.length; q++) {
+  //     bars[q].style.background = '#353535';
+  //   }
+  // }
 }
 
 let whatsNewSites = {
