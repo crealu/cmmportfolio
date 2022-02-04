@@ -35,12 +35,12 @@ let websiteProjects = [
     'img/covers/photaero-site.png',
     'https://crealu.github.io/enjoyeng'
   ],
-  [
-    'Uniqtable',
-    'Japan travel industry startup company website.',
-    'img/covers/uniqtable-site.png',
-    'http://uniqtable.xsrv.jp/wp/'
-  ],
+  // [
+  //   'Uniqtable',
+  //   'Japan travel industry startup company website.',
+  //   'img/covers/uniqtable-site.png',
+  //   'http://uniqtable.xsrv.jp/wp/'
+  // ],
   [
     'Holistic Pracitioner',
     "Custom-built website for a holisitic practitioner's growing business.",
@@ -58,13 +58,17 @@ let websiteProjects = [
 let jsProjects = [
   [
     'React Deth App',
-    '',
+    'A React application that connects to the Ethereum network via the Web3 websocket provider and Infura.',
     '',
     'https://github.com/crealu/react-eth-dapp',
     'https://github.com/crealu/react-eth-dapp'
   ],
   [
-
+    'Lightning Shaders',
+    'A fullstack application interface for creating and experimenting with WebGL shader programs.',
+    '',
+    'https://lightningshaders.herokuapp.com/',
+    ''
   ],
   [
     'Niheigo',
