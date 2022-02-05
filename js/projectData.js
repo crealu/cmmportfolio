@@ -68,7 +68,7 @@ let jsProjects = [
     'A fullstack application interface for creating and experimenting with WebGL shader programs.',
     '',
     'https://lightningshaders.herokuapp.com/',
-    ''
+    'https://lightningshaders.herokuapp.com/'
   ],
   [
     'Niheigo',
@@ -177,6 +177,13 @@ let pyProjects = [
     'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
     'https://github.com/crealu/mern-boilerplate',
     'https://github.com/crealu/mern-boilerplate'
+  ],
+  [
+    'MCPI Playground',
+    'Playable and teachable Python programs with MCPI and Minecraft.',
+    '',
+    'https://github.com/crealu/mcpi-playground',
+    'https://github.com/crealu/mcpi-playground'
   ],
   [
     'Web Automate',
