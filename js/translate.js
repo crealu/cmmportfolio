@@ -1,6 +1,3 @@
-// language data
-
-// website text
 let wst = {
   navigation: {
     e: ['About', 'Software', 'Visual Arts'],

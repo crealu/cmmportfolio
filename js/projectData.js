@@ -35,12 +35,6 @@ let websiteProjects = [
     'img/covers/photaero-site.png',
     'https://crealu.github.io/enjoyeng'
   ],
-  // [
-  //   'Uniqtable',
-  //   'Japan travel industry startup company website.',
-  //   'img/covers/uniqtable-site.png',
-  //   'http://uniqtable.xsrv.jp/wp/'
-  // ],
   [
     'Holistic Pracitioner',
     "Custom-built website for a holisitic practitioner's growing business.",
@@ -141,34 +135,6 @@ let jsProjects = [
     'https://codepen.io/lucidcode6/pens/public?grid_type=list'
   ]
 ];
-
-/*
-JavaScript
-- niheigonoawa c
-- kanji/canvas drawing c
-- animation page c
-- p5 kanji drawing c
-- website scroll mapping
-- p5 sound c
-- small vue app
-
-Python
-- regular expressions c
-- pygame
-- turtle drawing c
-- img processing c
-- data read/write c
-- css read/write c
-- mern boiler plate c
-- minecraft codes
-
-C/C++
-- writing files
-- synthesizer
-- arduino
-- microcontrollers
-
-*/
 
 let pyProjects = [
   [

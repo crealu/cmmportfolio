@@ -1,10 +1,7 @@
-// redesign.js
 function checkViewport() {
   let w = window;
   let wWidth = w.innerWidth;
   let wHeight = w.innerHeight;
-
-  //console.log(wWidth, wHeight);
   resizeHomeImg(wWidth, wHeight);
 }
 
@@ -30,8 +27,6 @@ function resizeHomeImg(wW, wH) {
   if (wW <= '800') {
     homeImg.style.transform = 'translateX(-' + (1090 - wW) + 'px)';
   }
-
-  //console.log(homeImg);
 }
 
 function toggleNavBackground(yn) {
@@ -111,12 +106,6 @@ function switchNavBtn() {
       bars[2].style.opacity = '0';
       bars[2].style.background = '#353535';
   }
-
-  // if (homeImg.style.opacity == '0') {
-  //   for (var q = 0; q < bars.length; q++) {
-  //     bars[q].style.background = '#353535';
-  //   }
-  // }
 }
 
 let whatsNewSites = {
@@ -212,7 +201,6 @@ function displayContent(topic) {
       addProjectList('js');
       fillProject("js", 0);
       let option1 = gebcn('options-wrapper')[0];
-      //option1.style.background = 'rgba(250, 250, 250, 0.4)';
       option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
       break;
     case 'Visual Arts':
@@ -221,8 +209,6 @@ function displayContent(topic) {
       addVisualProjectList('photos');
       break;
   }
-
-  //window.history.pushState('', topic, topic);
 
   let bars = gebcn('bars');
   if (window.innerWidth <= 800) {
@@ -240,7 +226,6 @@ function displayContent(topic) {
   }
 }
 
-/* soft js */
 function projectListItem(ti, projectDescription) {
   this.newLI = createEl("li");
   this.titleH = createEl("h3");
@@ -264,7 +249,6 @@ function addProjectList(p) {
   ];
   console.log(p);
 
-  // option tab number
   let optNum;
   let projArr;
   switch (p) {
@@ -340,18 +324,13 @@ function fillProject(p, projN) {
       break;
   }
   let newImgSrc = projArr[projN][2];
-//  console.log(projArr);
 
   let newSoftwareLink = projArr[projN][3];
-  //softwareImg.src = newImgSrc;
   softViewLink.setAttribute('href', newSoftwareLink);
   softwareTitle.innerHTML = projArr[projN][0];
   softwareText.innerHTML = projArr[projN][1];
-
-  //console.log(softViewLink.href);
 }
 
-/* va js */
 function addVisualProjectList(vp) {
   let visualList = gebcn('visual-list')[0];
   clear(visualList);
@@ -438,7 +417,6 @@ function animate() {
 function handleMouseMove(event) {
   mouseX = event.pageX;
   mouseY = event.pageY;
-  //checkBounds();
 }
 
 document.addEventListener('mousemove', handleMouseMove);
@@ -452,7 +430,6 @@ function photoModal(category, phos) {
       ball.style.display = 'none';
     });
     clearTimeout(hideIt);
-    //console.log('over close');
   });
 
   theClose.addEventListener('mouseout', () => {
@@ -461,10 +438,8 @@ function photoModal(category, phos) {
       ball.style.opacity = '1';
     });
     clearTimeout(showIt);
-    //console.log('left close');
   });
   if (called == 0) {
-    //animate();
     called++;
   }
   let modal = document.getElementById('modal');
@@ -476,9 +451,6 @@ function photoModal(category, phos) {
 
   modalTitle.classList.add('modal-title');
   filmRoll.classList.add('modal-film-roll');
-
-  //addFilmSlide(filmRoll);
-  //addFilmSlide1(filmRoll);
   filmSlide3(filmRoll);
 
   modalTitle.appendChild(titleText);
@@ -640,7 +612,6 @@ function createImgSlide(c, i, j) {
   theImg.setAttribute("src", "img/photos/" + c + "/" + i + ".jpg");
   theImg.classList.add('modal-img');
   imgSlide.classList.add('img-slide');
-  //imgSlide.setAttribute('onmousedown', "slideImg(" + j + ")");
   imgSlide.appendChild(theImg);
   return imgSlide;
 }
@@ -649,7 +620,6 @@ function slideCaro(direction) {
   let testSlides = gebcn('img-slide');
   let testSlideLen = testSlides.length;
   let kanjiSlideNum = gebcn('kanji-slide-num')[0];
-  //let testHere = document.getElementById('gets-test');
 
   if (direction == 'next' && kanjiSlideNum.dataset.slidenum != testSlideLen - 1) {
     kanjiSlideNum.dataset.slidenum++;
@@ -661,11 +631,6 @@ function slideCaro(direction) {
 
   for (let j = 0; j < testSlides.length; j++) {
     testSlides[j].style.display = 'none';
-    //testSlides[j].style.animation = 'psah 1s ease 0s forwards';
-
-    // need to separate the previous slide anmiation to come before slideCaro('next') is called
-    //testSlides[slideNum - 1].style.animation = 'psah 1s ease 0s forwards';
-
     testSlides[slideNum].style.display = 'block';
     testSlides[slideNum].style.animation = 'nsar 1s ease 0s forwards';
   }
@@ -689,12 +654,3 @@ function homeLoadFunctions() {
 }
 
 window.onload = homeLoadFunctions();
-
-/* mobile screen sizes
-large tablets around 1000px
-medium tablets around 767px
-smart phones around 479px
-
-greatest height for iphones is 896px so lets rounnd to 900px
-
- */
