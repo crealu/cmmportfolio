@@ -19,6 +19,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: hidden;
+  background: #110f15;
 }
 
 .navigation-bar {
@@ -194,6 +195,7 @@ body {
   z-index: 100;
   left: 30px;
   padding-left: 4px;
+  filter: invert(1);
 }
 
 .other-sites ul {
