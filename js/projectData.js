@@ -1,6 +1,45 @@
+const projects = [
+  [
+    'Phocamm',
+    'A brand focused on digital content creation by the means of photography, videography, and graphic design.',
+    'img/covers/photaero-site.png',
+    'https://crealu.github.io/phocam/'
+  ],
+  [
+    'Niheigo',
+    'A web-based application that gives users a smoother approach to learning kanji.',
+    'img/covers/niheigo temp logo.png',
+    'https://niheigo.herokuapp.com'
+  ],
+  [
+    'Lightning Shaders',
+    'A fullstack application interface for creating and experimenting with WebGL shader programs.',
+    'https://lightningshaders.herokuapp.com/',
+    'https://lightningshaders.herokuapp.com/'
+  ],
+  [
+    'Awapop',
+    'A kanji learning game built with React.',
+    'img/covers/niheigo temp logo.png',
+    'https://niheigo.herokuapp.com'
+  ],
+  [
+    'MERN Stack Boilerplate',
+    "A file that automates the preparation of a MERN full stack application for development.",
+    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
+    'https://github.com/crealu/mern-boilerplate'
+  ],
+  [
+    'Clean Story',
+    'A codebase architected to outline the essentials game components of an RPG game.',
+    '',
+    'https://github.com/crealu/clean-story'
+  ]
+];
+
 let websiteProjects = [
   [
-    'Phocam',
+    'Phocamm',
     'A brand focused on digital content creation by the means of photography, videography, and graphic design.',
     'img/covers/photaero-site.png',
     'https://crealu.github.io/phocam/'
