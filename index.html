@@ -50,10 +50,10 @@
 					<a class="nav-link-mobile"  onclick="displayContent('About')">About</a>
 				</li>
 				<li class="nav-item-mobile selector">
-					<a class="nav-link-mobile" onclick="displayContent('Software')">Projects</a>
+					<a class="nav-link-mobile" onclick="displayContent('Projects')">Projects</a>
 				</li>
 				<li class="nav-item-mobile selector">
-					<a class="nav-link-mobile" onclick="displayContent('Visual Arts')">Connect</a>
+					<a class="nav-link-mobile" onclick="displayContent('Connect')">Connect</a>
 				</li>
 				<li class="nav-item-mobile no-top-border-mobile">
 					<ul class="media-list">
@@ -115,37 +115,7 @@
 	</div>
 
 	<div class="desktop-view">
-		<div id="whats-new-wrapper" class="topic-content">
-			<h2 class="whats-new-title whats-new-swap">What's new ?</h2>
-			<div class="whats-new-content">
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('lshaders')">
-					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Lightning Shaders</p>
-						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text whats-new-swap">An interactive environment for learning GLSL via WebGL. Users can recompile, edit, and save their shader programs. Interface thoughtfully built with React and served with Express, Node, and MongoDB backend.</p>
-						</div>
-					</div>
-				</div>
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('gengoatvista')">
-					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Gengo At Vista</p>
-						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text whats-new-swap">Gengo At Vista is a language learning interface idea inpired by the book <i>Spanish At Sight</i>. It is built with React, hosted on Heroku and served on top of a Node backend.</p>
-						</div>
-					</div>
-				</div>
-				<div class="whats-new-col-3 col-of-3" onclick="whatsNewTab('mernboiler')">
-					<div class="whats-new-col">
-						<p class="whats-new-subtitle">Mernboiler</p>
-						<div class="whats-new-text-wrapper">
-							<p class="whats-new-text whats-new-swap">A MERN stack web application boilerplate written in Bash. One script creates an application architecture that utilizes Node, Express, MongoDB, and React.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="about-content" class="topic-content about-wrapper">
+		<div id="about-content" class="topic-content">
 			<div class="row">
 				<div class="about-wrapper">
 					<div class="col-of-1 cam-text-col">
@@ -154,11 +124,11 @@
 						</div>
 						<div class="project-text-wrapper">
 							<p class="project-text about-swap">I'm a programmer, visual artist, and musician based in New York.
-								Code and creative design are pursuits that coalesce well for me.
-								They are skills that I strive to continuously hone.
-								When I'm not coding I'm usually socializing, making music, or spontaneously adventuring.
-								I like to explore new places and grow my photography portfolio.
+								<br>
+								When I'm not coding I'm usually socializing, doing something musical, or exploring new places.
+								I have a growing my photography portfolio that tends to get updated with each new adventure.
 								Traveling is a big part of my life, too, and I'm always looking to expand my network.
+								<br>
 								Let's connect!
 							</p>
 						</div>
@@ -174,95 +144,31 @@
 						<div class="project-title-wrapper">
 							<h3 class="project-title about-swap">Projects</h3>
 						</div>
+						<div class="project-row" id="project-content-row">
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- <div id="software-projects" class="topic-content">
-			<div class="software-ui">
-				<div class="row options-row">
-					<h2 class="software-title software-swap">Software</h2>
-					<div class="software-options-container">
-						<div class="col-of-4 options-wrapper" onclick="addProjectList('js')">
-							<h3 class="options-title">JS</h3>
+		<div id="connect-content" class="topic-content">
+			<div class="row">
+				<div class="about-wrapper">
+					<div class="col-of-1 cam-text-col">
+						<div class="project-title-wrapper">
+							<h3 class="project-title about-swap">Connect</h3>
 						</div>
-						<div class="col-of-4 options-wrapper" onclick="addProjectList('py')">
-							<h3 class="options-title">Python</h3>
+						<div class="project-row">
+							<p class="software-project-text">
+								cameron.miller294@gmail.com
+							</p>
 						</div>
-						<div class="col-of-4 options-wrapper" onclick="addProjectList('cpp')">
-							<h3 class="options-title">C/C++</h3>
-						</div>
-						<div class="col-of-4 options-wrapper" onclick="addProjectList('web')">
-							<h3 class="options-title software-swap">Web</h3>
-						</div>
-					</div>
-				</div>
-
-				<div class="row project-row soft-proj-details">
-					<div class="software-project-wrapper">
-						<div class="col-of-2 software-ui-left">
-							<a href="" target="_blank" class="software-view-link">
-								<div class="software-project-title-wrapper">
-									<h4 class="software-project-title"></h4>
-								</div>
-								<div class="software-project-text-wrapper">
-									<p class="software-project-text"></p>
-								</div>
-							</a>
-							<div class="software-img-wrapper">
-							</div>
-						</div>
-						<div class="col-of-2">
-							<div class="software-list-wrapper">
-								<ul class="software-list">
-									<li class="software-list-item">
-										<h4 class="list-item-title"></h4>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<div id="design-projects" class="topic-content">
-			<div class="visual-arts-ui">
-				<div class="row options-row">
-					<h1 class="visual-title va-swap">Visual Arts</h1>
-					<div class="software-options-container">
-						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('designs')">
-							<h3 class="options-title-v va-swap">Design</h3>
-						</div>
-						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('photos')">
-							<h3 class="options-title-v va-swap">Photo</h3>
-						</div>
-						<div class="col-of-3 options-wrapper-v" onclick="addVisualProjectList('videos')">
-							<h3 class="options-title-v va-swap">Video</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="visual-project-wrapper">
-						<ul class="visual-list">
-							<li class="visual-list-item">
-								<div class="visual-img-wrapper">
-									<img class="visual-img-photo" src=""/>
-								</div>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="home-img-content">
-		<div class="home-img-wrapper">
-			<img src="css/suncam_4.jpg" class="home-img"/>
-		</div>
-	</div> -->
 
 	<div id="modal">
 		<button id="close" onclick="closeModal()">X</button>

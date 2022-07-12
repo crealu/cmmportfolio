@@ -2,32 +2,32 @@ function checkViewport() {
   let w = window;
   let wWidth = w.innerWidth;
   let wHeight = w.innerHeight;
-  resizeHomeImg(wWidth, wHeight);
+  // resizeHomeImg(wWidth, wHeight);
 }
 
-function resizeHomeImg(wW, wH) {
-  let homeImg = gebcn('home-img')[0];
-  let desktopView = gebcn('desktop-view')[0];
-
-  if (wW >= 1400) {
-    homeImg.style.width = wW.toString() + 'px';;
-  }
-
-  if (wH >= 766) {
-    homeImg.style.height = wH.toString() + 'px';
-  } else if (wH < 760 && wW > 700) {
-    console.log(wH, wH - 550);
-    desktopView.style.top = (wH - 550).toString() + 'px';
-  }
-
-  if (900 < wW <= 1400 && wH >= 600) {
-    homeImg.style.transform = 'translateX(-' + (1400 - wW) + 'px)';
-  }
-
-  if (wW <= '800') {
-    homeImg.style.transform = 'translateX(-' + (1090 - wW) + 'px)';
-  }
-}
+// function resizeHomeImg(wW, wH) {
+//   let homeImg = gebcn('home-img')[0];
+//   let desktopView = gebcn('desktop-view')[0];
+//
+//   if (wW >= 1400) {
+//     homeImg.style.width = wW.toString() + 'px';;
+//   }
+//
+//   if (wH >= 766) {
+//     homeImg.style.height = wH.toString() + 'px';
+//   } else if (wH < 760 && wW > 700) {
+//     console.log(wH, wH - 550);
+//     desktopView.style.top = (wH - 550).toString() + 'px';
+//   }
+//
+//   if (900 < wW <= 1400 && wH >= 600) {
+//     homeImg.style.transform = 'translateX(-' + (1400 - wW) + 'px)';
+//   }
+//
+//   if (wW <= '800') {
+//     homeImg.style.transform = 'translateX(-' + (1090 - wW) + 'px)';
+//   }
+// }
 
 function toggleNavBackground(yn) {
   let nav = gebcn('navigation-bar')[0];
@@ -123,11 +123,11 @@ function whatsNewTab(wn) {
 function displayProjects(div) {
   let contentArray = [
     'about-content',
-    'software-projects',
-    'design-projects'
+    'projects-content',
+    'connect-content'
   ];
 
-  let desProj = gebi('design-projects');
+  // let desProj = gebi('design-projects');
 
   if (contentArray.indexOf(div) != -1) {
     let ind = contentArray.indexOf(div);
@@ -187,26 +187,26 @@ function toggleSoftVis(tog) {
 }
 
 function displayContent(topic) {
-  let whatsNew = gebi('whats-new-wrapper');
+  let whatsNew = gebi('about-content');
   fadeHide(whatsNew);
 
   switch (topic) {
     case 'About':
-      toggleSoftVis(2);
+      // toggleSoftVis(2);
       displayProjects('about-content');
       break;
-    case 'Software':
-      toggleSoftVis(1);
-      displayProjects('software-projects');
-      addProjectList('js');
-      fillProject("js", 0);
+    case 'Projects':
+      // toggleSoftVis(1);
+      displayProjects('projects-content');
+      // addProjectList();
+      // fillProject("js", 0);
       let option1 = gebcn('options-wrapper')[0];
-      option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
+      // option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
       break;
-    case 'Visual Arts':
-      toggleSoftVis(0);
-      displayProjects('design-projects');
-      addVisualProjectList('photos');
+    case 'Connect':
+      // toggleSoftVis(0);
+      displayProjects('connect-content');
+      // addVisualProjectList('photos');
       break;
   }
 
@@ -234,102 +234,33 @@ function projectListItem(ti, projectDescription) {
   this.descT = textNode(projectDescription);
 }
 
-function addProjectList(p) {
-  let softwareList = gebcn('software-list')[0];
-  let softwareImg = gebcn('software-img')[0];
-  clear(softwareList);
+const projectContentRow = document.getElementById('project-content-row');
 
-  let itemLI, itemH, itemTitle, itemP, itemDesc;
-  let attrArr = [
-    [itemLI, 'newLI'],
-    [itemH, 'titleH'],
-    [itemTitle, 'titleT'],
-    [itemP, 'descP'],
-    [itemDesc, 'descT']
-  ];
-  console.log(p);
+function addProjectList() {
+  projects.forEach(project => {
+    const div = document.createElement("div");
+    const title = document.createElement("h3");
+    const description = document.createElement("p");
+    const link = document.createElement("a");
 
-  let optNum;
-  let projArr;
-  switch (p) {
-    case 'js':
-      projArr = jsProjects;
-      optNum = 0;
-      break;
-    case 'py':
-      projArr = pyProjects;
-      optNum = 1;
-      break;
-    case 'cpp':
-      projArr = cppProjects;
-      optNum = 2;
-      break;
-    case 'web':
-      projArr = websiteProjects;
-      optNum = 1;
-      break;
-  }
+    div.classList.add('software-project-wrapper');
+    title.textContent = project[0];
+    title.classList.add('software-project-title');
+    description.textContent = project[1];
+    description.classList.add('software-project-text');
+    link.href = project[3];
+    link.classList.add('software-project-link');
+    link.setAttribute('target', '_blank');
 
-  let opt = gebcn('options-wrapper');
-  for (var x = 0; x < opt.length; x++) {
-    opt[x].style.boxShadow = '';
-  }
-  opt[optNum].style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
+    div.appendChild(title);
+    div.appendChild(description);
+    link.appendChild(div);
 
-  for (var z = 0; z < projArr.length; z++) {
-    let newItem = new projectListItem(projArr[z][0], projArr[z][1]);
-    for (var y = 0; y < attrArr.length; y++) {
-      attrArr[y][0] = newItem[attrArr[y][1]];
-    }
+    projectContentRow.appendChild(link);
+  });
+};
 
-    attrArr[1][0].classList.add('list-item-title');
-    attrArr[1][0].appendChild(attrArr[2][0]);
-
-    attrArr[0][0].classList.add('software-list-item');
-    attrArr[0][0].appendChild(attrArr[1][0]);
-
-
-    if (window.innerWidth <= 800) {
-      attrArr[3][0].classList.add('list-item-description');
-      attrArr[3][0].appendChild(attrArr[4][0]);
-      attrArr[0][0].appendChild(attrArr[3][0]);
-      attrArr[0][0].setAttribute('onclick', 'window.open("' + projArr[z][3] + '", "_blank")');
-    } else {
-      attrArr[0][0].setAttribute('onmouseover', 'fillProject("' + p + '", ' + z + ')');
-    }
-
-    softwareList.appendChild(attrArr[0][0]);
-  }
-}
-
-function fillProject(p, projN) {
-  let softwareImg = gebcn('software-img')[0];
-  let softViewLink = gebcn('software-view-link')[0];
-  let softwareText = gebcn('software-project-text')[0];
-  let softwareTitle = gebcn('software-project-title')[0];
-  let projArr;
-
-  switch (p) {
-    case 'web':
-      projArr = websiteProjects;
-      break;
-    case 'js':
-      projArr = jsProjects;
-      break;
-    case 'py':
-      projArr = pyProjects;
-      break;
-    case 'cpp':
-      projArr = cppProjects;
-      break;
-  }
-  let newImgSrc = projArr[projN][2];
-
-  let newSoftwareLink = projArr[projN][3];
-  softViewLink.setAttribute('href', newSoftwareLink);
-  softwareTitle.innerHTML = projArr[projN][0];
-  softwareText.innerHTML = projArr[projN][1];
-}
+addProjectList();
 
 function addVisualProjectList(vp) {
   let visualList = gebcn('visual-list')[0];
