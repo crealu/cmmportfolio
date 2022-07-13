@@ -161,7 +161,7 @@
   }
 
   .software-project-wrapper {
-    height: 150px;
+    height: 200px;
     box-shadow: none;
   }
 
@@ -190,6 +190,10 @@
 
   .software-project-text-wrapper {
     height: 50px;
+  }
+
+  .software-project-text {
+    font-size: 16px;
   }
 
   .email-text {
