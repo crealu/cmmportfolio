@@ -127,8 +127,6 @@ function displayProjects(div) {
     'connect-content'
   ];
 
-  // let desProj = gebi('design-projects');
-
   if (contentArray.indexOf(div) != -1) {
     let ind = contentArray.indexOf(div);
     contentArray.splice(ind, 1);
@@ -192,37 +190,30 @@ function displayContent(topic) {
 
   switch (topic) {
     case 'About':
-      // toggleSoftVis(2);
       displayProjects('about-content');
       break;
     case 'Projects':
-      // toggleSoftVis(1);
       displayProjects('projects-content');
-      // addProjectList();
-      // fillProject("js", 0);
-      let option1 = gebcn('options-wrapper')[0];
-      // option1.style.boxShadow = 'inset 0px 0px 16px 4px #ffffff';
+      // let option1 = gebcn('options-wrapper')[0];
       break;
     case 'Connect':
-      // toggleSoftVis(0);
       displayProjects('connect-content');
-      // addVisualProjectList('photos');
       break;
   }
 
-  let bars = gebcn('bars');
+  // let bars = gebcn('bars');
   if (window.innerWidth <= 800) {
     mobileMenu();
     checkViewport();
-    if (topic == 'About' || topic == 'Software') {
-      toggleNavBackground('yes');
-    } else if (topic == 'Visual Arts') {
-        toggleNavBackground('no');
-        for (var z = 0; z < bars.length; z++) {
-          bars[z].style.background = '#353535';
-        }
-        console.log('switch to vis');
-    }
+    // if (topic == 'About' || topic == 'Software') {
+    //   toggleNavBackground('yes');
+    // } else if (topic == 'Visual Arts') {
+    //     toggleNavBackground('no');
+    //     for (var z = 0; z < bars.length; z++) {
+    //       bars[z].style.background = '#353535';
+    //     }
+    //     console.log('switch to vis');
+    // }
   }
 }
 

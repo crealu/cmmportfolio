@@ -22,6 +22,10 @@
     display: none;
   }
 
+  .about-swap {
+    text-align: center;
+  }
+
   .whats-new-wrapper {
     width: 90%;
   }
@@ -80,7 +84,7 @@
   }
 
   .navigation-bar {
-    background: linear-gradient(180deg, rgba(139, 161, 198, 1) 50%, rgba(159, 179, 200, 0));
+    /* background: linear-gradient(180deg, rgba(139, 161, 198, 1) 50%, rgba(159, 179, 200, 0)); */
     height: 80px;
   }
 
@@ -157,7 +161,7 @@
   }
 
   .software-project-wrapper {
-    height: 775px;
+    height: 150px;
     box-shadow: none;
   }
 
@@ -186,6 +190,10 @@
 
   .software-project-text-wrapper {
     height: 50px;
+  }
+
+  .email-text {
+    text-align: center;
   }
 
   /* visual arts */
