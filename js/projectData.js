@@ -18,6 +18,12 @@ const projects = [
     'https://crealu.github.io/phocam/'
   ],
   [
+    'BOTW UI',
+    'A user interface inspired by the game menu used in Zelda: Breath of The Wild'
+    '',
+    'https://botw-ui.herokuapp.com'
+  ],
+  [
     'Niheigo',
     'Web-based application for learning Japanese kanji and vocab',
     'img/covers/niheigo temp logo.png',
