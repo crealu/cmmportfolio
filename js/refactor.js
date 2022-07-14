@@ -1,34 +1,3 @@
-function checkViewport() {
-  let w = window;
-  let wWidth = w.innerWidth;
-  let wHeight = w.innerHeight;
-  // resizeHomeImg(wWidth, wHeight);
-}
-
-// function resizeHomeImg(wW, wH) {
-//   let homeImg = gebcn('home-img')[0];
-//   let desktopView = gebcn('desktop-view')[0];
-//
-//   if (wW >= 1400) {
-//     homeImg.style.width = wW.toString() + 'px';;
-//   }
-//
-//   if (wH >= 766) {
-//     homeImg.style.height = wH.toString() + 'px';
-//   } else if (wH < 760 && wW > 700) {
-//     console.log(wH, wH - 550);
-//     desktopView.style.top = (wH - 550).toString() + 'px';
-//   }
-//
-//   if (900 < wW <= 1400 && wH >= 600) {
-//     homeImg.style.transform = 'translateX(-' + (1400 - wW) + 'px)';
-//   }
-//
-//   if (wW <= '800') {
-//     homeImg.style.transform = 'translateX(-' + (1090 - wW) + 'px)';
-//   }
-// }
-
 function toggleNavBackground(yn) {
   let nav = gebcn('navigation-bar')[0];
   let backgroundStyle;
@@ -204,7 +173,7 @@ function displayContent(topic) {
   // let bars = gebcn('bars');
   if (window.innerWidth <= 800) {
     mobileMenu();
-    checkViewport();
+    // checkViewport();
     // if (topic == 'About' || topic == 'Software') {
     //   toggleNavBackground('yes');
     // } else if (topic == 'Visual Arts') {
@@ -227,7 +196,7 @@ function projectListItem(ti, projectDescription) {
 
 const projectContentRow = document.getElementById('project-content-row');
 
-function addProjectList() {
+(function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
     const title = document.createElement("h3");
@@ -235,23 +204,22 @@ function addProjectList() {
     const link = document.createElement("a");
 
     div.classList.add('software-project-wrapper');
-    title.textContent = project[0];
     title.classList.add('software-project-title');
-    description.textContent = project[1];
+    title.textContent = project[0];
     description.classList.add('software-project-text');
-    link.href = project[3];
+    description.textContent = project[1];
     link.classList.add('software-project-link');
+    link.href = project[3];
     link.setAttribute('target', '_blank');
 
     div.appendChild(title);
     div.appendChild(description);
     link.appendChild(div);
-
     projectContentRow.appendChild(link);
   });
-};
+})();
 
-addProjectList();
+// addProjectList();
 
 function addVisualProjectList(vp) {
   let visualList = gebcn('visual-list')[0];
@@ -285,7 +253,6 @@ function createVASlide(va, theCase) {
   let imgSlide = createEl("div");
   let theImg = createEl("img");
   let srcAttribute = '';
-
   let theTitle, titleText;
 
   imgSlide.classList.add('visual-ui-img-wrapper');
@@ -317,7 +284,6 @@ var ballBig = '100px';
 
 let mouseX = window.innerWidth/2;
 let mouseY = window.innerHeight/2;
-
 let ballX = window.innerWidth/2;
 let ballY = window.innerHeight/2;
 
@@ -329,7 +295,6 @@ function animate() {
 
   ballX = ballX + (distX * speed);
   ballY = ballY + (distY * speed);
-
   ball.style.left = ballX + "px";
   ball.style.top = ballY + "px";
 
@@ -568,11 +533,11 @@ function closeModal() {
 }
 
 function homeLoadFunctions() {
-  checkViewport();
-  fadeShowWhatsNew()
+  // checkViewport();
+  // fadeShowWhatsNew()
   let abtCnt = gebi('about-content');
   fadeHide(abtCnt);
-  window.addEventListener('resize', checkViewport);
+  // window.addEventListener('resize', checkViewport);
 }
 
 window.onload = homeLoadFunctions();
