@@ -7,7 +7,7 @@ const projects = [
   ],
   [
     'Clean Story',
-    'Codebase containing game components and story logic for basic RPG built with SDL and C++'
+    'Codebase containing game components and story logic for basic RPG built with SDL and C++',
     '',
     'https://github.com/crealu/clean-story'
   ],
@@ -19,7 +19,7 @@ const projects = [
   ],
   [
     'BOTW UI',
-    'A user interface inspired by the game menu used in Zelda: Breath of The Wild'
+    'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
     '',
     'https://botw-ui.herokuapp.com'
   ],

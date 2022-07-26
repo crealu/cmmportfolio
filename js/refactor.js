@@ -196,7 +196,7 @@ function projectListItem(ti, projectDescription) {
 
 const projectContentRow = document.getElementById('project-content-row');
 
-(function addProjectList() {
+function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
     const title = document.createElement("h3");
@@ -217,9 +217,9 @@ const projectContentRow = document.getElementById('project-content-row');
     link.appendChild(div);
     projectContentRow.appendChild(link);
   });
-})();
+};
 
-// addProjectList();
+addProjectList();
 
 function addVisualProjectList(vp) {
   let visualList = gebcn('visual-list')[0];
