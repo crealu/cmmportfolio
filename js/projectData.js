@@ -1,5 +1,17 @@
 const projects = [
   [
+    'Niheigo',
+    'Web-based application for learning Japanese kanji and vocab',
+    'img/covers/niheigo temp logo.png',
+    'https://niheigo.herokuapp.com'
+  ],
+  [
+    'Jahmon',
+    'Music tabulating app for guitarists',
+    '',
+    'https://jahmon.herokuapp.com'
+  ],
+  [
     'Dotmate',
     'Logo visualization generator built with p5.js and React',
     '',
@@ -7,7 +19,7 @@ const projects = [
   ],
   [
     'Clean Story',
-    'Codebase containing game components and story logic for basic RPG built with SDL and C++',
+    'Codebase containing game components and story logic for basic RPG. Built with SDL and C++',
     '',
     'https://github.com/crealu/clean-story'
   ],
@@ -15,19 +27,13 @@ const projects = [
     'Phocamm',
     'Visual arts project focusing on aerial and long exposure photography/videography',
     'img/covers/photaero-site.png',
-    'https://crealu.github.io/phocam/'
+    'https://www.instagram.com/phocamm/?hl=en'
   ],
   [
     'BOTW UI',
     'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
     '',
     'https://botw-ui.herokuapp.com'
-  ],
-  [
-    'Niheigo',
-    'Web-based application for learning Japanese kanji and vocab',
-    'img/covers/niheigo temp logo.png',
-    'https://niheigo.herokuapp.com'
   ],
   [
     'Lightning Shaders',
