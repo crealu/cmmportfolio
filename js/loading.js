@@ -1,16 +1,15 @@
 function loadingBar() {
   let loader = document.getElementById('loader-modal');
-
   let i = 0;
   let id = setInterval(frame, 1000);
   function frame() {
     i++;
-    if (i >= 3) {
+    if (i >= 2) {
       let loadFlower = document.getElementById('loader-flower');
       loadFlower.style.transition = '0.5s';
       loadFlower.style.opacity = '0';
     }
-    if (i >= 3.75) {
+    if (i >= 2.75) {
       clearInterval(id);
       closeLoader();
     }
@@ -20,7 +19,6 @@ function loadingBar() {
 function closeLoader() {
   let loader = document.getElementById('loader-modal');
   loader.style.opacity = '0';
-
   let i = 0;
   let id = setInterval(frame, 1000);
 
