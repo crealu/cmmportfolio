@@ -1,7 +1,7 @@
 let wst = {
   navigation: {
-    e: ['About', 'Software', 'Visual Arts'],
-    j: ['自身', 'ソフトウエア', 'ビジュアルアツ']
+    e: ['About', 'Software', 'Connect'],
+    j: ['自身', 'ソフトウエア', 'コネクト']
   },
 
   whatsNew: {

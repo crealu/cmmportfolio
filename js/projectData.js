@@ -3,7 +3,7 @@ const projects = [
     'Niheigo',
     'Web-based application for learning Japanese kanji and vocab',
     'img/covers/niheigo temp logo.png',
-    'https://niheigo.herokuapp.com'
+    'https://www.niheigo.com'
   ],
   [
     'Jahmon',
@@ -18,19 +18,13 @@ const projects = [
     'https://dotmate.herokuapp.com/'
   ],
   [
-    'Clean Story',
+    'Storyline',
     'Codebase containing game components and story logic for basic RPG. Built with SDL and C++',
     '',
     'https://github.com/crealu/clean-story'
   ],
   [
-    'Phocamm',
-    'Visual arts project focusing on aerial and long exposure photography/videography',
-    'img/covers/photaero-site.png',
-    'https://www.instagram.com/phocamm/?hl=en'
-  ],
-  [
-    'BOTW UI',
+    'Breath Of The Wild UI',
     'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
     '',
     'https://botw-ui.herokuapp.com'
@@ -42,34 +36,16 @@ const projects = [
     'https://lightningshaders.herokuapp.com/'
   ],
   [
-    'JSON Renderer',
-    'Application that displays expandable JSON data',
-    '',
-    'https://json-renderer.herokuapp.com/'
-  ],
-  [
     'Awapop',
     'Kanji learning game and Japanese typing practice built with React',
     'img/covers/niheigo temp logo.png',
     'https://niheigo.herokuapp.com'
   ],
   [
-    'MERN Stack Boilerplate',
-    "Boilerplate codebase for a MERN full stack web application",
-    'https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png',
-    'https://github.com/crealu/mern-boilerplate'
-  ],
-  [
     'KIT Group Ryokans',
     'Main and branch websites for Japanese ryokan group, KIT',
     'img/covers/urushitei-site.png',
     'https://www.kyoto-ryokan-sakura.com/'
-  ],
-  [
-    'CodePen Projects',
-    'Curious about more projects? Check my CodePen profile for live examples and code samples',
-    'img/softimg/calculator.jpg',
-    'https://codepen.io/lucidcode6/pens/public?grid_type=list'
   ]
 ];
 
