@@ -7,6 +7,7 @@
   --body-cubez: cubic-bezier(.09,.66,.68,1.00);
   --wh-cubez: cubic-bezier(.09,.66,.68,1.00);
   --wh-trans: 1.5s;
+  --bg1: #110f15;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background: #110f15;
+  background: var(--bg1);
 }
 
 .navigation-bar {
@@ -238,7 +239,7 @@ body {
 .ig-img {
   width: 42px;
   left: -4px;
-}}
+}
 
 #ig-mobile {
   top: 3px;
@@ -499,6 +500,7 @@ body {
   padding: 1% 5% 2% 5%;
   margin: 10px 0px 30px 0px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .software-project-wrapper:hover {
@@ -508,10 +510,10 @@ body {
 .software-project-link {
   text-decoration: none;
 }
-
+/*
 .software-project-link:hover .software-project-text {
   text-decoration: underline;
-}
+}*/
 
 /* .software-img-wrapper {
   height: 250px;
@@ -734,28 +736,52 @@ body {
 }
 
 /* modal */
-#modal {
+.project-modal {
   display: none;
   position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 800px;
-  background: white;
-  color: #535353;
+  background: var(--bg1);
+  color: white;
   z-index: 103;
   overflow-x: scroll;
+  transition: 0.25s ease;
 }
 
-#close {
+.project-modal-inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.project-modal-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.project-modal-description {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0;
+  color: white;
+  line-height: 45px;
+  letter-spacing: 0.8px;
+}
+
+.close {
   position: absolute;
   float: right;
+  top: -20px;
+  right: 0px;
   padding: 20px;
-  z-index: 200;
-  background: none;
-  color: black;
-  font-weight: 400;
   border: none;
+  background: none;
+  color: white;
+  font-weight: 400;
   font-size: 24px;
   cursor: pointer;
   z-index: 202;
