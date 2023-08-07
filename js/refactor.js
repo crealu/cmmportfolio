@@ -137,15 +137,42 @@ function openProjectModal(project) {
   projectModalTitle.innerHTML = project[0];
   projectModalDescription.innerHTML = project[4];
   projectExternalLink.href = project[3];
-
-  fadeShow(projectModal);
+  revealModal(project);
+  // fadeShow(projectModal);
 }
 
 function closeProjectModal() {
-  clear(projectModalTitle);
-  clear(projectModalDescription);
-  clear(projectExternalLink);
-  fadeHide(projectModal);
+  hideModal();
+  // fadeHide(projectModal);
+}
+
+function revealModal() {
+  let i = 0;
+  let id = setInterval(frame, 500);
+  projectModal.style.display = 'block';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      projectModal.style.top = '0px';
+      projectModal.style.opacity = '1';
+    }
+  }
+}
+
+function hideModal() {
+  let i = 0;
+  let id = setInterval(frame, 500);
+  projectModal.style.opacity = '0';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      projectModal.style.display = 'none';
+      clear(projectModalTitle);
+      clear(projectModalDescription);
+    }
+  }
 }
 
 function fadeShow(el) {
