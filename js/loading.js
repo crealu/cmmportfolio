@@ -4,12 +4,12 @@ function loadingBar() {
   let id = setInterval(frame, 1000);
   function frame() {
     i++;
-    if (i >= 2) {
+    if (i >= 1) {
       let loadFlower = document.getElementById('loader-flower');
       loadFlower.style.transition = '0.5s';
       loadFlower.style.opacity = '0';
     }
-    if (i >= 2.75) {
+    if (i >= 1.75) {
       clearInterval(id);
       closeLoader();
     }

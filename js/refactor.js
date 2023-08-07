@@ -2,6 +2,17 @@ const bars = document.getElementsByClassName('bar');
 const navBtn = document.getElementById('nav-btn');
 const mobileNav = document.getElementById('nav-mobile');
 const projectContentRow = document.getElementById('project-content-row');
+const aboutContent = document.getElementById('about-content');
+const projectModal = document.getElementsByClassName('project-modal')[0];
+const projectModalTitle = document.getElementsByClassName('project-modal-title')[0];
+const projectModalDescription = document.getElementsByClassName('project-modal-description')[0];
+const projectExternalLink = document.getElementsByClassName('external-link')[0];
+
+function clear(element) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
+}
 
 function openMenu() {
   if (!(mobileNav.style.display == 'block')) {
@@ -91,13 +102,12 @@ function projectListItem(ti, projectDescription) {
   this.descT = document.createTextNode(projectDescription);
 }
 
-
 function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
     const title = document.createElement("h3");
     const description = document.createElement("p");
-    const link = document.createElement("a");
+    const link = document.createElement("div");
 
     div.classList.add('software-project-wrapper');
     title.classList.add('software-project-title');
@@ -105,8 +115,14 @@ function addProjectList() {
     description.classList.add('software-project-text');
     description.textContent = project[1];
     link.classList.add('software-project-link');
-    link.href = project[3];
+    // link.href = project[3];
     link.setAttribute('target', '_blank');
+    link.addEventListener('click', () => {
+      const modalTitle = link.children[0].children[0].textContent;
+      openProjectModal(project);
+      console.dir(link.children[0].children[0]);
+      // console.log(link.children[0].textContent);
+    })
 
     div.appendChild(title);
     div.appendChild(description);
@@ -117,6 +133,20 @@ function addProjectList() {
 
 addProjectList();
 
+function openProjectModal(project) {
+  projectModalTitle.innerHTML = project[0];
+  projectModalDescription.innerHTML = project[4];
+  projectExternalLink.href = project[3];
+
+  fadeShow(projectModal);
+}
+
+function closeProjectModal() {
+  clear(projectModalTitle);
+  clear(projectModalDescription);
+  clear(projectExternalLink);
+  fadeHide(projectModal);
+}
 
 function fadeShow(el) {
   let i = 0;
@@ -146,7 +176,6 @@ function fadeHide(el) {
 }
 
 function fadeHide2(el1, el2) {
-  console.log(el1, el2);
   let i = 0;
   let id = setInterval(frame, 500);
   el1.style.opacity = '0';
@@ -162,7 +191,6 @@ function fadeHide2(el1, el2) {
 }
 
 function homeLoadFunctions() {
-  let aboutContent = document.getElementById('about-content');
   fadeShow(aboutContent);
 }
 
