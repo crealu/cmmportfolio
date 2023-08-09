@@ -359,6 +359,61 @@ body {
   letter-spacing: 0.8px;
 }
 
+.hats-text {
+/*  text-decoration: underline;*/
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+.project-hats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hats-list {
+  color: white;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: max-content;
+}
+
+.hats-list li {
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  width: 150px;
+}
+
+@keyframes shimmer {
+  0% {
+    color: lightblue;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    color: lightblue;
+    filter: hue-rotate(360deg);
+  }
+}
+
+.connect-span {
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: lightblue;
+  filter: hue-rotate(0deg);
+  animation: 2s shimmer 0s ease infinite;
+}
+
+.sparkle {
+  
+}
+
+.connect-span:hover {
+  color: lightblue;
+}
+
 /* whats new */
 #whats-new-wrapper {
   width: 80%;
