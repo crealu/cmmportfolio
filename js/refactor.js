@@ -2,7 +2,7 @@ const bars = document.getElementsByClassName('bar');
 const navBtn = document.getElementById('nav-btn');
 const mobileNav = document.getElementById('nav-mobile');
 const projectContentRow = document.getElementById('project-content-row');
-const aboutContent = document.getElementById('about-content');
+const firstContent = document.getElementById('projects-content');
 const projectModal = document.getElementsByClassName('project-modal')[0];
 const projectModalTitle = document.getElementsByClassName('project-modal-title')[0];
 const projectModalDescription = document.getElementsByClassName('project-modal-description')[0];
@@ -218,7 +218,7 @@ function fadeHide2(el1, el2) {
 }
 
 function homeLoadFunctions() {
-  fadeShow(aboutContent);
+  fadeShow(firstContent);
 }
 
 window.onload = homeLoadFunctions();
