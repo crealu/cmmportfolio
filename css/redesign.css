@@ -843,6 +843,7 @@ body {
   transition: 0.5s ease;
   transition-delay: 0s;
   top: -100px;
+  margin-bottom: 40px;
 }
 
 .project-modal-inner {
