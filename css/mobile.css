@@ -1,3 +1,25 @@
+@media (max-width: 1025px) and (min-width: 900px) {
+  .project-text-wrapper {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 200px) {
+  .software-project-link {
+    flex-direction: column;
+  }
+
+  .software-project-wrapper {
+    padding: 2% 5% 2% 0%;
+    margin-left: 0px;
+  }
+
+  .project-modal-inner {
+    width: 85%;
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 800px) and (min-width: 200px) {
   #flake-logo {
     width: 35px;
@@ -278,11 +300,6 @@
   }
 }
 
-@media (max-width: 1025px) and (min-width: 800px) {
-  .project-text-wrapper {
-    overflow: scroll;
-  }
-}
 
 @media (max-width: 530px) and (min-width: 400px) {
   .software-img-wrapper {
