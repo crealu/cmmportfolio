@@ -1,8 +1,8 @@
 const projects = [
   [
     'Niheigo',
-    'Web-based application for learning Japanese kanji and vocab',
-    'img/covers/niheigo temp logo.png',
+    'Web-based application for learning Japanese kanji and vocabulary',
+    'img/niheigo1.png',
     'https://www.niheigo.com',
     `Niheigo is a platform that contains a suite of tools designed to 
     help Japanese language learners better understand kanji. It 
@@ -15,7 +15,7 @@ const projects = [
   [
     'Jahmon',
     'Music tabulating app for guitarists',
-    '',
+    'img/jahmon.png',
     'https://jahmon.herokuapp.com',
     `Jahmon is an application meant for guitarists and songwriters. With an interactive fretboard, 
     chord sequence customizer, and lyric module, users can create any song that comes to their imagination.
@@ -24,7 +24,7 @@ const projects = [
   [
     'Dotmate',
     'Logo visualization generator built with p5.js and React',
-    '',
+    'img/dotmate.png',
     'https://dotmate.herokuapp.com/',
     `Dotmate was a really fun side project that I threw together for an specific application.
     It features p5.js (what used to be Processing) and implements the animation UI within
@@ -34,7 +34,7 @@ const projects = [
   [
     'Storyline',
     'Codebase containing game components and story logic for basic RPG. Built with SDL and C++',
-    '',
+    'img/storyline.png',
     'https://github.com/crealu/clean-story',
     `In an effort to kill two birds with one stone (desigining a tasked based RPG game while
     improving my C++ chops) I created Storyline. Although I decided to sunset this project after I
@@ -44,7 +44,7 @@ const projects = [
   [
     'Breath Of The Wild UI',
     'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
-    '',
+    'img/botw.png',
     'https://botw-ui.herokuapp.com',
     `After one too many long nights of playing Switch, I decided to recreate the (game) 
     UI of Zelda: Breath of The Wild with React and Three.js. What a fun challenge this was!
@@ -54,7 +54,7 @@ const projects = [
   [
     'Lightning Shaders',
     'Interface for creating and experimenting with WebGL shader programs',
-    'https://lightningshaders.herokuapp.com/',
+    'img/lightningshaders.png',
     'https://lightningshaders.herokuapp.com/',
     `I designed this shader programming interface to better understand the lines of code
     within shader programs. Being a graphics nerd and not having a very strong foundation in it,
