@@ -105,27 +105,33 @@ function projectListItem(ti, projectDescription) {
 function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
+    const link = document.createElement("div");
     const title = document.createElement("h3");
     const description = document.createElement("p");
-    const link = document.createElement("div");
+    const image = document.createElement("img");
+    const imageWrapper = document.createElement("div");
 
     div.classList.add('software-project-wrapper');
     title.classList.add('software-project-title');
     title.textContent = project[0];
     description.classList.add('software-project-text');
     description.textContent = project[1];
+
     link.classList.add('software-project-link');
-    // link.href = project[3];
     link.setAttribute('target', '_blank');
     link.addEventListener('click', () => {
-      const modalTitle = link.children[0].children[0].textContent;
+      // const modalTitle = link.children[0].children[0].textContent;
       openProjectModal(project);
-      console.dir(link.children[0].children[0]);
-      // console.log(link.children[0].textContent);
     })
 
+    imageWrapper.classList.add('software-project-img-wrapper');
+    image.classList.add('software-project-img');
+    image.src = project[2];
+
+    imageWrapper.appendChild(image);
     div.appendChild(title);
     div.appendChild(description);
+    link.appendChild(imageWrapper);
     link.appendChild(div);
     projectContentRow.appendChild(link);
   });

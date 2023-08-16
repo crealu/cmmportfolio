@@ -64,7 +64,7 @@ const projects = [
   [
     'KIT Group Ryokans',
     'Main and branch websites for Japanese ryokan group, KIT',
-    'img/covers/urushitei-site.png',
+    'img/kit.png',
     'https://www.kyoto-ryokan-sakura.com/',
     `As a freelancer in Japan, I connected with a startup in the travel and tourism industry.
     We were tasked with redesigning several websites for a hotel group, KIT, and I was the 
