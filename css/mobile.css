@@ -92,6 +92,11 @@
     margin-bottom: 0px;
     padding-top: 8px;
   }
+
+  .project-modal-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /* potential mobile nav background
