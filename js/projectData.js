@@ -42,6 +42,16 @@ const projects = [
     or starting point to develop more sophisticated game objects and features.`
   ],
   [
+    'Tartle',
+    'Generative art with Python and Tartle',
+    'img/tartle.png',
+    'https://github.com/crealu/tartle',
+    `Experimentation is the name of the game. What better way to get in touch with my visual arts 
+    programming roots and simultaneously keep my Python coding chops sharp? This project features 
+    generative art drawings and taking a chance on the ideas that simply come to mind. Nothing too
+    fancy - just some good old-fashioned trial and error.`
+  ],
+  [
     'Breath Of The Wild UI',
     'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
     'img/botw.png',
