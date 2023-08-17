@@ -288,6 +288,7 @@ body {
   position: relative;
   top: 185px;
   z-index: 1;
+  margin-bottom: 100px;
 }
 
 .home-img-content {
