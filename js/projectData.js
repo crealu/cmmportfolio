@@ -43,7 +43,7 @@ const projects = [
   ],
   [
     'Tartle',
-    'Generative art with Python and Tartle',
+    'Generative art with Python and Turtle',
     'img/tartle.png',
     'https://github.com/crealu/tartle',
     `Experimentation is the name of the game. What better way to get in touch with my visual arts 
