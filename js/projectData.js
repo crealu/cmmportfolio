@@ -27,7 +27,7 @@ const projects = [
     'img/dotmate.png',
     'https://dotmate.herokuapp.com/',
     `Dotmate was a really fun side project that I threw together for an specific application.
-    It features p5.js (what used to be Processing) and implements the animation UI within
+    It features a Sketch component from p5.js (what used to be Processing) and implements the animation UI within
     a basic React application. A big area to improvement in this project would be to create a CPU throttler
     or to get more low-level and draw directly on a WebGL canvas.`
   ],
@@ -37,8 +37,8 @@ const projects = [
     'img/storyline.png',
     'https://github.com/crealu/clean-story',
     `In an effort to kill two birds with one stone (desigining a tasked based RPG game while
-    improving my C++ chops) I created Storyline. Although I decided to sunset this project after I
-    reached a barebones working version of the game, the codebase can be used as a guideline 
+    improving my C++ coding skills) I created Storyline. Although I decided to sunset this project upon
+    obtaining a barebones working version of the game, the codebase can be used as a guideline 
     or starting point to develop more sophisticated game objects and features.`
   ],
   [
@@ -56,10 +56,11 @@ const projects = [
     'A user interface inspired by the game menu used in Zelda: Breath of The Wild',
     'img/botw.png',
     'https://botw-ui.herokuapp.com',
-    `After one too many long nights of playing Switch, I decided to recreate the (game) 
+    `After one too many long nights of playing Switch, I decided to recreate the menu 
     UI of Zelda: Breath of The Wild with React and Three.js. What a fun challenge this was!
     As a UI developer and modest game designer, linking updates in the application state to 
-    game events was an exciting brain tease of integration.`
+    game events was an exciting brain tease. Taking on this project allowed me to see the
+    intergrated aspects of game logic and GUIs.`
   ],
   [
     'Lightning Shaders',
