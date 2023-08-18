@@ -7,6 +7,13 @@
 @media (max-width: 900px) and (min-width: 200px) {
   .software-project-link {
     flex-direction: column;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .software-project-img {
+    width: 100%;
   }
 
   .software-project-wrapper {
@@ -44,9 +51,14 @@
     display: none;
   }
 
-  .about-swap {
-    text-align: center;
+  .about-content {
+    margin-bottom: 100px;
   }
+
+  .about-swap {
+    text-align: left;
+  }
+
 
   .whats-new-wrapper {
     width: 90%;
@@ -302,6 +314,18 @@
 
   .no-top-border-mobile {
     border-top: none;
+  }
+
+  .project-hats {
+    margin-bottom: 50px;
+  }
+
+  .hats-text {
+    padding-bottom: 0px;
+    line-height: 18px;
+  }
+  .about-content {
+    margin-bottom: 50px;
   }
 }
 
