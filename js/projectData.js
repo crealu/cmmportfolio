@@ -8,7 +8,7 @@ const projects = [
     help Japanese language learners better understand kanji. It 
     features a customizable quiz, various learning sets, a typing game,
     and a lookup table based on kana. For those who like to explore, there
-    is a tool for simply checking details related to specific kanji. All platform 
+    is a tool for checking detailed information related to specific kanji. All platform 
     features were written in vanilla JavaScript and the app is served on 
     a Node/Express server.`
   ],
