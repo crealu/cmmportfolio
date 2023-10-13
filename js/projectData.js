@@ -1,5 +1,14 @@
 const projects = [
   [
+    'How You Eye',
+    'YouTube channel exploring user interactivity in arts and technology',
+    'https://yt3.ggpht.com/edXjVYGGMt37N2-gU_xNXHTvcF1s7PIwm_DnKZ1g4hAr7rBLP2waTeZ4FPgJATDbM4xLx_WkrQ=s176-c-k-c0x00ffffff-no-rj',
+    'https://www.youtube.com/@howyoueye.',
+    `How You Eye is a project that aims to create content exploring how users
+    interface with music, software, design, imaging, and games. It is a new approach
+    to observing and exploring various forms of user interaction.`
+  ],
+  [
     'Niheigo',
     'Web-based application for learning Japanese kanji and vocabulary',
     'img/niheigo1.png',
