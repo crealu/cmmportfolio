@@ -24,6 +24,15 @@ body {
   background: var(--bg1);
 }
 
+table {
+  color: white;
+}
+
+td {
+  font-size: 24px;
+  padding-right: 20px;
+}
+
 .navigation-bar {
   position: fixed;
   width: 100%;
@@ -359,17 +368,20 @@ body {
   color: white;
   line-height: 45px;
   letter-spacing: 0.8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hats-text {
 /*  text-decoration: underline;*/
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+/*  padding-bottom: 5px;
+  border-bottom: 1px solid white;*/
+  text-decoration: underline;
 }
 
 .project-hats {
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 
@@ -379,6 +391,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   width: max-content;
+  padding-left: 0px;
+  margin-top: 0px;
 }
 
 .hats-list li {
