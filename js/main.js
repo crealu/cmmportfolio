@@ -138,20 +138,6 @@ function addProjectList() {
   });
 };
 
-
-function openProjectModal(project) {
-  projectModalTitle.innerHTML = project[0];
-  projectModalDescription.innerHTML = project[4];
-  projectExternalLink.href = project[3];
-  revealModal(project);
-  // fadeShow(projectModal);
-}
-
-function closeProjectModal() {
-  hideModal();
-  // fadeHide(projectModal);
-}
-
 function revealModal() {
   let i = 0;
   let id = setInterval(frame, 500);
@@ -166,6 +152,20 @@ function revealModal() {
   }
 }
 
+function openProjectModal(project) {
+  projectModalTitle.textContent = project[0];
+  projectModalDescription.textContent = project[4];
+  projectExternalLink.href = project[3];
+  revealModal(project);
+  // fadeShow(projectModal);
+}
+
+function closeProjectModal() {
+  hideModal();
+  // fadeHide(projectModal);
+}
+
+
 function hideModal() {
   let i = 0;
   let id = setInterval(frame, 500);
@@ -175,8 +175,9 @@ function hideModal() {
     if (i == 1) {
       clearInterval(id);
       projectModal.style.display = 'none';
-      clear(projectModalTitle);
-      clear(projectModalDescription);
+      projectModal.style.top = '-30px';
+      // clear(projectModalTitle);
+      // clear(projectModalDescription);
     }
   }
 }

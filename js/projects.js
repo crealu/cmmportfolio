@@ -4,7 +4,7 @@ const projects = [
     'Explorations in UI/UX, coding, and design',
     'img/icons/hye logo.svg',
     'https://www.youtube.com/@howyoueye.',
-    `How You Eye is a channel featuring design and code for user interfaces.
+    `Unraveling topics in tech is always a fun challenge. How You Eye is a channel featuring design and code for user interfaces.
     Videos cover various technical and creative concepts used in software, design, music,
     language, and games.`
   ],
@@ -13,7 +13,7 @@ const projects = [
     'Japanese lanugage learning app',
     'img/icons/niheigo logo.svg',
     'https://www.niheigo.com',
-    `Niheigo is a platform that contains a suite of tools designed to 
+    `Kanji is plentiful and so is the confusion of learning Japanese. Niheigo is a platform that contains a suite of tools designed to 
     help Japanese language learners. It features customizable testing, 
     detailed learning sets, language games, and language analytics.
     Tech Stack: Figma, HTML, CSS, JavaScript, Node, Express, MongoDB, Heroku, p5.js
@@ -24,8 +24,10 @@ const projects = [
     'Music tabulating app',
     'img/icons/jahmon logo.svg',
     'https://www.jahmon.space',
-    `Jahmon is an application meant for guitarists, songwriters, and people who simply invent
-    musical riffs. With an interactive fretboard, step sequencer, lyric module, and chordbank, 
+    `When I came up with a musical idea it usually ended up lost in a misplaced notebook. I wanted to change that.
+    Jahmon is an application meant for guitarists, songwriters, 
+    and people who simply invent musical riffs. With an interactive fretboard, step sequencer, 
+    lyric module, and chordbank, 
     users can create any song that gets conjured in the old noggin of imagination.
     Tech Stack: Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku, GitHub`
   ],
@@ -34,7 +36,7 @@ const projects = [
     'Logo visualization interface',
     'img/icons/dotmate logo.svg',
     'https://dotmate.herokuapp.com/',
-    `Dotmate was a really fun side project that I put together to demo for a job application. Users
+    `I needed to put together a demo UI for a job application and this is what came out. Users
     can place dots inside the canvas, set specific parameters that control the style of the animation, and view
     the animation. The placement of the dots can be edited to obtain various styles.
     Tech Stack: React, p5.js, Heroku, GitHub`
@@ -83,29 +85,6 @@ const projects = [
     Tech Stack: React, Node, Webpack, GLSL, Heroku`
   ]
 ];
-
-  // [
-  //   'KIT Group Ryokans',
-  //   'Main and branch websites for Japanese ryokan group, KIT',
-  //   'img/kit.png',
-  //   'https://www.kyoto-ryokan-sakura.com/',
-  //   `As a freelancer in Japan, I connected with a startup in the travel and tourism industry.
-  //   We were tasked with redesigning several websites for a hotel group, KIT, and I was the 
-  //   primary developer on the project. An exciting endeavor indeed! I worked with marketers, designers,
-  //   and consultants and helped get the site up and running with a custom WordPress theme.`
-  // ]
-// {
-//   title: 'Niheigo',
-//   caption: 'Web-based application for learning Japanese kanji and vocab',
-//   logo: 'img/covers/niheigo temp logo.png',
-//   link: 'https://www.niheigo.com',
-//   tag: 'Application'
-//   discription: `Niheigo is a platform that contains a suite of tools designed to 
-//     help Japanese language learners gain a better handle on kanji. It 
-//     features a customizable quiz, various learning sets, a typing game,
-//     and a lookup table based on kana. For those who like to explore, there
-//     is a tool for simply checking details related to specific kanji.`
-// }
 
 let photos = [
   {
