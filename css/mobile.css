@@ -5,15 +5,35 @@
 }
 
 @media (max-width: 900px) and (min-width: 200px) {
+  .desktop-view {
+    top: 100px;
+  }
+
+  .project-hats {
+    align-items: center;
+  }
+
+  .project-title-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .software-project-link {
-    flex-direction: column;
-    width: 80%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .software-project-img-wrapper {
+    margin-right: 30px;
   }
 
   .software-project-img {
-    width: 100%;
+    width: 100px;
+    margin-right: 0px;
   }
 
   .software-project-wrapper {
@@ -25,12 +45,38 @@
     width: 85%;
     margin-top: 40px;
   }
+
+  .social-media-sites {
+    display: none;
+  }
+
+  table {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  tbody {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-text {
+    text-align: center;
+  }
+
+  footer {
+    height: 100px;
+  }
 }
 
 @media (max-width: 800px) and (min-width: 200px) {
   #flake-logo {
     width: 35px;
-    left: 10px;
+    left: 20px;
+    top: 10px;
   }
 
   #cameron-miller {
@@ -47,18 +93,11 @@
     display: block;
   }
 
-  .other-sites {
-    display: none;
-  }
+
 
   .about-content {
     margin-bottom: 100px;
   }
-
-  .about-swap {
-    text-align: left;
-  }
-
 
   .whats-new-wrapper {
     width: 90%;
@@ -200,7 +239,6 @@
   }
 
   .software-project-wrapper {
-    height: 200px;
     box-shadow: none;
   }
 

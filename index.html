@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio for New York based Software Developer seeking employment.">
 	<title>CMM Portfolio</title>
 	<link rel="icon" size="310x310" href="img/star.png">
 	<link href="css/camstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/redesign.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/mobile.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -41,11 +42,11 @@
 		<div id="nav-btn" onclick="openMenu()">
 			<div class="bar bar1"></div>
 			<div class="bar bar2"></div>
-			<div class='bar bar3'></div>
+			<div class="bar bar3"></div>
 		</div>
 		<div id="nav-mobile">
 			<ul class="nav-list-mobile">
-				<li class="nav-item-mobile selector no-top-border-mobile">
+				<li class="nav-item-mobile selector">
 					<a class="nav-link-mobile" onclick="displayContent('About')">About</a>
 				</li>
 				<li class="nav-item-mobile selector">
@@ -55,22 +56,19 @@
 					<a class="nav-link-mobile" onclick="displayContent('Connect')">Connect</a>
 				</li>
 				<li class="nav-item-mobile no-top-border-mobile">
-					<ul class="media-list">
-						<li>
-							<a href="https://github.com/crealu" target="_blank">
-								<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-						    	<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="https://codepen.io/lucidcode6/" target="_blank">
-								<img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/>
-							</a>
-						</li>
-					</ul>
+					<div class="social-media-mobile">
+						<a href="https://github.com/crealu" target="_blank">
+							<img src="img/icons/github logo.svg" class="social-img" />
+						</a>
+						<a href="https://codepen.io/lucidcode6/" target="_blank">
+							<img src="img/icons/codepen logo.svg" class="social-img" />
+						</a>
+						<a href="https://www.instagram.com/npmicam/?hl=en" target="_blank">
+							<img src="img/icons/instagram logo.svg" class="social-img" />
+						</a>
+					</div>
 				</li>
-				<li class="nav-item-mobile no-top-border-mobile">
+<!-- 				<li class="nav-item-mobile no-top-border-mobile">
 					<div class="language-toggle-mobile">
 						<div class="lang-btn-wrapper">
 							<p class="language-btn" onclick="changeLanguage('j')">JP</p>
@@ -79,26 +77,9 @@
 							<p class="language-btn" onclick="changeLanguage('e')">EN</p>
 						</div>
 					</div>
-				</li>
+				</li> -->
 			</ul>
 		</div>
-	</div>
-
-	<div class="other-sites">
-		<ul>
-			<li>
-				<a href="https://github.com/crealu" target="_blank">
-					<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-				    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-					</svg>
-				</a>
-			</li>
-			<li>
-				<a href="https://codepen.io/lucidcode6/" target="_blank">
-					<img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" class="social-img"/>
-				</a>
-			</li>
-		</ul>
 	</div>
 
 <!-- 	<div class="language-toggle">
@@ -116,40 +97,23 @@
 				<div class="about-wrapper">
 					<div class="col-of-1 cam-text-col">
 						<div class="project-title-wrapper">
-							<h3 class="project-title about-swap">Me</h3>
+							<h3 class="project-title about-swap">About Me</h3>
 						</div>
+						<table>
+							<thead></thead>
+							<tbody>
+								<tr>
+									<td>Software Consultant</td>
+								</tr>
+								<tr>
+									<td>New York, New York</td>
+								</tr>
+							</tbody>
+						</table>
 						<div class="project-text-wrapper">
-<!-- 							<p class="project-text about-swap">I'm a dev based in New York.
-								When I'm not coding I'm usually socializing, doing something that involves live music, or exploring new places.
-								I love taking on creative or technical projects and bringing ideas to life.
-								Helping others achieve their goals brings me a lot of fulfillment, as well.
-								Traveling is a big part of who I am, too, so I'm always looking to expand my network.
-								Let's 
-								<span class="connect-span" onclick="displayContent('Connect')">
-									connect!
-									<img class="sparkle sparkle-1" src="sparkle.svg" />
-									<img class="sparkle sparkle-2" src="sparkle.svg" />
-									<img class="sparkle sparkle-3" src="sparkle.svg" />
-								</span>
-							</p><br> -->
-							<table>
-								<thead></thead>
-								<tbody>
-									<tr>
-										<td>Role:</td>
-										<td>Software Developer</td>
-									</tr>
-									<tr>
-										<td>Location:</td>
-										<td>New York, New York</td>
-									</tr>
-									<tr>
-										<td>Interests:</td>
-										<td>Live Music, Language, Travel</td>
-									</tr>
-								</tbody>
-							</table>
-							<p class="project-text">I'm always looking to expand my network and collaborate. Let's 				
+							<p class="project-text">When I'm not coding or designing I enjoy socializing with friends, watching live music, and exploring new places.
+								I love to take on creative and technical projects to bring ideas to life.
+								I'm always looking to expand my network and collaborate. Let's			
 								<span class="connect-span" onclick="displayContent('Connect')">
 									connect!
 									<img class="sparkle sparkle-1" src="sparkle.svg" />
@@ -158,18 +122,31 @@
 								</span>
 							</p>
 
+		
 							<div class="project-hats">
 								<p class="project-text hats-text about-swap">Other Hats I Wear</p>
 								<ul class="hats-list">
-									<li>Programmer</li>
-									<li>Musician</li>
+									<li>Consultant</li>
+									<li>Teacher</li>
 									<li>Designer</li>
 									<li>Photographer</li>
-									<li>Teacher</li>
+									<li>Musician</li>
 									<li>Traveler</li>
 									<li>Woodworker</li>
 									<li>Cap pending...</li>
 								</ul>
+							</div>
+
+							<div class="social-media-sites">
+								<a href="https://github.com/crealu" target="_blank">
+									<img src="img/icons/github logo.svg" class="social-img" />
+								</a>
+								<a href="https://codepen.io/lucidcode6/" target="_blank">
+									<img src="img/icons/codepen logo.svg" class="social-img" />
+								</a>
+								<a href="https://www.instagram.com/phocamm/?hl=en" target="_blank">
+									<img src="img/icons/instagram logo.svg" class="social-img" />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -217,16 +194,19 @@
 	<div class="project-modal">
 		<div class="project-modal-inner">
 			<span class="close" onclick="closeProjectModal()">x</span>
-			<div class="project-modal-title"></div>
-			<div class="project-modal-description"></div>
+			<h3 class="project-modal-title"></h3>
+			<p class="project-modal-description"></p>
 			<a class="external-link" target="_blank">View</a>
 		</div>
 	</div>
 
-	<!-- <script type="text/javascript" src="js/help.js"></script> -->
+	<footer>
+
+	</footer>
+
 	<script type="text/javascript" src="js/loading.js"></script>
-	<script type="text/javascript" src="js/projectData.js"></script>
+	<script type="text/javascript" src="js/projects.js"></script>
 	<script type="text/javascript" src="js/translate.js"></script>
-	<script type="text/javascript" src="js/refactor.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

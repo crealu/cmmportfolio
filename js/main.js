@@ -18,9 +18,11 @@ function openMenu() {
   if (!(mobileNav.style.display == 'block')) {
     switchNavBtn();
     fadeShowMobile(mobileNav);
+    toggleMobileNav(mobileNav, true);
   } else {
     switchNavBtn();
     fadeHideMobile(mobileNav);
+    toggleMobileNav(mobileNav, false);
   }
 }
 
@@ -39,7 +41,7 @@ function fadeShowMobile(el) {
 
 function fadeHideMobile(el) {
   let i = 0;
-  let id = setInterval(frame, 125);
+  let id = setInterval(frame, 250);
   el.style.opacity = '0';
   function frame() {
     i++;
@@ -81,7 +83,7 @@ function displayProjects(div) {
 
   let content1 = document.getElementById(content[0] + '-content');
   let content2 = document.getElementById(content[1] + '-content');
-  fadeHide2(content1, content2);
+  fadeHideSeveral(content1, content2);
 
   let contentToDisplay = document.getElementById(div + '-content');
   fadeShow(contentToDisplay);
@@ -119,10 +121,9 @@ function addProjectList() {
 
     link.classList.add('software-project-link');
     link.setAttribute('target', '_blank');
-    link.addEventListener('click', () => {
-      // const modalTitle = link.children[0].children[0].textContent;
-      openProjectModal(project);
-    })
+    link.addEventListener('click', () => { openProjectModal(project) })
+
+    // const modalTitle = link.children[0].children[0].textContent;
 
     imageWrapper.classList.add('software-project-img-wrapper');
     image.classList.add('software-project-img');
@@ -137,7 +138,6 @@ function addProjectList() {
   });
 };
 
-addProjectList();
 
 function openProjectModal(project) {
   projectModalTitle.innerHTML = project[0];
@@ -208,7 +208,7 @@ function fadeHide(el) {
   }
 }
 
-function fadeHide2(el1, el2) {
+function fadeHideSeveral(el1, el2) {
   let i = 0;
   let id = setInterval(frame, 500);
   el1.style.opacity = '0';
@@ -223,10 +223,11 @@ function fadeHide2(el1, el2) {
   }
 }
 
-function homeLoadFunctions() {
+function loadPage() {
   fadeShow(firstContent);
+  addProjectList();
 }
 
-window.onload = homeLoadFunctions();
+window.addEventListener('load', loadPage);
 
 
