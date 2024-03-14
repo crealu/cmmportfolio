@@ -1,13 +1,13 @@
 const projects = [
-  [
-    'How You Eye',
-    'Explorations in UI/UX, coding, and design',
-    'img/icons/hye logo.svg',
-    'https://www.youtube.com/@howyoueye.',
-    `Unraveling topics in tech is always a fun challenge. How You Eye is a channel featuring design and code for user interfaces.
-    Videos cover various technical and creative concepts used in software, design, music,
-    language, and games.`
-  ],
+  // [
+  //   'How You Eye',
+  //   'Explorations in UI/UX, coding, and design',
+  //   'img/icons/hye logo.svg',
+  //   'https://www.youtube.com/@howyoueye.',
+  //   `Unraveling topics in tech is always a fun challenge. How You Eye is a channel featuring design and code for user interfaces.
+  //   Videos cover various technical and creative concepts used in software, design, music,
+  //   language, and games.`
+  // ],
   [
     'Niheigo',
     'Japanese lanugage learning app',

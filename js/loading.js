@@ -35,21 +35,10 @@ function closeLoader() {
 }
 
 function toggleMobileNav(menu, showing) {
-  // if (showing) {
-  //   menu.style.display = 'block';
-  // } else {
-  //   menu.style.height = '0px';
-  // }
   let rate = showing ? 100 : 500;
-  // showing ? menu.style.display = 'block': menu.style.height = '0px';
-  // showing ? rate = 100: rate = 500;
 
   if (!showing) {
-    // mediaItem.style.transition = '0.1s';
-    // mediaItem.style.opacity = '0';
-    // mediaItem.style.animation = '0';
     for (var m = 0; m < mobileLinks.length; m++) {
-      // mobileLinks[m].style.transition = '0.1s';
       mobileLinks[m].style.opacity = '0';
     }
   }
@@ -65,7 +54,6 @@ function toggleMobileNav(menu, showing) {
       } else {
         menu.style.display = 'none';
       }
-      // showing ? menu.style.height = window.innnerHeight + 'px': menu.style.display = 'none';
     }
     if (showing) {
       if (i >= 2 && i < 3) {
@@ -94,10 +82,6 @@ function toggleMobileNav(menu, showing) {
         }
     }
   }
-}
-
-function animateMobile() {
-
 }
 
 let glowColors = {
