@@ -9,6 +9,17 @@ const projects = [
   //   language, and games.`
   // ],
   [
+    'Paranormal',
+    'US map of haunted places',
+    'img/icons/paranormal logo.svg',
+    'https://paranormal.onrender.com/',
+    `This project was for a client who wanted to map all ghostly places in the US.
+    Although it is a simple data-driven UI, there are exciting and spooky directions 
+    this project can go. D3.js and geocoded CSV data is used to render the map.`,
+    'CSS, JavaScript, D3.js, Node, Render',
+    1
+  ],
+  [
     'Niheigo',
     'Japanese lanugage learning app',
     'img/icons/niheigo logo.svg',
