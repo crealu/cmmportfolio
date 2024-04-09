@@ -36,27 +36,29 @@ td {
 
 .navigation-bar {
   position: fixed;
+  display: flex;
   width: 100%;
   height: 60px;
+  margin-top: 10px;
   z-index: 5;
   color: white;
   transition: 2s ease;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #home-link {
   text-decoration: none;
   color: inherit;
   position: relative;
-  top: 10px;
 }
 
 #flake-logo {
   position: relative;
   float: left;
-  padding: 4px;
+  padding: 2px;
   width: 50px;
-  left: 30px;
-  top: 5px;
+  margin-left: 20px;
 }
 
 #cameron-miller {
@@ -114,10 +116,8 @@ td {
   margin: 0 auto;
   width: 30px;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 10px;
   float: right;
-  top: 13px;
-  left: -20px;
   z-index: 101;
   cursor: pointer;
 }
@@ -141,6 +141,7 @@ td {
   left: 0%;
   width: 100%;
   height: 800px;
+  top: 100px;
   background: var(--bg1);
   color: white;
   transition: 0.25s ease opacity;

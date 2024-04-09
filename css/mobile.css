@@ -79,9 +79,7 @@
 
 @media (max-width: 800px) and (min-width: 200px) {
   #flake-logo {
-    width: 35px;
-    left: 20px;
-    top: 10px;
+    margin-left: 20px;
   }
 
   #cameron-miller {
@@ -96,8 +94,9 @@
 
   #nav-btn {
     display: block;
+    top: 0px;
+    margin-right: 20px;
   }
-
 
 
   .about-content {
@@ -168,11 +167,15 @@
 
   .navigation-bar {
     /* background: linear-gradient(180deg, rgba(139, 161, 198, 1) 50%, rgba(159, 179, 200, 0)); */
-    height: 80px;
+    height: 60px;
   }
 
   .home-img {
     filter: brightness(0.9);
+  }
+
+  .home-link {
+    top: 0px;
   }
 
   .desktop-view {
