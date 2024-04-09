@@ -24,11 +24,12 @@
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
   }
 
   .software-project-img-wrapper {
     margin-right: 0px;
+    width: auto;
   }
 
   .software-project-img {
