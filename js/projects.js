@@ -32,7 +32,7 @@ const projects = [
     step sequencer, lyric module, and chordbank, users can create any song that gets 
     conjured in the old noggin of imagination.`,
     'Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku, GitHub',
-    0
+    3
   ],
   [
     'Dotmate',
@@ -44,7 +44,7 @@ const projects = [
     style of the animation, and view the animation. The placement of the dots can be 
     edited to obtain various patterns.`,
     'React, p5.js, Heroku, GitHub',
-    0
+    3
   ],
   [
     'Storyline',
@@ -56,7 +56,7 @@ const projects = [
     barebones working version of the game, the codebase can be used as a small guideline 
     or starting point to develop more sophisticated game objects and features.`,
     'C++, SDL2, Clang compiler',
-    0
+    2
   ],
   [
     'Tartle',
@@ -68,7 +68,7 @@ const projects = [
     This project features generative art drawings and simple ideas with learnable 
     approaches. Nothing toofancy - just some good old-fashioned trial and error drawing.`,
     'Python, Turtle, PIL',
-    0
+    4
   ],
   [
     'Breath Of The Wild UI',
@@ -80,7 +80,7 @@ const projects = [
     allowed me to see the intergrated aspects of game logic, 3D rendering, GUIs and how best to
     utilize Three.js in a React application.`,
     'React, Webpack, Node, Three.js',
-    0
+    4
   ],
   [
     'Lightning Shaders',
@@ -91,8 +91,8 @@ const projects = [
     written in shader programs, specifically fragment shaders. Being a graphics nerd 
     (and beginner) with little experience, I found that constructing a tool like this 
     to visualize each part's significance in the program was a massive help.`,
-    'React, Node, Webpack, GLSL, Heroku',
-    0
+    'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
+    1
   ]
 ];
 

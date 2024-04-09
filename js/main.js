@@ -159,6 +159,13 @@ function revealModal() {
 
 function fillScreenshots(name, count) {
   clear(projectModalScreenshots);
+  
+  if (name.includes('Wild')) {
+    name = 'botwui';
+  } else if (name.includes('Lightning')) {
+    name = 'lightning';
+  }
+
   for (let i = 1; i <= count; i++) {
     const img = document.createElement('img');
     img.classList.add('screenshot');
