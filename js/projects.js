@@ -42,7 +42,7 @@ const projects = [
     and want to keep them on record... figuratively. With an interactive fretboard, 
     step sequencer, lyric module, and chordbank, users can create any song that gets 
     conjured in the old noggin of imagination.`,
-    'Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku, GitHub',
+    'Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku',
     3
   ],
   [
@@ -54,7 +54,7 @@ const projects = [
     Users can place dots inside the canvas, set specific parameters that control the 
     style of the animation, and view the animation. The placement of the dots can be 
     edited to obtain various patterns.`,
-    'React, p5.js, Heroku, GitHub',
+    'p5.js, React, Webpack, Heroku',
     3
   ],
   [
@@ -90,7 +90,7 @@ const projects = [
     in the application state to game events was an exciting brain tease. Taking on this project 
     allowed me to see the intergrated aspects of game logic, 3D rendering, GUIs and how best to
     utilize Three.js in a React application.`,
-    'React, Webpack, Node, Three.js',
+    'Three.js, React, Webpack, Node',
     4
   ],
   [
