@@ -13,21 +13,21 @@ const projects = [
     'Japanese lanugage learning app',
     'img/icons/niheigo logo.svg',
     'https://www.niheigo.com',
-    `Kanji is plentiful and so is the confusion of learning Japanese. Niheigo is a platform that contains a suite of tools designed to 
+    `Learning Japanese and kanji character can be confusing and daunting. 
+    Niheigo is a platform that contains a suite of tools designed to 
     help Japanese language learners. It features customizable testing, 
-    detailed learning sets, language games, and language analytics.
-    Tech Stack: Figma, HTML, CSS, JavaScript, Node, Express, MongoDB, Heroku, p5.js
-    `
+    detailed kanji learning sets, language games, and language analytics.
+    Tech Stack: Figma, HTML, CSS, JavaScript, Node, Express, MongoDB, Heroku, p5.js`
   ],
   [
     'Jahmon',
     'Music tabulating app',
     'img/icons/jahmon logo.svg',
     'https://www.jahmon.space',
-    `When I came up with a musical idea it usually ended up lost in a misplaced notebook. I wanted to change that.
-    Jahmon is an application meant for guitarists, songwriters, 
-    and people who simply invent musical riffs. With an interactive fretboard, step sequencer, 
-    lyric module, and chordbank, 
+    `When I used to come up with a musical ideas they usually ended up lost somewhere
+    in a misplaced notebook. I wanted to change that. Jahmon is an application meant 
+    for guitarists, songwriters, and people who simply invent musical riffs and lines. 
+    With an interactive fretboard, step sequencer, lyric module, and chordbank, 
     users can create any song that gets conjured in the old noggin of imagination.
     Tech Stack: Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku, GitHub`
   ],
@@ -36,9 +36,10 @@ const projects = [
     'Logo visualization interface',
     'img/icons/dotmate logo.svg',
     'https://dotmate.herokuapp.com/',
-    `I needed to put together a demo UI for a job application and this is what came out. Users
-    can place dots inside the canvas, set specific parameters that control the style of the animation, and view
-    the animation. The placement of the dots can be edited to obtain various styles.
+    `I needed to put together a demo UI for a job application and this is what came out. 
+    Users can place dots inside the canvas, set specific parameters that control the 
+    style of the animation, and view the animation. The placement of the dots can be 
+    edited to obtain various patterns.
     Tech Stack: React, p5.js, Heroku, GitHub`
   ],
   [
@@ -46,9 +47,9 @@ const projects = [
     'RPG game design codebase',
     'img/icons/storyline logo.svg',
     'https://github.com/crealu/clean-story',
-    `In an effort to kill two birds with one stone, desigining a tasked based RPG game while
-    improving my C++ coding skills, I created Storyline. Although I decided to sunset this project upon
-    obtaining a barebones working version of the game, the codebase can be used as a guideline 
+    `In an effort to design a tasked based RPG game while improving my C++ coding skills, 
+    I created Storyline. Although I decided to sunset this project upon obtaining a 
+    barebones working version of the game, the codebase can be used as a small guideline 
     or starting point to develop more sophisticated game objects and features.
     Tech Stack: C++, SDL2, Clang compiler`
   ],
@@ -57,10 +58,10 @@ const projects = [
     'Generative art with Python Turtle',
     'img/icons/tartle logo.svg',
     'https://github.com/crealu/tartle',
-    `Experimentation is the name of the game. What better way to get in touch with my visual arts 
-    programming roots and simultaneously keep my Python coding chops sharp? This project features 
-    generative art drawings and simple ideas with learnable approaches. Nothing too
-    fancy - just some good old-fashioned trial and error.
+    `Experimentation is the name of the game. What better way to get in touch with 
+    my visual arts programming roots and simultaneously keep my Python coding chops sharp? 
+    This project features generative art drawings and simple ideas with learnable 
+    approaches. Nothing toofancy - just some good old-fashioned trial and error drawing.
     Tech Stack: Python, Turtle, PIL`
   ],
   [
@@ -70,7 +71,8 @@ const projects = [
     'https://botw-ui.herokuapp.com',
     `What a fun challenge this was! As a UI developer and modest game designer, linking updates 
     in the application state to game events was an exciting brain tease. Taking on this project 
-    allowed me to see the intergrated aspects of game logic, 3D rendering and GUIs.
+    allowed me to see the intergrated aspects of game logic, 3D rendering, GUIs and how best to
+    utilize Three.js in a React application.
     Tech Stack: React, Webpack, Node, Three.js`
   ],
   [
@@ -79,9 +81,9 @@ const projects = [
     'img/icons/ls logo.svg',
     'https://lightningshaders.herokuapp.com/',
     `I created a shader programming interface to better understand the lines of code
-    written in shader programs. Being a graphics nerd (and beginner) with little experience,
-    I found that constructing a tool like this to visualize each part's significance in the 
-    program is a massive help.
+    written in shader programs, specifically fragment shaders. Being a graphics nerd 
+    (and beginner) with little experience, I found that constructing a tool like this 
+    to visualize each part's significance in the program was a massive help.
     Tech Stack: React, Node, Webpack, GLSL, Heroku`
   ]
 ];

@@ -1,0 +1,167 @@
+#loader-modal {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  transition: 0.75s ease;
+  z-index: 150;
+}
+
+.pulse {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  right: 0px;
+  border: 4px dotted #f44832;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.25s ease;
+  animation: 2s ease-out 3s pulse forwards;
+}
+
+.pulse-1 {
+  animation-delay: 3.25s;
+}
+
+.pulse-2 {
+  animation-delay: 3.5s;
+}
+
+.pulse-3 {
+  animation-delay: 3.75s;
+}
+
+#loader-flower {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+  width: 150px;
+  transition: 0.25s ease;
+  transform-origin: center center;
+  animation: 3.35s ease-out 0s slide_flower forwards;
+}
+
+.g-layer {
+  animation: 3.35s ease-out 0s reverse_rotate forwards;
+}
+
+.cls-1 {
+  animation: null;
+  opacity: 0;
+}
+
+.cls-2 {
+  animation: null;
+  opacity: 0;
+}
+
+.cls-3 {
+  animation: null;
+  opacity: 0;
+}
+
+.cls-4 {
+  animation: null;
+  opacity: 0;
+}
+
+.cls-5 {
+  animation: null;
+  opacity: 0;
+}
+
+.cls-6 {
+  animation: null;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #f44832;
+    transform: scale(1) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    border-color: #a65755;
+  }
+
+  40% {
+    border-color: #665865;
+  }  
+
+  60% {
+    border-color: #b1c8e8;
+  }
+
+  80% {
+    border-color: #fcfc69;
+  }
+
+  100% {
+    transform: scale(2) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slide_flower {
+  0% {
+    transform: translate(0%);
+  }
+
+  88% {
+    transform: translate(100%, 95%) scale(1);    
+  }
+
+  92% {
+    transform: translate(98%, 95%) scale(0.98);    
+  }
+
+  97% {
+    transform: translate(98%, 95%) scale(0.98);    
+  }  
+
+  100% {
+    transform: translate(100%, 95%) scale(1);    
+  }
+}
+
+@keyframes reverse_rotate {
+  0% {
+    transform: rotate(-180deg);
+  }
+
+  85% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(5.0);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(180deg) scale(1.0);
+  }
+}
