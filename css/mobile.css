@@ -24,21 +24,21 @@
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
   }
 
   .software-project-img-wrapper {
-    margin-right: 30px;
+    margin-right: 0px;
   }
 
   .software-project-img {
-    width: 70px;
+    width: 60px;
     margin-right: 0px;
   }
 
   .software-project-wrapper {
     padding: 2% 5% 2% 0%;
-    margin-left: 0px;
+    padding-left: 20px;
   }
 
   .project-modal-inner {
@@ -203,7 +203,7 @@
 
   /* about */
   .about-wrapper {
-    width: 95%;
+    width: 100%;
     top: 0px;
   }
 
