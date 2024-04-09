@@ -6,7 +6,9 @@ const firstContent = document.getElementById('projects-content');
 const projectModal = document.getElementsByClassName('project-modal')[0];
 const projectModalTitle = document.getElementsByClassName('project-modal-title')[0];
 const projectModalDescription = document.getElementsByClassName('project-modal-description')[0];
-const projectExternalLink = document.getElementsByClassName('external-link')[0];
+const projectModalLink = document.getElementsByClassName('project-modal-link')[0];
+const projectModalTechStack = document.getElementsByClassName('project-modal-tech-stack')[0];
+const projectModalScreenshots = document.getElementsByClassName('project-modal-screenshots')[0];
 
 function clear(element) {
   while (element.firstChild) {
@@ -96,13 +98,15 @@ function displayContent(topic) {
   }
 }
 
-function projectListItem(ti, projectDescription) {
-  this.newLI = document.createElement("li");
-  this.titleH = document.createElement("h3");
-  this.titleT = document.createTextNode(ti);
-  this.descP = document.createElement("p");
-  this.descT = document.createTextNode(projectDescription);
-}
+// function projectListItem(ti, projectDescription) {
+//   this.newLI = document.createElement("li");
+//   this.titleH = document.createElement("h3");
+//   this.titleT = document.createTextNode(ti);
+//   this.descP = document.createElement("p");
+//   this.descT = document.createTextNode(projectDescription);
+//   this.stackP = document.createElement("p");
+//   this.stackT = document.createTextNode(Description);
+// }
 
 function addProjectList() {
   projects.forEach(project => {
@@ -110,6 +114,7 @@ function addProjectList() {
     const link = document.createElement("div");
     const title = document.createElement("h3");
     const description = document.createElement("p");
+    const techStack = document.createElement("p");
     const image = document.createElement("img");
     const imageWrapper = document.createElement("div");
 
@@ -152,10 +157,22 @@ function revealModal() {
   }
 }
 
+function fillScreenshots(name, count) {
+  clear(projectModalScreenshots);
+  for (let i = 1; i <= count; i++) {
+    const img = document.createElement('img');
+    img.classList.add('screenshot');
+    img.src = `./img/projs/${name.toLowerCase()}/screenshot_${i}.png`;
+    projectModalScreenshots.appendChild(img);
+  }
+}
+
 function openProjectModal(project) {
   projectModalTitle.textContent = project[0];
   projectModalDescription.textContent = project[4];
-  projectExternalLink.href = project[3];
+  projectModalTechStack.textContent = project[5];
+  projectModalLink.href = project[3];
+  fillScreenshots(project[0], project[6]);
   revealModal(project);
   // fadeShow(projectModal);
 }
