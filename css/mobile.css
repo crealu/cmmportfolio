@@ -23,6 +23,16 @@
     padding-left: 0px;
   }
 
+  .portrait-img-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .portrait {
+    width: 300px;
+    height: 300px;
+  }
+
   .about-me-text {
     margin-top: 20px;
   }
