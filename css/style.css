@@ -386,8 +386,69 @@ td {
   padding-left: 20px;
 }
 
+.portrait-img-wrapper {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 380px;
+}
+
 .portrait {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
   width: 380px;
+  height: 380px;
+}
+
+.portrait-gray {
+  mix-blend-mode: difference;
+}
+
+.portrait-color:nth-child(3) {
+  mix-blend-mode: overlay;
+  transform: translateX(-60px);
+  opacity: 0;
+  animation: null;
+/*  animation: 4s animat_pc1 0s ease forwards;*/
+
+}
+
+.portrait-color:nth-child(2) {
+  mix-blend-mode: exclusion;
+  transform: translateX(60px);
+  opacity: 0;
+  animation: null;
+/*  animation: 4s animate_pc2 0s ease forwards;*/
+}
+
+@keyframes animate_pc1 {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(60px);
+
+  }
+}
+
+@keyframes animate_pc2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-60px);
+  }
 }
 
 .hats-text {
