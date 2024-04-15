@@ -387,10 +387,10 @@ td {
 }
 
 .portrait-img-wrapper {
+  position: relative;
   display: block;
-  margin: 0 auto;
   overflow: hidden;
-  width: 100%;
+  width: 380px;
   height: 380px;
 }
 
@@ -412,6 +412,7 @@ td {
   transform: translateX(-60px);
   opacity: 0;
   animation: null;
+  transition: 0.5s ease;
 /*  animation: 4s animat_pc1 0s ease forwards;*/
 
 }
@@ -421,6 +422,7 @@ td {
   transform: translateX(60px);
   opacity: 0;
   animation: null;
+  transition: 0.5s ease;
 /*  animation: 4s animate_pc2 0s ease forwards;*/
 }
 
@@ -428,13 +430,16 @@ td {
   0% {
     opacity: 0;
     transform: translateX(0px);
+  }
 
+  50% {
+    opacity: 1;
+    transform: translateX(100px);
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(60px);
-
+    opacity: 0;
+    transform: translateX(0px);
   }
 }
 
@@ -442,12 +447,16 @@ td {
   0% {
     opacity: 0;
     transform: translateX(0px);
+  }
 
+  50% {
+    opacity: 1;
+    transform: translateX(-100px);
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(-60px);
+    opacity: 0;
+    transform: translateX(0px);
   }
 }
 

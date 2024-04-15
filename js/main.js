@@ -141,8 +141,30 @@ function displayProjects(div) {
   fadeShow(contentToDisplay);
 }
 
+function animateMe() {
+  let portrait1 = document.getElementsByClassName('portrait-color')[0];
+  let portrait2 = document.getElementsByClassName('portrait-color')[1];
+
+  let durr = '9s';
+  let delay = '1.5s';
+  // let timing = 'ease';
+  let timing = 'cubic-bezier(0.9, 0.09, 0.39, 0.88)';
+  let end = 'forwards';
+
+  let a1 = `${durr} animate_pc1 ${delay} ${timing} ${end}`;
+  let a2 = `${durr} animate_pc2 ${delay} ${timing} ${end}`;
+
+  portrait1.style.animation = a1;
+  portrait2.style.animation = a2;
+}
+
 function displayContent(topic) {
   displayProjects(topic.toLowerCase());
+
+  if (topic == 'About') {
+    animateMe();
+  }
+
   if (window.innerWidth <= 800) {
     openMenu();
   }
