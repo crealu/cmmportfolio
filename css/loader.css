@@ -91,16 +91,13 @@
     opacity: 0;
   }
 
-  10% {
-    opacity: 1;
-  }
-
   20% {
     border-color: #a65755;
   }
 
   40% {
     border-color: #665865;
+    opacity: 1;
   }  
 
   60% {
