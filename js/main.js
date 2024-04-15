@@ -9,6 +9,9 @@ const projectModalDescription = document.getElementsByClassName('project-modal-d
 const projectModalLink = document.getElementsByClassName('project-modal-link')[0];
 const projectModalTechStack = document.getElementsByClassName('project-modal-tech-stack')[0];
 const projectModalScreenshots = document.getElementsByClassName('project-modal-screenshots')[0];
+const animateBtn = document.getElementsByClassName('glow-btn')[0];
+const portrait1 = document.getElementsByClassName('portrait-color')[0];
+const portrait2 = document.getElementsByClassName('portrait-color')[1];
 
 function toggleMobileNav(menu, showing) {
   let rate = showing ? 100 : 500;
@@ -142,20 +145,22 @@ function displayProjects(div) {
 }
 
 function animateMe() {
-  let portrait1 = document.getElementsByClassName('portrait-color')[0];
-  let portrait2 = document.getElementsByClassName('portrait-color')[1];
+  portrait1.classList.add('animated-portrait-1');
+  portrait2.classList.add('animated-portrait-2');
+}
 
-  let durr = '9s';
-  let delay = '1.5s';
-  // let timing = 'ease';
-  let timing = 'cubic-bezier(0.9, 0.09, 0.39, 0.88)';
-  let end = 'forwards';
+function animateMeFromBtn() {
+  portrait1.classList.remove('animated-portrait-1');
+  portrait2.classList.remove('animated-portrait-2');
+  portrait1.classList.add('unanimated-portrait-1');
+  portrait2.classList.add('unanimated-portrait-2');
 
-  let a1 = `${durr} animate_pc1 ${delay} ${timing} ${end}`;
-  let a2 = `${durr} animate_pc2 ${delay} ${timing} ${end}`;
-
-  portrait1.style.animation = a1;
-  portrait2.style.animation = a2;
+  setTimeout(() => {
+    portrait1.classList.remove('unanimated-portrait-1');
+    portrait2.classList.remove('unanimated-portrait-2');
+    portrait1.classList.add('animated-portrait-1');
+    portrait2.classList.add('animated-portrait-2');
+  }, 100)
 }
 
 function displayContent(topic) {
@@ -163,6 +168,7 @@ function displayContent(topic) {
 
   if (topic == 'About') {
     animateMe();
+    animateBtn.style.animation = '1s reveal_glow_btn 9s ease forwards';
   }
 
   if (window.innerWidth <= 800) {
@@ -309,6 +315,7 @@ function fadeHideSeveral(el1, el2) {
 function loadPage() {
   fadeShow(firstContent);
   addProjectList();
+  animateBtn.addEventListener('click', animateMeFromBtn);
 }
 
 window.addEventListener('load', loadPage);
