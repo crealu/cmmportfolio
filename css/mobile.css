@@ -9,8 +9,34 @@
     top: 100px;
   }
 
+  .about-inner {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-column {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-column:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .about-me-text {
+    margin-top: 20px;
+  }
+
   .project-hats {
     align-items: center;
+  }
+
+  .hats-list {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .hats-list li {
+    justify-content: center;
   }
 
   .project-title-wrapper {

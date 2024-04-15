@@ -73,9 +73,6 @@ let translations = [
   {
     e: "What's new?",
     j: '新し物'
-  },
-  {
-
   }
 ];
 
