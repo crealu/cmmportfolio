@@ -786,14 +786,22 @@ td {
   margin-top: 40px;
 }
 
-.resume-link {
+.glow-btn {
   color: black;
   background: white;
   padding: 8px 16px;
   border-radius: 8px;
+  border: none;
   box-shadow: 0px 0px 10px 0px white;
   text-decoration: none;
   margin-top: 30px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.glow-btn:hover {
+  box-shadow: 0px 0px 14px 0px white;
+  transform: scale(0.95);
 }
 
 /* visual */
