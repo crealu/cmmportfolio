@@ -4,10 +4,10 @@ const projects = [
     'Japanese lanugage learning app',
     'img/icons/niheigo logo.svg',
     'https://www.niheigo.com',
-    `Learning Japanese kanji characters can be confusing and daunting. 
-    Niheigo is a platform that contains a suite of tools designed to 
-    help Japanese language learners. It features customizable testing, 
-    detailed kanji learning sets, language games, and language analytics.`,
+    `Learning Japanese kanji can be a challenging and complex process. Niheigo addresses 
+    this with a suite of tools tailored for Japanese language learners. The platform includes 
+    features such as customizable testing, comprehensive kanji learning sets, engaging 
+    language games, and detailed language analytics to enhance the learning experience.`,
     'Figma, HTML, CSS, JavaScript, Node, Express, MongoDB, Heroku, p5.js',
     4
   ],
