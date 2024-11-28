@@ -1,24 +1,4 @@
 const projects = [
-  // [
-  //   'How You Eye',
-  //   'Explorations in UI/UX, coding, and design',
-  //   'img/icons/hye logo.svg',
-  //   'https://www.youtube.com/@howyoueye.',
-  //   `Unraveling topics in tech is always a fun challenge. How You Eye is a channel featuring design and code for user interfaces.
-  //   Videos cover various technical and creative concepts used in software, design, music,
-  //   language, and games.`
-  // ],
-  [
-    'Paranormal',
-    'US map of haunted places',
-    'img/icons/paranormal logo.svg',
-    'https://paranormal.onrender.com/',
-    `This project was for a client who wanted to map all ghostly places in the US.
-    Although it is a simple data-driven UI, there are exciting and spooky directions 
-    this project can go. D3.js and geocoded CSV data is used to render the map.`,
-    'CSS, JavaScript, D3.js, Node, Render',
-    1
-  ],
   [
     'Niheigo',
     'Japanese lanugage learning app',
@@ -33,39 +13,49 @@ const projects = [
   ],
   [
     'Jahmon',
-    'Music tabulating app',
+    'Web-based music composition management app',
     'img/icons/jahmon logo.svg',
     'https://www.jahmon.space',
-    `When I would come up with musical ideas they usually ended up lost somewhere
-    in a misplaced notebook. I wanted to change that. Jahmon is an application meant 
-    for guitarists, songwriters, and people who simply invent musical riffs or lines
-    and want to keep them on record... figuratively. With an interactive fretboard, 
-    step sequencer, lyric module, and chordbank, users can create any song that gets 
-    conjured in the old noggin of imagination.`,
+    `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
+    To address this issue, Jahmon was developed as a tool for guitarists, songwriters, and creatives 
+    who generate musical riffs or lines and need an efficient way to document them. The application 
+    features an interactive fretboard, a step sequencer, a lyric module, and a chord bank, enabling 
+    users to compose and organize songs with ease and precision.`,
     'Figma, TypeScript, React, Webpack, Node, Express, MongoDB, Heroku',
     3
+  ],
+  [
+    'Paranormal',
+    'Map of haunted places in the US',
+    'img/icons/paranormal logo.svg',
+    'https://paranormal.onrender.com/',
+    `A project developed for a client seeking to map haunted locations across the United States. 
+    Designed as a data-driven interface, it offers intriguing possibilities for exploring eerie and 
+    supernatural themes. The map visualization was created using D3.js and geocoded CSV data.`,
+    'CSS, JavaScript, D3.js, Node, Render',
+    1
   ],
   [
     'Dotmate',
     'Logo visualization interface',
     'img/icons/dotmate logo.svg',
     'https://dotmate.herokuapp.com/',
-    `I needed to put together a demo UI for a job application and this is what came out. 
-    Users can place dots inside the canvas, set specific parameters that control the 
-    style of the animation, and view the animation. The placement of the dots can be 
-    edited to obtain various patterns.`,
+    `A demo UI was created as part of a job application process. It allows users to place 
+    dots on a canvas, configure parameters to control animation styles, and preview the resulting 
+    animation. The dot placement can be adjusted to create diverse patterns, offering flexibility 
+    in design and visualization.`,
     'p5.js, React, Webpack, Heroku',
     3
   ],
   [
     'Storyline',
-    'RPG game design codebase',
+    'RPG game design scaffolding',
     'img/icons/storyline logo.svg',
     'https://github.com/crealu/clean-story',
-    `In an effort to design a tasked based RPG game while improving my C++ coding skills, 
-    I created Storyline. Although I decided to sunset this project upon obtaining a 
-    barebones working version of the game, the codebase can be used as a small guideline 
-    or starting point to develop more sophisticated game objects and features.`,
+    `A codebase developed as an exercise in designing a task-based RPG while refining C++ 
+    programming skills. Although the project was retired after achieving a functional prototype, 
+    the resulting codebase serves as a foundational guideline for building more advanced game objects 
+    and features.`,
     'C++, SDL2, Clang compiler',
     2
   ],
@@ -74,10 +64,11 @@ const projects = [
     'Generative art with Python Turtle',
     'img/icons/tartle logo.svg',
     'https://github.com/crealu/tartle',
-    `Experimentation is the name of the game. What better way to get in touch with 
-    my visual arts programming roots and simultaneously keep my Python coding chops sharp? 
-    This project features generative art drawings and simple ideas with learnable 
-    approaches. Nothing toofancy - just some good old-fashioned trial and error drawing.`,
+    `A project that emphasizes experimentation as a core principle, blending visual arts programming 
+    with the goal of maintaining proficiency in Python. It showcases generative art drawings and 
+    straightforward concepts designed with approachable, learnable methods. The focus remains on 
+    exploring creative possibilities through iterative trial-and-error processes rather than producing 
+    overly complex outputs.`,
     'Python, Turtle, PIL',
     4
   ],
@@ -86,10 +77,10 @@ const projects = [
     'Zelda BOTW inspired user interface',
     'img/icons/botw logo.svg',
     'https://botw-ui.herokuapp.com',
-    `What a fun challenge this was! As a UI developer and modest game designer, linking updates 
-    in the application state to game events was an exciting brain tease. Taking on this project 
-    allowed me to see the intergrated aspects of game logic, 3D rendering, GUIs and how best to
-    utilize Three.js in a React application.`,
+    `A project presented as an engaging challenge, particularly in connecting application state updates 
+    to game events. As both a UI developer and an aspiring game designer, it provided an opportunity to 
+    explore the integration of game logic, 3D rendering, and graphical user interfaces. The experience also 
+    offered valuable insights into leveraging Three.js effectively within a React application.`,
     'Three.js, React, Webpack, Node',
     4
   ],
@@ -98,14 +89,24 @@ const projects = [
     'GLSL editing interface',
     'img/icons/ls logo.svg',
     'https://lightningshaders.herokuapp.com/',
-    `I created a shader programming interface to better understand the lines of code
-    written in shader programs, specifically fragment shaders. Being a graphics nerd 
-    (and beginner) with little experience, I found that constructing a tool like this 
-    to visualize each part's significance in the program was a massive help.`,
+    `A shader programming interface developed to facilitate a deeper understanding of the code structure within 
+    shader programs, particularly fragment shaders. As a graphics enthusiast with limited experience, creating 
+    this tool provided a valuable means to visualize and analyze the significance of each component within the 
+    programs, greatly enhancing the learning process.`,
     'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
     1
   ]
 ];
+
+// [
+//   'How You Eye',
+//   'Explorations in UI/UX, coding, and design',
+//   'img/icons/hye logo.svg',
+//   'https://www.youtube.com/@howyoueye.',
+//   `Unraveling topics in tech is always a fun challenge. How You Eye is a channel featuring design and code for user interfaces.
+//   Videos cover various technical and creative concepts used in software, design, music,
+//   language, and games.`
+// ],
 
 let photos = [
   {
