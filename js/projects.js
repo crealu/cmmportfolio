@@ -1,7 +1,7 @@
 const projects = [
   [
     'Niheigo',
-    'Japanese lanugage learning app',
+    'Japanese lanugage learning game',
     'img/icons/niheigo logo.svg',
     'https://www.niheigo.com',
     `Learning Japanese kanji can be a challenging and complex process. Niheigo addresses 
@@ -13,7 +13,7 @@ const projects = [
   ],
   [
     'Jahmon',
-    'Web-based music composition management app',
+    'Web-based music composition app',
     'img/icons/jahmon logo.svg',
     'https://www.jahmon.space',
     `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
@@ -26,7 +26,7 @@ const projects = [
   ],
   [
     'Paranormal',
-    'Map of haunted places in the US',
+    'Interactive map of haunted places in the US',
     'img/icons/paranormal logo.svg',
     'https://paranormal.onrender.com/',
     `A project developed for a client seeking to map haunted locations across the United States. 
@@ -37,7 +37,7 @@ const projects = [
   ],
   [
     'Dotmate',
-    'Logo visualization interface',
+    'Customizable logo visualization interface',
     'img/icons/dotmate logo.svg',
     'https://dotmate.herokuapp.com/',
     `A demo UI was created as part of a job application process. It allows users to place 
@@ -61,7 +61,7 @@ const projects = [
   ],
   [
     'Tartle',
-    'Generative art with Python Turtle',
+    'Generative art with Python',
     'img/icons/tartle logo.svg',
     'https://github.com/crealu/tartle',
     `A project that emphasizes experimentation as a core principle, blending visual arts programming 
