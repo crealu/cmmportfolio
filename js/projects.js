@@ -1,7 +1,7 @@
 const projects = [
   [
     'Niheigo',
-    'Japanese lanugage learning game',
+    'Japanese language learning product',
     'img/icons/niheigo logo.svg',
     'https://www.niheigo.com',
     `Learning Japanese kanji can be a challenging and complex process. Niheigo addresses 
@@ -13,7 +13,7 @@ const projects = [
   ],
   [
     'Jahmon',
-    'Web-based music composition app',
+    'Music composition app',
     'img/icons/jahmon logo.svg',
     'https://www.jahmon.space',
     `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
@@ -37,10 +37,10 @@ const projects = [
   ],
   [
     'Dotmate',
-    'Customizable logo visualization interface',
+    'Logo visualization interface',
     'img/icons/dotmate logo.svg',
     'https://dotmate.herokuapp.com/',
-    `A demo UI was created as part of a job application process. It allows users to place 
+    `A demo UI created as part of a job application process. It allows users to place 
     dots on a canvas, configure parameters to control animation styles, and preview the resulting 
     animation. The dot placement can be adjusted to create diverse patterns, offering flexibility 
     in design and visualization.`,
@@ -52,7 +52,7 @@ const projects = [
     'RPG game design scaffolding',
     'img/icons/storyline logo.svg',
     'https://github.com/crealu/clean-story',
-    `A codebase developed as an exercise in designing a task-based RPG while refining C++ 
+    `A codebase developed as an exercise in designing task-based RPG logic while refining C++ 
     programming skills. Although the project was retired after achieving a functional prototype, 
     the resulting codebase serves as a foundational guideline for building more advanced game objects 
     and features.`,
