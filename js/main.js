@@ -244,7 +244,8 @@ function fillScreenshots(name, count) {
 
 function openProjectModal(project) {
   projectModalTitle.textContent = project[0];
-  projectModalDescription.textContent = project[4];
+  // projectModalDescription.textContent = project[4];
+  projectModalDescription.innerHTML = project[4];
   projectModalTechStack.textContent = project[5];
   projectModalLink.href = project[3];
   fillScreenshots(project[0], project[6]);

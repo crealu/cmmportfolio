@@ -1,5 +1,29 @@
 const projects = [
   [
+    'Shcon',
+    'A consideration on GLSL implementations',
+    'img/icons/ls logo.svg',
+    'https://shcon-902b612ebe5d.herokuapp.com/',
+    `<p>A project to apply GLSL programming skills and knowledge in a web interface context.</p><br>
+    <iframe
+      id="inlineFrameExample"
+      title="Inline Frame Example"
+      width="600"
+      height="400"
+      style="
+      display: block;
+      position: relative;
+      margin:0 auto;
+      border: none;
+      opacity: ;
+      z-index: 0;
+      "
+      src="https://shcon-902b612ebe5d.herokuapp.com/">
+    </iframe>`,
+    'WebGL, GLSL, JavaScript, Canvas, OOP',
+    0
+  ],
+  [
     'Niheigo',
     'Japanese language learning product',
     'img/icons/niheigo logo.svg',
@@ -83,19 +107,19 @@ const projects = [
     offered valuable insights into leveraging Three.js effectively within a React application.`,
     'Three.js, React, Webpack, Node',
     4
-  ],
-  [
-    'Lightning Shaders',
-    'GLSL editing interface',
-    'img/icons/ls logo.svg',
-    'https://lightningshaders.herokuapp.com/',
-    `A shader programming interface developed to facilitate a deeper understanding of the code structure within 
-    shader programs, particularly fragment shaders. As a graphics enthusiast with limited experience, creating 
-    this tool provided a valuable means to visualize and analyze the significance of each component within the 
-    programs, greatly enhancing the learning process.`,
-    'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
-    1
   ]
+  // [
+  //   'Lightning Shaders',
+  //   'GLSL editing interface',
+  //   'img/icons/ls logo.svg',
+  //   'https://lightningshaders.herokuapp.com/',
+  //   `A shader programming interface developed to facilitate a deeper understanding of the code structure within 
+  //   shader programs, particularly fragment shaders. As a graphics enthusiast with limited experience, creating 
+  //   this tool provided a valuable means to visualize and analyze the significance of each component within the 
+  //   programs, greatly enhancing the learning process.`,
+  //   'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
+  //   1
+  // ]
 ];
 
 // [
