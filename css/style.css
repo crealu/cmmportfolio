@@ -791,6 +791,11 @@ td {
   letter-spacing: 2px;
 }
 
+.role-list {
+  list-style-type: none;
+  color: white;
+}
+
 .resume-row {
   margin-top: 40px;
 }
