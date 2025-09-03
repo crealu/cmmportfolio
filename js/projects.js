@@ -4,23 +4,11 @@ const projects = [
     'A consideration on GLSL implementations',
     'img/icons/ls logo.svg',
     'https://shcon-902b612ebe5d.herokuapp.com/',
-    `<p>A project to apply GLSL programming skills and knowledge in a web interface context.</p><br>
-    <iframe
-      id="inlineFrameExample"
-      title="Inline Frame Example"
-      width="600"
-      height="400"
-      style="
-      display: block;
-      position: relative;
-      margin:0 auto;
-      border: none;
-      opacity: ;
-      z-index: 0;
-      "
-      src="https://shcon-902b612ebe5d.herokuapp.com/">
-    </iframe>`,
-    'WebGL, GLSL, JavaScript, Canvas, OOP',
+    `Shcon considers how mathematical concepts are applied in WebGL shader programs to produce 
+    variations in graphics. The effects of user interactivity handled by JavaScript event
+    listeners on the program's uniform properties are examined to measure runtime efficiency, 
+    development maintainability, and levels of user experience.`,
+    'WebGL, GLSL, JavaScript, HTML Canvas, OOP',
     0
   ],
   [
@@ -70,57 +58,73 @@ const projects = [
     in design and visualization.`,
     'p5.js, React, Webpack, Heroku',
     3
-  ],
-  [
-    'Storyline',
-    'RPG game design scaffolding',
-    'img/icons/storyline logo.svg',
-    'https://github.com/crealu/clean-story',
-    `A codebase developed as an exercise in designing task-based RPG logic while refining C++ 
-    programming skills. Although the project was retired after achieving a functional prototype, 
-    the resulting codebase serves as a foundational guideline for building more advanced game objects 
-    and features.`,
-    'C++, SDL2, Clang compiler',
-    2
-  ],
-  [
-    'Tartle',
-    'Generative art with Python',
-    'img/icons/tartle logo.svg',
-    'https://github.com/crealu/tartle',
-    `A project that emphasizes experimentation as a core principle, blending visual arts programming 
-    with the goal of maintaining proficiency in Python. It showcases generative art drawings and 
-    straightforward concepts designed with approachable, learnable methods. The focus remains on 
-    exploring creative possibilities through iterative trial-and-error processes rather than producing 
-    overly complex outputs.`,
-    'Python, Turtle, PIL',
-    4
-  ],
-  [
-    'Breath Of The Wild UI',
-    'Zelda BOTW inspired user interface',
-    'img/icons/botw logo.svg',
-    'https://botw-ui.herokuapp.com',
-    `A project presented as an engaging challenge, particularly in connecting application state updates 
-    to game events. As both a UI developer and an aspiring game designer, it provided an opportunity to 
-    explore the integration of game logic, 3D rendering, and graphical user interfaces. The experience also 
-    offered valuable insights into leveraging Three.js effectively within a React application.`,
-    'Three.js, React, Webpack, Node',
-    4
   ]
-  // [
-  //   'Lightning Shaders',
-  //   'GLSL editing interface',
-  //   'img/icons/ls logo.svg',
-  //   'https://lightningshaders.herokuapp.com/',
-  //   `A shader programming interface developed to facilitate a deeper understanding of the code structure within 
-  //   shader programs, particularly fragment shaders. As a graphics enthusiast with limited experience, creating 
-  //   this tool provided a valuable means to visualize and analyze the significance of each component within the 
-  //   programs, greatly enhancing the learning process.`,
-  //   'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
-  //   1
-  // ]
-];
+]
+
+// <iframe
+//   id="inlineFrameExample"
+//   title="Inline Frame Example"
+//   width="600"
+//   height="400"
+//   style="
+//   display: block;
+//   position: relative;
+//   margin:0 auto;
+//   border: none;
+//   opacity: ;
+//   z-index: 0;
+//   "
+//   src="https://shcon-902b612ebe5d.herokuapp.com/">
+// </iframe>
+// [
+//   'Storyline',
+//   'RPG game design scaffolding',
+//   'img/icons/storyline logo.svg',
+//   'https://github.com/crealu/clean-story',
+//   `A codebase developed as an exercise in designing task-based RPG logic while refining C++ 
+//   programming skills. Although the project was retired after achieving a functional prototype, 
+//   the resulting codebase serves as a foundational guideline for building more advanced game objects 
+//   and features.`,
+//   'C++, SDL2, Clang compiler',
+//   2
+// ],
+// [
+//   'Tartle',
+//   'Generative art with Python',
+//   'img/icons/tartle logo.svg',
+//   'https://github.com/crealu/tartle',
+//   `A project that emphasizes experimentation as a core principle, blending visual arts programming 
+//   with the goal of maintaining proficiency in Python. It showcases generative art drawings and 
+//   straightforward concepts designed with approachable, learnable methods. The focus remains on 
+//   exploring creative possibilities through iterative trial-and-error processes rather than producing 
+//   overly complex outputs.`,
+//   'Python, Turtle, PIL',
+//   4
+// ]
+// [
+//   'Breath Of The Wild UI',
+//   'Zelda BOTW inspired user interface',
+//   'img/icons/botw logo.svg',
+//   'https://botw-ui.herokuapp.com',
+//   `A project presented as an engaging challenge, particularly in connecting application state updates 
+//   to game events. As both a UI developer and an aspiring game designer, it provided an opportunity to 
+//   explore the integration of game logic, 3D rendering, and graphical user interfaces. The experience also 
+//   offered valuable insights into leveraging Three.js effectively within a React application.`,
+//   'Three.js, React, Webpack, Node',
+//   4
+// ]
+// [
+//   'Lightning Shaders',
+//   'GLSL editing interface',
+//   'img/icons/ls logo.svg',
+//   'https://lightningshaders.herokuapp.com/',
+//   `A shader programming interface developed to facilitate a deeper understanding of the code structure within 
+//   shader programs, particularly fragment shaders. As a graphics enthusiast with limited experience, creating 
+//   this tool provided a valuable means to visualize and analyze the significance of each component within the 
+//   programs, greatly enhancing the learning process.`,
+//   'React, Node, Express, MongoDB, Webpack, GLSL, Heroku',
+//   1
+// ]
 
 // [
 //   'How You Eye',

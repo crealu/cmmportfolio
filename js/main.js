@@ -176,38 +176,67 @@ function displayContent(topic) {
   }
 }
 
+
+function toggleDetails(event) {
+  let selected = event.target;
+
+  if (selected.classList[0] != 'software-project-wrapper') {
+    selected = event.target.parentNode;
+  } 
+
+  let details = selected.querySelector('.software-project-details');
+
+  if (details.classList.contains('display-details')) {
+    details.classList.remove('display-details')
+  } else {
+    details.classList.add('display-details');
+  }
+}
+
 function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
-    const title = document.createElement("h3");
-    const description = document.createElement("p");
-    const link = document.createElement("div");
-    const techStack = document.createElement("p");
-    const image = document.createElement("img");
-    const imageWrapper = document.createElement("div");
-
     div.classList.add('software-project-wrapper');
+    div.addEventListener('click', toggleDetails)
+
+    const title = document.createElement("h3");
     title.classList.add('software-project-title');
     title.textContent = project[0];
+
+    const description = document.createElement("p");
     description.classList.add('software-project-text');
     description.textContent = project[1];
 
+    const details = document.createElement("p");
+    details.classList.add('software-project-details');
+    details.innerHTML = project[4]
+
+    const link = document.createElement("div");
     link.classList.add('software-project-link');
     link.setAttribute('target', '_blank');
-    link.addEventListener('click', () => { openProjectModal(project) })
+    // link.addEventListener('click', () => { openProjectModal(project) })
 
-    // const modalTitle = link.children[0].children[0].textContent;
-
+    const techStack = document.createElement("p");
+    const imageWrapper = document.createElement("div");
     imageWrapper.classList.add('software-project-img-wrapper');
+
+    const image = document.createElement("img");
     image.classList.add('software-project-img');
     image.src = project[2];
 
-    imageWrapper.appendChild(image);
-    div.appendChild(title);
-    div.appendChild(description);
-    link.appendChild(imageWrapper);
-    link.appendChild(div);
-    projectContentRow.appendChild(link);
+    imageWrapper.append(image);
+    div.append(title, description, details);
+    link.append(imageWrapper, div);
+    projectContentRow.append(link);
+
+    // const modalTitle = link.children[0].children[0].textContent;
+
+    // imageWrapper.appendChild(image);
+    // div.appendChild(title);
+    // div.appendChild(description);
+    // link.appendChild(imageWrapper);
+    // link.appendChild(div);
+    // projectContentRow.appendChild(link);
   });
 };
 
@@ -316,9 +345,7 @@ function fadeHideSeveral(el1, el2) {
 function loadPage() {
   fadeShow(firstContent);
   addProjectList();
-  animateBtn.addEventListener('click', animateMeFromBtn);
+  // animateBtn.addEventListener('click', animateMeFromBtn);
 }
 
 window.addEventListener('load', loadPage);
-
-
