@@ -2,7 +2,7 @@ const projects = [
   [
     'Jetter',
     'Aerospace industry news analyses',
-    '',
+    'img/icons/da logo.svg',
     'https://jetter-a18b8f283819.herokuapp.com/',
     `Jetter is a client project that aims to support primarily 3 features: maintaining an extensive
     database of aerospace industry news, visualizing relationships between company publications and
