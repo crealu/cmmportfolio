@@ -1,11 +1,12 @@
-const bars = document.getElementsByClassName('bar');
 const navBtn = document.getElementById('nav-btn');
+const bars = document.getElementsByClassName('bar');
 const mobileNav = document.getElementById('nav-mobile');
 const navLinks = document.getElementsByClassName('navigation-link');
 const navLinksMobile = document.getElementsByClassName('nav-link-mobile');
 const projectContentRow = document.getElementById('project-content-row');
 const firstContent = document.getElementById('projects-content');
 
+// navigation
 function toggleMobileNav(menu, showing) {
   let rate = showing ? 100 : 500;
 
@@ -90,32 +91,7 @@ function switchNavBtn() {
   }
 }
 
-function fadeShowMobile(el) {
-  let i = 0;
-  let id = setInterval(frame, 125);
-  el.style.display = 'block';
-  function frame() {
-    i++;
-    if (i == 1) {
-      clearInterval(id);
-      el.style.opacity = '1';
-    }
-  }
-}
-
-function fadeHideMobile(el) {
-  let i = 0;
-  let id = setInterval(frame, 250);
-  el.style.opacity = '0';
-  function frame() {
-    i++;
-    if (i == 1) {
-      clearInterval(id);
-      el.style.display = 'none';
-    }
-  }
-}
-
+// DOM changes
 function clear(element) {
   while (element.firstChild) {
     element.removeChild(element.firstChild);
@@ -227,6 +203,7 @@ function fillScreenshots(name, count) {
   }
 }
 
+// transitions
 function fadeShow(el) {
   let i = 0;
   let id = setInterval(frame, 500);
@@ -241,9 +218,35 @@ function fadeShow(el) {
   }
 }
 
+function fadeShowMobile(el) {
+  let i = 0;
+  let id = setInterval(frame, 125);
+  el.style.display = 'block';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      el.style.opacity = '1';
+    }
+  }
+}
+
 function fadeHide(el) {
   let i = 0;
   let id = setInterval(frame, 500);
+  el.style.opacity = '0';
+  function frame() {
+    i++;
+    if (i == 1) {
+      clearInterval(id);
+      el.style.display = 'none';
+    }
+  }
+}
+
+function fadeHideMobile(el) {
+  let i = 0;
+  let id = setInterval(frame, 250);
   el.style.opacity = '0';
   function frame() {
     i++;
