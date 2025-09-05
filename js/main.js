@@ -1,17 +1,10 @@
 const bars = document.getElementsByClassName('bar');
 const navBtn = document.getElementById('nav-btn');
 const mobileNav = document.getElementById('nav-mobile');
+const navLinks = document.getElementsByClassName('navigation-link');
+const navLinksMobile = document.getElementsByClassName('nav-link-mobile');
 const projectContentRow = document.getElementById('project-content-row');
 const firstContent = document.getElementById('projects-content');
-const projectModal = document.getElementsByClassName('project-modal')[0];
-const projectModalTitle = document.getElementsByClassName('project-modal-title')[0];
-const projectModalDescription = document.getElementsByClassName('project-modal-description')[0];
-const projectModalLink = document.getElementsByClassName('project-modal-link')[0];
-const projectModalTechStack = document.getElementsByClassName('project-modal-tech-stack')[0];
-const projectModalScreenshots = document.getElementsByClassName('project-modal-screenshots')[0];
-const animateBtn = document.getElementsByClassName('glow-btn')[0];
-const portrait1 = document.getElementsByClassName('portrait-color')[0];
-const portrait2 = document.getElementsByClassName('portrait-color')[1];
 
 function toggleMobileNav(menu, showing) {
   let rate = showing ? 100 : 500;
@@ -144,33 +137,11 @@ function displayProjects(div) {
   fadeShow(contentToDisplay);
 }
 
-function animateMe() {
-  portrait1.classList.add('animated-portrait-1');
-  portrait2.classList.add('animated-portrait-2');
-}
+function displayContent(event) {
+  let topic = event.target.textContent;
 
-function animateMeFromBtn() {
-  portrait1.classList.remove('animated-portrait-1');
-  portrait2.classList.remove('animated-portrait-2');
-  portrait1.classList.add('unanimated-portrait-1');
-  portrait2.classList.add('unanimated-portrait-2');
-
-  setTimeout(() => {
-    portrait1.classList.remove('unanimated-portrait-1');
-    portrait2.classList.remove('unanimated-portrait-2');
-    portrait1.classList.add('animated-portrait-1');
-    portrait2.classList.add('animated-portrait-2');
-  }, 100)
-}
-
-function displayContent(topic) {
   displayProjects(topic.toLowerCase());
-
-  if (topic == 'About') {
-    animateMe();
-    animateBtn.style.animation = '1s reveal_glow_btn 9s ease forwards';
-  }
-
+  
   if (window.innerWidth <= 800) {
     openMenu();
   }
@@ -241,23 +212,7 @@ function addProjectList() {
   });
 };
 
-function revealModal() {
-  let i = 0;
-  let id = setInterval(frame, 500);
-  projectModal.style.display = 'block';
-  function frame() {
-    i++;
-    if (i == 1) {
-      clearInterval(id);
-      projectModal.style.top = '0px';
-      projectModal.style.opacity = '1';
-    }
-  }
-}
-
-function fillScreenshots(name, count) {
-  clear(projectModalScreenshots);
-  
+function fillScreenshots(name, count) {  
   if (name.includes('Wild')) {
     name = 'botwui';
   } else if (name.includes('Lightning')) {
@@ -269,35 +224,6 @@ function fillScreenshots(name, count) {
     img.classList.add('screenshot');
     img.src = `./img/projs/${name.toLowerCase()}/screenshot_${i}.png`;
     projectModalScreenshots.appendChild(img);
-  }
-}
-
-function openProjectModal(project) {
-  projectModalTitle.textContent = project[0];
-  // projectModalDescription.textContent = project[4];
-  projectModalDescription.innerHTML = project[4];
-  projectModalTechStack.textContent = project[5];
-  projectModalLink.href = project[3];
-  fillScreenshots(project[0], project[6]);
-  revealModal();
-}
-
-function closeProjectModal() {
-  hideModal();
-}
-
-
-function hideModal() {
-  let i = 0;
-  let id = setInterval(frame, 500);
-  projectModal.style.opacity = '0';
-  function frame() {
-    i++;
-    if (i == 1) {
-      clearInterval(id);
-      projectModal.style.display = 'none';
-      projectModal.style.top = '-30px';
-    }
   }
 }
 
@@ -343,10 +269,20 @@ function fadeHideSeveral(el1, el2) {
   }
 }
 
+function addListeners() {
+  navBtn.addEventListener('click', openMenu);
+  navLinks[0].addEventListener('click', displayContent)
+  navLinks[1].addEventListener('click', displayContent)
+  navLinks[2].addEventListener('click', displayContent)  
+  navLinksMobile[0].addEventListener('click', displayContent)
+  navLinksMobile[1].addEventListener('click', displayContent)
+  navLinksMobile[2].addEventListener('click', displayContent)
+}
+
 function loadPage() {
   fadeShow(firstContent);
   addProjectList();
-  // animateBtn.addEventListener('click', animateMeFromBtn);
+  addListeners();
 }
 
 window.addEventListener('load', loadPage);
