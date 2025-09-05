@@ -1,5 +1,18 @@
 const projects = [
   [
+    'Jetter',
+    'Aerospace industry news analyses',
+    '',
+    'https://jetter-a18b8f283819.herokuapp.com/',
+    `Jetter is a client project that aims to support primarily 3 features: maintaining an extensive
+    database of aerospace industry news, visualizing relationships between company publications and
+    market trends, and automating the retrieval of new press releases. It was constructed to function
+    in a microservices architecture and employs several backend modules created separately with Python 
+    (Django) and JavaScript (Node).`,
+    'Python, Django, BeautifulSoup, Google Developer Tools, JavaScript, Node, Heroku, MongoDB',
+    0
+  ],
+  [
     'Shcon',
     'A consideration on GLSL implementations',
     'img/icons/ls logo.svg',
@@ -38,7 +51,7 @@ const projects = [
   ],
   [
     'Paranormal',
-    'Interactive map of haunted places in the US',
+    'Interactive map of spooky places in the US',
     'img/icons/paranormal logo.svg',
     'https://paranormal.onrender.com/',
     `A project developed for a client seeking to map haunted locations across the United States. 

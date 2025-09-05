@@ -207,14 +207,13 @@ function addProjectList() {
     description.classList.add('software-project-text');
     description.textContent = project[1];
 
-    const details = document.createElement("p");
+    const details = document.createElement("div");
     details.classList.add('software-project-details');
-    details.innerHTML = project[4]
+    details.innerHTML = `<p>${project[4]}</p>`
 
     const link = document.createElement("div");
     link.classList.add('software-project-link');
     link.setAttribute('target', '_blank');
-    // link.addEventListener('click', () => { openProjectModal(project) })
 
     const techStack = document.createElement("p");
     const imageWrapper = document.createElement("div");
@@ -228,15 +227,6 @@ function addProjectList() {
     div.append(title, description, details);
     link.append(imageWrapper, div);
     projectContentRow.append(link);
-
-    // const modalTitle = link.children[0].children[0].textContent;
-
-    // imageWrapper.appendChild(image);
-    // div.appendChild(title);
-    // div.appendChild(description);
-    // link.appendChild(imageWrapper);
-    // link.appendChild(div);
-    // projectContentRow.appendChild(link);
   });
 };
 
