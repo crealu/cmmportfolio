@@ -9,7 +9,7 @@ const projects = [
     market trends, and automating the retrieval of new press releases. It was constructed to function
     in a microservices architecture and employs several backend modules created separately with Python 
     (Django) and JavaScript (Node).`,
-    'Python, Django, BeautifulSoup, Google Developer Tools, JavaScript, Node, Heroku, MongoDB',
+    'Google Dev Tools, HTML, CSS, JavaScript, Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
     0
   ],
   [
@@ -21,7 +21,7 @@ const projects = [
     variations in graphics. The effects of user interactivity handled by JavaScript event
     listeners on the program's uniform properties are examined to measure runtime efficiency, 
     development maintainability, and levels of user experience.`,
-    'WebGL, GLSL, JavaScript, HTML Canvas, OOP',
+    'HTML Canvas, WebGL, GLSL, JavaScript, Notion',
     0
   ],
   [
@@ -33,7 +33,7 @@ const projects = [
     this with a suite of tools tailored for Japanese language learners. The platform includes 
     features such as customizable testing, comprehensive kanji learning sets, engaging 
     language games, and detailed language analytics to enhance the learning experience.`,
-    'Figma, HTML, CSS, JavaScript, Node, Express, MongoDB, Heroku, p5.js',
+    'Figma, p5.js, HTML, CSS, JavaScript, Node, Express, MongoDB, Cloudflare, Heroku',
     4
   ],
   [
@@ -69,7 +69,7 @@ const projects = [
     dots on a canvas, configure parameters to control animation styles, and preview the resulting 
     animation. The dot placement can be adjusted to create diverse patterns, offering flexibility 
     in design and visualization.`,
-    'p5.js, React, Webpack, Heroku',
+    'p5.js, JavaScript, React, Webpack, Node, Heroku',
     3
   ]
 ]

@@ -753,11 +753,31 @@ td {
   display: none;
   transition: 0.25s ease;
   line-height: 30px;
+  font-size: 18px;
 }
 
 .display-details {
   display: block;
   opacity: 1;
+}
+
+.software-live-link {
+  position: relative;
+  display: block;
+  width: 100px;
+  padding: 8px 20px;
+  margin-top: 30px;
+  border-radius: 14px;
+  background: white;
+  color: var(--bg1);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.software-live-link:hover {
+  background: gray;
 }
 
 .project-row {

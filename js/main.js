@@ -176,7 +176,6 @@ function displayContent(topic) {
   }
 }
 
-
 function toggleDetails(event) {
   let selected = event.target;
 
@@ -197,25 +196,11 @@ function addProjectList() {
   projects.forEach(project => {
     const div = document.createElement("div");
     div.classList.add('software-project-wrapper');
-    div.addEventListener('click', toggleDetails)
-
-    const title = document.createElement("h3");
-    title.classList.add('software-project-title');
-    title.textContent = project[0];
-
-    const description = document.createElement("p");
-    description.classList.add('software-project-text');
-    description.textContent = project[1];
-
-    const details = document.createElement("div");
-    details.classList.add('software-project-details');
-    details.innerHTML = `<p>${project[4]}</p>`
+    div.addEventListener('click', toggleDetails);
 
     const link = document.createElement("div");
     link.classList.add('software-project-link');
-    link.setAttribute('target', '_blank');
 
-    const techStack = document.createElement("p");
     const imageWrapper = document.createElement("div");
     imageWrapper.classList.add('software-project-img-wrapper');
 
@@ -223,8 +208,34 @@ function addProjectList() {
     image.classList.add('software-project-img');
     image.src = project[2];
 
+    const title = document.createElement("h3");
+    title.classList.add('software-project-title');
+    title.textContent = project[0];
+
+    const caption = document.createElement("p");
+    caption.classList.add('software-project-text');
+    caption.textContent = project[1];
+
+    const details = document.createElement("div");
+    details.classList.add('software-project-details');
+
+    const description = document.createElement("p");
+    description.classList.add('software-project-stack');
+    description.textContent = project[4];
+
+    const stack = document.createElement("p");
+    stack.classList.add('software-project-stack');
+    stack.textContent = `Tech Stack: ${project[5]}`;
+
+    const button = document.createElement("a");
+    button.classList.add('software-live-link');
+    button.textContent = 'View Live';
+    button.href = project[3];
+    button.setAttribute('target', '_blank');
+
     imageWrapper.append(image);
-    div.append(title, description, details);
+    details.append(description, stack, button);
+    div.append(title, caption, details);
     link.append(imageWrapper, div);
     projectContentRow.append(link);
   });
