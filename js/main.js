@@ -38,13 +38,14 @@ function toggleMobileNav(menu, showing) {
       } else if (i >= 4 && i < 5) {
         mobileLinks[2].style.opacity = '1';
         mobileLinks[2].style.transform = 'scale(1) translateY(0px)';
-      } else if (i >= 5 && i < 6) {
-        mobileLinks[3].style.opacity = '1';
-        mobileLinks[3].style.transform = 'scale(1) translateY(0px)';
-      } else if (i >= 9 && i < 10) {
-        // clearInterval(id);
-        // mediaItem.style.animation = '0.5s var(--cb-bounce) 0s forwards media_bounce';
-      }
+      } 
+      // else if (i >= 5 && i < 6) {
+      //   mobileLinks[3].style.opacity = '1';
+      //   mobileLinks[3].style.transform = 'scale(1) translateY(0px)';
+      // } else if (i >= 9 && i < 10) {
+      //   // clearInterval(id);
+      //   // mediaItem.style.animation = '0.5s var(--cb-bounce) 0s forwards media_bounce';
+      // }
     } else {
         if (i >= 1) {
           clearInterval(id);

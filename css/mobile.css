@@ -54,6 +54,10 @@
     text-align: center;
   }
 
+  .project-text-wrapper {
+    text-align: left;
+  }
+
   .software-project-link {
     display: flex;
     align-items: center;
@@ -84,6 +88,10 @@
     margin-top: 10px;
   }
 
+  .software-project-details {
+    text-align: left;
+  }
+
   .project-modal-inner {
     width: 85%;
     margin-top: 40px;
@@ -107,7 +115,7 @@
   }
 
   .email-text {
-    text-align: center;
+    text-align: left;
   }
 
   .resume-row {
@@ -324,7 +332,7 @@
   }
 
   .email-text {
-    text-align: center;
+    text-align: left;
   }
 
   /* visual arts */
