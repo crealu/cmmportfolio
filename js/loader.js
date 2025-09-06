@@ -48,7 +48,7 @@ function loadingBar() {
       loadFlower.style.opacity = '0';
     }
 
-    if (i >= 2) {
+    if (i >= 3) {
       clearInterval(id);
       closeLoader();
     }

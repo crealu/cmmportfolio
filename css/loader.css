@@ -150,7 +150,7 @@
 @keyframes intro {
   0% {
     opacity: 0;
-    transform: rotate(0deg) scale(5.0);
+    transform: rotate(0deg) scale(3.0);
   }
 
   20% {
