@@ -485,7 +485,9 @@ td {
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  margin: 30px 0px;
+  margin: 50px 0px;
+  height: auto;
+  transition: 0.5s ease;
 }
 
 .software-project-wrapper {
@@ -494,13 +496,13 @@ td {
   grid-template-columns: repeat(2, auto);
   margin: 0 auto;
   width: 90%;
-  height: inherit;
+  height: 163px;
   padding: 2% 5% 2% 5%;
   text-decoration: none;
   cursor: pointer;
   justify-items: start;
   flex-direction: column;
-  transition: 0.25s ease-out;
+  transition: 0.25s ease-out box-shadow, 0.5s ease height;
 }
 
 .software-project-wrapper:hover {
@@ -545,11 +547,24 @@ td {
   transition: 0.25s ease;
   line-height: 30px;
   font-size: 18px;
+  height: inherit;
+  max-height: 200px;
 }
 
 .display-details {
   display: block;
-  opacity: 1;
+  animation: 1s ease 0.25s a1 forwards 1;
+  max-height: none;
+}
+
+@keyframes a1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .software-live-link {
@@ -718,5 +733,5 @@ td {
 }
 
 footer {
-  height: 200px;
+  height: 400px;
 }

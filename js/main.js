@@ -129,15 +129,20 @@ function toggleDetails(event) {
 
   if (selected.classList[0] != 'software-project-wrapper') {
     selected = event.target.parentNode;
-  } 
+  }
 
+  let newHeight = '';
   let details = selected.querySelector('.software-project-details');
 
   if (details.classList.contains('display-details')) {
     details.classList.remove('display-details')
+    newHeight = '163px';
   } else {
     details.classList.add('display-details');
+    newHeight = '500px';
   }
+
+  selected.style.height = newHeight;
 }
 
 function addProjectList() {
