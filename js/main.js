@@ -5,6 +5,7 @@ const navLinks = document.getElementsByClassName('navigation-link');
 const navLinksMobile = document.getElementsByClassName('nav-link-mobile');
 const projectContentRow = document.getElementById('project-content-row');
 const firstContent = document.getElementById('projects-content');
+const connectSpan = document.getElementsByClassName('connect-span')[0];
 
 // navigation
 function toggleMobileNav(menu, showing) {
@@ -278,6 +279,10 @@ function fadeHideSeveral(el1, el2) {
   }
 }
 
+function openConnect() {
+  displayProjects('connect');
+}
+
 function addListeners() {
   navBtn.addEventListener('click', openMenu);
   navLinks[0].addEventListener('click', displayContent)
@@ -286,6 +291,7 @@ function addListeners() {
   navLinksMobile[0].addEventListener('click', displayContent)
   navLinksMobile[1].addEventListener('click', displayContent)
   navLinksMobile[2].addEventListener('click', displayContent)
+  connectSpan.addEventListener('click', openConnect);
 }
 
 function loadPage() {
