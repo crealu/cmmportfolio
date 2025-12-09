@@ -1,28 +1,28 @@
 const projects = [
   [
-    'Jetter',
-    'Aerospace industry news analytics',
-    'img/icons/da logo.svg',
-    'https://jetter-a18b8f283819.herokuapp.com/',
-    `Jetter is a client project that aims to support primarily 3 features: maintaining an extensive
-    database of aerospace industry news, visualizing relationships between company publications and
-    market trends, and automating the retrieval of new press releases. It was constructed to function
-    in a microservices architecture and employs several backend modules created separately with Python 
-    (Django) and JavaScript (Node).`,
-    'Google Dev Tools, HTML, CSS, JavaScript, Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
-    0
-  ],
-  [
     'Shcon',
-    'A consideration of GLSL implementations',
+    'Shaders in context',
     'img/icons/ls logo.svg',
     'https://shcon-902b612ebe5d.herokuapp.com/',
-    `Shcon considers how mathematical concepts are applied in WebGL shader programs to produce 
+    `Shcon explores how mathematical concepts are applied in WebGL shader programs to produce 
     variations in graphics. The effects of user interactivity handled by JavaScript event
     listeners on the program's uniform properties are examined to measure runtime efficiency, 
     development maintainability, and levels of user experience.`,
     'HTML Canvas, WebGL, GLSL, JavaScript, Node, Notion',
     0
+  ],
+  [
+    'Amusic',
+    'Music composition application',
+    'img/icons/jahmon logo.svg',
+    'https://amusic-6276f873a610.herokuapp.com/',
+    `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
+    To solve this issue, Amusic was developed as a tool for creatives, songwriters, and musicians 
+    to efficiently document their musical riffs or lines. The application 
+    features a chord bank, an interactive fretboard, a step sequencer, and a lyric module enabling 
+    users to compose and organize songs with ease and precision.`,
+    'Figma, HTML, CSS, TypeScript, React, Redux, Webpack, Node, Express, MongoDB, Heroku',
+    3
   ],
   [
     'Niheigo',
@@ -37,17 +37,17 @@ const projects = [
     4
   ],
   [
-    'Jahmon',
-    'Music composition application',
-    'img/icons/jahmon logo.svg',
-    'https://www.jahmon.space',
-    `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
-    To address this issue, Jahmon was developed as a tool for guitarists, songwriters, and creatives 
-    who generate musical riffs or lines and need an efficient way to document them. The application 
-    features an interactive fretboard, a step sequencer, a lyric module, and a chord bank, enabling 
-    users to compose and organize songs with ease and precision.`,
-    'Figma, HTML, CSS, TypeScript, React, Redux, Webpack, Node, Express, MongoDB, Heroku',
-    3
+    'Jetter',
+    'Aerospace industry news analytics',
+    'img/icons/da logo.svg',
+    'https://jetter-a18b8f283819.herokuapp.com/',
+    `Jetter is a client project that aims to support primarily 3 features: maintaining an extensive
+    database of aerospace industry news, visualizing relationships between company publications and
+    market trends, and automating the retrieval of new press releases. It was constructed to function
+    in a microservices architecture and employs several backend modules created separately with Python 
+    (Django) and JavaScript (Node).`,
+    'Google Dev Tools, HTML, CSS, JavaScript, Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
+    0
   ],
   [
     'Paranormal',
