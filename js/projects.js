@@ -15,7 +15,7 @@ const projects = [
     'Amusic',
     'Music composition application',
     'img/icons/jahmon logo.svg',
-    'https://amusic-6276f873a610.herokuapp.com/',
+    'https://www.amusic.space/',
     `Musical ideas can often become inaccessible, lost, and forgotten in disorganized notebooks. 
     To solve this issue, Amusic was developed as a tool for creatives, songwriters, and musicians 
     to efficiently document their musical riffs or lines. The application 
