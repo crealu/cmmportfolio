@@ -179,7 +179,7 @@ function addProjectList() {
 
     const stack = document.createElement("p");
     stack.classList.add('software-project-stack');
-    stack.textContent = `Tech Stack: ${project[5]}`;
+    stack.textContent = `Featured tools: ${project[5]}`;
 
     const button = document.createElement("a");
     button.classList.add('software-live-link');
