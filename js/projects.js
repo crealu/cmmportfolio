@@ -8,7 +8,8 @@ const projects = [
     variations in graphics. The effects of user interactivity handled by JavaScript event
     listeners on the program's uniform properties are examined to measure runtime efficiency, 
     development maintainability, and levels of user experience.`,
-    'HTML Canvas, WebGL, GLSL, JavaScript, Node, Notion',
+    // 'HTML Canvas, WebGL, GLSL, JavaScript, Node, Notion',
+    'WebGL, Mapbox, JavaScript, Node',
     0
   ],
   [
@@ -21,7 +22,8 @@ const projects = [
     to efficiently document their musical riffs or lines. The application 
     features a chord bank, an interactive fretboard, a step sequencer, and a lyric module enabling 
     users to compose and organize songs with ease and precision.`,
-    'Figma, HTML, CSS, TypeScript, React, Redux, Webpack, Node, Express, MongoDB, Heroku',
+    // 'Figma, HTML, CSS, TypeScript, React, Redux, Webpack, Node, Express, MongoDB, Heroku',
+    'TypeScript, React, Redux, Vite, Node, Express, MongoDB'
     3
   ],
   [
@@ -33,7 +35,8 @@ const projects = [
     this with a suite of tools tailored for Japanese language learners. The platform includes 
     features such as customizable testing, comprehensive kanji learning sets, engaging 
     language games, and detailed language analytics to enhance the learning experience.`,
-    'Figma, HTML, CSS, p5.js, GSAP, JavaScript, Node, Express, MongoDB, Cloudflare, Heroku',
+    // 'Figma, HTML, CSS, p5.js, GSAP, JavaScript, Node, Express, MongoDB, Cloudflare, Heroku',
+    'p5.js, GSAP, JavaScript, Cloudflare, Heroku',
     4
   ],
   [
@@ -46,7 +49,8 @@ const projects = [
     market trends, and automating the retrieval of new press releases. It was constructed to function
     in a microservices architecture and employs several backend modules created separately with Python 
     (Django) and JavaScript (Node).`,
-    'Google Dev Tools, HTML, CSS, JavaScript, Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
+    // 'Google Dev Tools, HTML, CSS, JavaScript, Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
+    'Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
     0
   ],
   [
@@ -57,7 +61,8 @@ const projects = [
     `A project developed for a client seeking to map haunted locations across the United States. 
     Designed as a data-driven interface, it offers intriguing possibilities for exploring eerie and 
     supernatural themes. The map visualization was created using D3.js and geocoded CSV data.`,
-    'Mapbox Geocoding, CSS, JavaScript, D3.js, Node, Render',
+    // 'Mapbox Geocoding, CSS, JavaScript, D3.js, Node, Render',
+    'Mapbox Geocoding, D3.js, JavaScript, Node, Render',
     1
   ],
   [
@@ -69,7 +74,8 @@ const projects = [
     dots on a canvas, configure parameters to control animation styles, and preview the resulting 
     animation. The dot placement can be adjusted to create diverse patterns, offering flexibility 
     in design and visualization.`,
-    'HTML Canvas, p5.js, JavaScript, React, Webpack, Node, Heroku',
+    // 'HTML Canvas, p5.js, JavaScript, React, Webpack, Node, Heroku',
+    'p5.js, JavaScript, React, Webpack, Node, Heroku',
     3
   ]
 ]
