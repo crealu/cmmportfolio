@@ -23,7 +23,7 @@ const projects = [
     features a chord bank, an interactive fretboard, a step sequencer, and a lyric module enabling 
     users to compose and organize songs with ease and precision.`,
     // 'Figma, HTML, CSS, TypeScript, React, Redux, Webpack, Node, Express, MongoDB, Heroku',
-    'TypeScript, React, Redux, Vite, Node, Express, MongoDB'
+    'TypeScript, React, Redux, Vite, Node, Express, MongoDB',
     3
   ],
   [
