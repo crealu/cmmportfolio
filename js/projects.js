@@ -53,18 +53,18 @@ const projects = [
     'Python, Django, BeautifulSoup, Node, Express, MongoDB, Heroku',
     0
   ],
-  [
-    'Paranormal',
-    'Interactive map of eerie US locations',
-    'img/icons/paranormal logo.svg',
-    'https://paranormal.onrender.com/',
-    `A project developed for a client seeking to map haunted locations across the United States. 
-    Designed as a data-driven interface, it offers intriguing possibilities for exploring eerie and 
-    supernatural themes. The map visualization was created using D3.js and geocoded CSV data.`,
-    // 'Mapbox Geocoding, CSS, JavaScript, D3.js, Node, Render',
-    'Mapbox Geocoding, D3.js, JavaScript, Node, Render',
-    1
-  ],
+  // [
+  //   'Paranormal',
+  //   'Interactive map of eerie US locations',
+  //   'img/icons/paranormal logo.svg',
+  //   'https://paranormal.onrender.com/',
+  //   `A project developed for a client seeking to map haunted locations across the United States. 
+  //   Designed as a data-driven interface, it offers intriguing possibilities for exploring eerie and 
+  //   supernatural themes. The map visualization was created using D3.js and geocoded CSV data.`,
+  //   // 'Mapbox Geocoding, CSS, JavaScript, D3.js, Node, Render',
+  //   'Mapbox Geocoding, D3.js, JavaScript, Node, Render',
+  //   1
+  // ],
   [
     'Dotmate',
     'Logo visualization interface',
